@@ -60,5 +60,5 @@ This query retrieves all **negative proteins**. For each entry, the TSV includes
 
 | Dataset       | Proteins | Files |
 |---------------|----------|-------|
-| Positive Set  | 2,949    | [FASTA](Data_Collection/Positive_Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17(2).fasta.gz), [TSV](Data_Collection/Positive_Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17(2).tsv.gz) |
-| Negative Set  | 20,615   | [FASTA](Data_Collection/Negative_Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17(1).fasta.gz), [TSV](Data_Collection/Negative_Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17(1).tsv.gz) |
+| Positive Set  | 2,949    | [FASTA](Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(2).fasta.gz), [TSV](Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(2).tsv.gz) |
+| Negative Set  | 20,615   | [FASTA](Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(1).fasta.gz), [TSV](Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(1).tsv.gz) |
