@@ -27,6 +27,8 @@ https://rest.uniprot.org/uniprotkb/search?format=fasta&query=%28%28fragment%3Afa
 
 This query retrieves all **positive proteins** to build the dataset. Results are exported in both TSV (metadata) and FASTA (sequences).  
 
+**Final dataset size:** 2,949 proteins
+
 ---
 
 ## Negative Set (Non-SP proteins)
@@ -54,5 +56,13 @@ https://rest.uniprot.org/uniprotkb/search?format=fasta&query=%28%28reviewed%3Atr
 
 This query retrieves all **negative proteins**. For each entry, the TSV includes accession, organism, protein length, kingdom (derived from lineage), and a flag indicating whether a transmembrane helix is present in the first 90 residues.  
 
+**Final dataset size:** 20,615 proteins
+
 ---
 
+## Dataset Summary
+
+| Dataset       | Proteins | Files |
+|---------------|----------|-------|
+| Positive Set  | 2,949    | [FASTA](data_collection/positive_set/positive_set.fasta.gz), [TSV](data_collection/positive_set/positive_set.tsv.gz) |
+| Negative Set  | 20,615   | [FASTA](data_collection/negative_set/negative_set.fasta.gz), [TSV](data_collection/negative_set/negative_set.tsv.gz) |
