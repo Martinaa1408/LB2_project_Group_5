@@ -24,6 +24,7 @@ The first step of the pipeline is the construction of two datasets of eukaryotic
 
 **API URL (paginated, 500 entries per batch):**
 https://rest.uniprot.org/uniprotkb/search?format=fasta&query=%28%28fragment%3Afalse%29+AND+%28taxonomy_id%3A2759%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28reviewed%3Atrue%29+AND+%28existence%3A1%29+AND+%28ft_signal_exp%3A*%29%29&size=500
+
 This query retrieves all **positive proteins** to build the dataset. Results are exported in both TSV (metadata) and FASTA (sequences).  
 
 ---
@@ -50,3 +51,8 @@ This query retrieves all **positive proteins** to build the dataset. Results are
 
 **API URL (paginated, 500 entries per batch):**
 https://rest.uniprot.org/uniprotkb/search?format=fasta&query=%28%28reviewed%3Atrue%29+AND+%28fragment%3Afalse%29+AND+%28taxonomy_id%3A2759%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28existence%3A1%29+NOT+%28ft_signal%3A*%29+OR+%28cc_scl_term_exp%3ASL-0191%29+OR+%28cc_scl_term_exp%3ASL-0204%29+OR+%28cc_scl_term_exp%3ASL-0039%29+OR+%28cc_scl_term_exp%3ASL-0091%29+OR+%28cc_scl_term_exp%3ASL-0209%29+OR+%28cc_scl_term_exp%3ASL-0173%29%29&size=500
+
+This query retrieves all **negative proteins**. For each entry, the TSV includes accession, organism, protein length, kingdom (derived from lineage), and a flag indicating whether a transmembrane helix is present in the first 90 residues.  
+
+---
+
