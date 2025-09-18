@@ -84,7 +84,7 @@ This project is released under the **[GPL-3.0 License](https://github.com/Martin
 
 ## Acknowledgements
 This project is part of the **Laboratory of Bioinformatics II** course (University of Bologna, 2025).  
-We thank the course instructors and teaching assistants for their guidance, feedback, and support.  
+We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi** for their guidance, feedback and continuous support throughout the project.
 
 ---
 
