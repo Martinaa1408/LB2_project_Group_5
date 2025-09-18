@@ -70,7 +70,7 @@ LB2_project_Group_5/
 ## Authors
 This project has been developed by the following group members:
 
-- **Martina A.** – [@Martinaa1408](https://github.com/Martinaa1408)  
+- **Martina Castellucci** – [@Martinaa1408](https://github.com/Martinaa1408)  
 - **Alessia Corica** – [@alessia-corica](https://github.com/alessia-corica)  
 - **Anna Rossi** – [@AnnaRossi01](https://github.com/AnnaRossi01)  
 - **Sofia Natale** – [@sofianatale](https://github.com/sofianatale)  
