@@ -91,6 +91,5 @@ We thank the course instructors and teaching assistants for their guidance, feed
 ## References & Tools
 - **UniProtKB**: [https://www.uniprot.org/](https://www.uniprot.org/)  
 - **scikit-learn**: [https://scikit-learn.org/](https://scikit-learn.org/)  
-- **Jupyter/Colab** for analysis and dataset retrieval  
-- von Heijne G. (1986) “A new method for predicting signal sequence cleavage sites.” *Nucleic Acids Res.*  
-- State-of-the-art methods for signal peptide prediction (e.g. SignalP, Phobius) as references for benchmarking.
+- **Jupyter/Colab** for analysis and dataset retrieval
+- **JSON Viewer** [https://jsonformatter.org/json-viewer/](https://jsonformatter.org/json-viewer)
