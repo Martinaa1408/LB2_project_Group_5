@@ -43,7 +43,6 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 -  Implement the SVM classifier  
 -  Evaluate methods with cross-validation and blind test set  
 -  Discuss and report results  
--  *(Optional)* Extend with advanced methods (NNs, DL)  
 -  Prepare manuscript in scientific article format  
 ---
 
