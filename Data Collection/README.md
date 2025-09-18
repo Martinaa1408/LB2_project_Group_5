@@ -58,7 +58,10 @@ This query retrieves all **negative proteins**. For each entry, the TSV includes
 
 ## Dataset Summary
 
-| Dataset       | Proteins | Files |
-|---------------|----------|-------|
-| Positive Set  | 2,949    | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/raw/main/Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(2).fasta.gz), [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/raw/main/Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(2).tsv.gz) |
-| Negative Set  | 20,615   | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/raw/main/Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(1).fasta.gz), [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/raw/main/Data%20Collection/Negative%20Set/uniprotkb_fragment_false_AND_taxonomy_i_2025_09_17%20(1).tsv.gz) |
+## Dataset Summary
+
+| Dataset      | Total Proteins   | Filtered Proteins | Files |
+|--------------|------------------|-------------------|-------|
+| Positive Set | 2,949            | 2,932              | [FASTA]([link](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.fasta)) · [TSV]([link](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.tsv)) |
+| Negative Set | 20,615           | 20,615              | [FASTA]([link](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.fasta)) · [TSV]([link](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.tsv)) |
+
