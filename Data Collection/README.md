@@ -1,6 +1,6 @@
 # LAB2_project – Data Collection
  
-The first step of the pipeline is the construction of two datasets of eukaryotic proteins from **UniProtKB**:
+The first step of the pipeline consists of the **collection and preparation of datasets** from [UniProtKB](https://www.uniprot.org/): 
 
 - **Positive set** → proteins with experimentally validated signal peptides.  
 - **Negative set** → proteins without signal peptides, but experimentally localized in non-secretory compartments.  
@@ -18,7 +18,7 @@ The first step of the pipeline is the construction of two datasets of eukaryotic
 - (Additional filtering: SP length > 14 aa, and cleaved)  
 
 **Query used in UniProt graphical interface:**
-(fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO ]) AND (reviewed:true) AND (existence:1) AND (ft_signal_exp:)
+```(fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO ]) AND (reviewed:true) AND (existence:1) AND (ft_signal_exp:)```
 
 
 **API URL:**
@@ -45,13 +45,25 @@ This query retrieves all **positive proteins** to build the dataset. Results are
   - Cell membrane (SL-0039)  
 
 **Query used in UniProt graphical interface:**
-(reviewed:true) AND (fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO *]) AND (existence:1) NOT (ft_signal:*) OR (cc_scl_term_exp:SL-0191) OR (cc_scl_term_exp:SL-0204) OR (cc_scl_term_exp:SL-0039) OR (cc_scl_term_exp:SL-0091) OR (cc_scl_term_exp:SL-0209) OR (cc_scl_term_exp:SL-0173)
+```(reviewed:true) AND (fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO *]) AND (existence:1) NOT (ft_signal:*) OR (cc_scl_term_exp:SL-0191) OR (cc_scl_term_exp:SL-0204) OR (cc_scl_term_exp:SL-0039) OR (cc_scl_term_exp:SL-0091) OR (cc_scl_term_exp:SL-0209) OR (cc_scl_term_exp:SL-0173)```
 
 
 **API URL:**
 https://rest.uniprot.org/uniprotkb/search?format=json&query=%28%28reviewed%3Atrue%29+AND+%28fragment%3Afalse%29+AND+%28taxonomy_id%3A2759%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28existence%3A1%29+NOT+%28ft_signal%3A*%29+OR+%28cc_scl_term_exp%3ASL-0191%29+OR+%28cc_scl_term_exp%3ASL-0204%29+OR+%28cc_scl_term_exp%3ASL-0039%29+OR+%28cc_scl_term_exp%3ASL-0091%29+OR+%28cc_scl_term_exp%3ASL-0209%29+OR+%28cc_scl_term_exp%3ASL-0173%29%29&size=500
 
 This query retrieves all **negative proteins**. For each entry, the TSV includes accession, organism, protein length, kingdom (derived from lineage), and a flag indicating whether a transmembrane helix is present in the first 90 residues.  
+
+---
+
+## Reproducibility
+
+The entire data collection workflow is implemented in the Jupyter notebook:
+- [LB2_Project__5_Pipeline.ipynb](./Data%20Collection/LB2_Project__5_Pipeline.ipynb)
+
+This notebook:
+- Downloads data from UniProtKB using REST API.
+- Applies filtering functions for positive and negative sets.
+- Exports datasets in both FASTA (sequences) and TSV (metadata).
 
 ---
 
