@@ -78,7 +78,7 @@ This project has been developed by the following group members:
 ---
 
 ## License
-This project is released under the **[GPL-3.0 License](./LICENSE)**.
+This project is released under the **[GPL-3.0 License](https://github.com/Martinaa1408/LB2_project_Group_5/tree/main?tab=License-1-ov-file)**.
 
 ---
 
