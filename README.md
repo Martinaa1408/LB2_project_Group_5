@@ -49,7 +49,7 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 
 ## Repository Structure
 ```bash
-LAB2_project/
+LB2_project_Group_5/
 │
 ├── Data Collection/
 │   ├── Positive Set/
