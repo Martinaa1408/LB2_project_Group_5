@@ -18,7 +18,9 @@ The first step of the pipeline consists of the **collection and preparation of d
 - (Additional filtering: SP length > 14 aa, and cleaved)  
 
 **Query used in UniProt graphical interface:**
-```(fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO ]) AND (reviewed:true) AND (existence:1) AND (ft_signal_exp:)```
+```text
+(fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO ]) AND (reviewed:true) AND (existence:1) AND (ft_signal_exp:)
+```
 
 
 **API URL:**
@@ -45,7 +47,9 @@ This query retrieves all **positive proteins** to build the dataset. Results are
   - Cell membrane (SL-0039)  
 
 **Query used in UniProt graphical interface:**
-```(reviewed:true) AND (fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO *]) AND (existence:1) NOT (ft_signal:*) OR (cc_scl_term_exp:SL-0191) OR (cc_scl_term_exp:SL-0204) OR (cc_scl_term_exp:SL-0039) OR (cc_scl_term_exp:SL-0091) OR (cc_scl_term_exp:SL-0209) OR (cc_scl_term_exp:SL-0173)```
+```text
+(reviewed:true) AND (fragment:false) AND (taxonomy_id:2759) AND (length:[40 TO *]) AND (existence:1) NOT (ft_signal:*) OR (cc_scl_term_exp:SL-0191) OR (cc_scl_term_exp:SL-0204) OR (cc_scl_term_exp:SL-0039) OR (cc_scl_term_exp:SL-0091) OR (cc_scl_term_exp:SL-0209) OR (cc_scl_term_exp:SL-0173)
+```
 
 
 **API URL:**
