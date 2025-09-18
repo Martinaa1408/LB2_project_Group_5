@@ -62,7 +62,7 @@ This query retrieves all **negative proteins**. For each entry, the TSV includes
 ## Reproducibility
 
 The entire data collection workflow is implemented in the Jupyter notebook:
-- [Data_Collection.ipynb](./Data%20Collection/Data_Collection.ipynb)
+- [Data_Collection.ipynb](Data_Collection.ipynb)
 
 This notebook:
 - Downloads data from UniProtKB using REST API.
