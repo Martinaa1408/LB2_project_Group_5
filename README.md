@@ -66,3 +66,31 @@ LB2_project_Group_5/
 ├── README.md         # main project README (global overview)
 └── LICENSE
 ```
+---
+## Authors
+This project has been developed by the following group members:
+
+- **Martina A.** – [@Martinaa1408](https://github.com/Martinaa1408)  
+- **Alessia Corica** – [@alessia-corica](https://github.com/alessia-corica)  
+- **Anna Rossi** – [@AnnaRossi01](https://github.com/AnnaRossi01)  
+- **Sofia Natale** – [@sofianatale](https://github.com/sofianatale)  
+
+---
+
+## License
+This project is released under the **[GPL-3.0 License](./LICENSE)**.
+
+---
+
+## Acknowledgements
+This project is part of the **Laboratory of Bioinformatics II** course (University of Bologna, 2025).  
+We thank the course instructors and teaching assistants for their guidance, feedback, and support.  
+
+---
+
+## References & Tools
+- **UniProtKB**: [https://www.uniprot.org/](https://www.uniprot.org/)  
+- **scikit-learn**: [https://scikit-learn.org/](https://scikit-learn.org/)  
+- **Jupyter/Colab** for analysis and dataset retrieval  
+- von Heijne G. (1986) “A new method for predicting signal sequence cleavage sites.” *Nucleic Acids Res.*  
+- State-of-the-art methods for signal peptide prediction (e.g. SignalP, Phobius) as references for benchmarking.
