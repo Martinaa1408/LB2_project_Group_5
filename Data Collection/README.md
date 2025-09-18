@@ -1,6 +1,5 @@
 # LAB2_project – Data Collection
-
-This folder contains the data, scripts and documentation for the Laboratory of Bioinformatics II project.  
+ 
 The first step of the pipeline is the construction of two datasets of eukaryotic proteins from **UniProtKB**:
 
 - **Positive set** → proteins with experimentally validated signal peptides.  
