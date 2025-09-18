@@ -58,7 +58,7 @@ LB2_project_Group_5/
 │   │
 │   ├── Negative Set/
 │   │   ├── negative.fasta
-│   │   └── negative.tsv.
+│   │   └── negative.tsv
 │   │
 │   ├── Data_Collection.ipynb           # Jupyter/Colab for dataset retrieval
 │   └── README.md                       # specific README for data collection
