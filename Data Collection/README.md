@@ -73,8 +73,9 @@ This notebook:
 
 ## Dataset Summary
 
-| Dataset      | Total Proteins   | Filtered Proteins | Files |
-|--------------|------------------|-------------------|-------|
-| Positive Set | 2,949            | 2,932              | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.tsv) |
-| Negative Set | 20,615           | 20,615              | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.tsv) |
+| Dataset      | Total Proteins | Filtered Proteins | Transmembrane Proteins | Files                     |
+| ------------ | -------------- | ----------------- | ---------------------- | ------------------------- |
+| Positive Set | 2,949          | 2,932             |         –              | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Positive%20Set/positive.tsv)|
+| Negative Set | 20,615         | 20,615            |    2,465                    | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data%20Collection/Negative%20Set/negative.tsv)  |
+
 
