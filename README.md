@@ -88,7 +88,4 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 ---
 
 ## References & Tools
-- **UniProtKB**: [https://www.uniprot.org/](https://www.uniprot.org/)  
-- **scikit-learn**: [https://scikit-learn.org/](https://scikit-learn.org/)  
-- **Jupyter/Colab** for analysis and dataset retrieval
-- **JSON Viewer** [https://jsonformatter.org/json-viewer/](https://jsonformatter.org/json-viewer)
+
