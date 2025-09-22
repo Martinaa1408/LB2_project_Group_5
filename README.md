@@ -61,7 +61,7 @@ LB2_project_Group_5/
 │   │
 │   ├── Data_Collection.ipynb           # Jupyter/Colab for dataset retrieval
 │   └── README.md                       # specific README for data collection
-│
+├── Data Preparation/
 ├── README.md         # main project README (global overview)
 └── LICENSE
 ```
