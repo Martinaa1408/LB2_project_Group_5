@@ -72,8 +72,8 @@ After clustering and representative selection:
 
 | Dataset   | Total sequences | Representative sequences | File containing representatives |
 |-----------|----------------:|-------------------------:|---------------------------------|
-| Positive  |            |      1093               | `pos_cluster_results.tsv`        |
-| Negative  |           |     8934                | `neg_cluster_results.tsv`        |
+| Positive  |     2,949       |      1093                | `pos_cluster_results.tsv`        |
+| Negative  |     20,615      |      8934                | `neg_cluster_results.tsv`        |
 
 After splitting with `get_sets.py`:  
 
