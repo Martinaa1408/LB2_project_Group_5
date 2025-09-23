@@ -12,7 +12,7 @@ Positive and negative datasets were clustered independently using **MMseqs2** in
 **Main outputs:**
 - `pos_cluster-results_cluster.tsv` / `neg-cluster-results_cluster.tsv`  
   Tables mapping each input sequence to its cluster representative.  
-- `pos-cluster-results_rep_seq.fasta` / `neg-cluster-results_rep_seq.fasta`  -->correct name
+- `pos-cluster-results_rep_seq.fasta` / `neg-cluster-results_rep_seq.fasta`  -----thename-----
   FASTA files containing only the representative sequences (one per cluster).  
 
 ---
