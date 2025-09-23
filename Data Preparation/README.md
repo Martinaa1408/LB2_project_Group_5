@@ -1,4 +1,4 @@
-# Data Preparation
+# LAB2_project - Data Preparation
 
 This stage of the project focuses on generating **non-redundant and unbiased datasets** that can be used for training and benchmarking machine learning models. The process involves clustering, representative selection, TSV filtering, and final dataset splitting.
 
