@@ -62,6 +62,7 @@ The script **`get_sets.py`** takes the reduced TSVs as input and generates:
 
 These thresholds are specifically chosen to minimize the risk of **data leakage**, which occurs if similar sequences are present in both training and benchmarking datasets.  
 
+Official repository: [soedinglab/MMseqs2](https://github.com/soedinglab/MMseqs2)  
 ---
 
 ## Current Results
