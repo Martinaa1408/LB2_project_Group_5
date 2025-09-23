@@ -10,9 +10,9 @@ This stage of the project focuses on generating **non-redundant and unbiased dat
 Positive and negative datasets were clustered independently using **MMseqs2** in order to reduce redundancy and ensure that no highly similar proteins appear in both training and benchmarking sets.
 
 **Main outputs:**
-- `pos-cluster-results_cluster.tsv` / `neg-cluster-results_cluster.tsv`  
+- `pos_cluster-results_cluster.tsv` / `neg-cluster-results_cluster.tsv`  
   Tables mapping each input sequence to its cluster representative.  
-- `pos-cluster-results_rep_seq.fasta` / `neg-cluster-results_rep_seq.fasta`  
+- `pos-cluster-results_rep_seq.fasta` / `neg-cluster-results_rep_seq.fasta`  -->correct name
   FASTA files containing only the representative sequences (one per cluster).  
 
 ---
@@ -21,8 +21,8 @@ Positive and negative datasets were clustered independently using **MMseqs2** in
 Representative identifiers were retrieved directly from the FASTA headers of the MMseqs2 output.  
 
 **Generated files:**
-- `pos.ids` → list of representative IDs for the positive dataset  
-- `neg.ids` → list of representative IDs for the negative dataset  
+- `rep_positive.ids` → list of representative IDs for the positive dataset  
+- `rep_negative.ids` → list of representative IDs for the negative dataset  
 
 ---
 
@@ -48,8 +48,8 @@ The script **`get_sets.py`** takes the reduced TSVs as input and generates:
   Held out and never used during model training, providing an unbiased evaluation of generalization performance.  
 
 **Outputs:**
-- `train_pos.tsv` and `train_neg.tsv` → training data for positive and negative classes, including fold assignments  
-- `bench_pos.tsv` and `bench_neg.tsv` → benchmarking data for positive and negative classes  
+- `pos-train.tsv` and `neg-train.tsv` → training data for positive and negative classes, including fold assignments  
+- `pos-bench.tsv` and `neg-bench.tsv` → benchmarking data for positive and negative classes  
 
 ---
 
