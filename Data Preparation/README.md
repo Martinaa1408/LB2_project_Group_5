@@ -1,87 +1,91 @@
-# LAB2_project - Data Preparation
+# LAB2 Project Group 5 – Prediction of Secretory Signal Peptides
 
-This stage of the project focuses on generating **non-redundant and unbiased datasets** that can be used for training and benchmarking machine learning models. The process involves clustering, representative selection, TSV filtering, and final dataset splitting.
-
----
-
-## Workflow Details
-
-### 1. Clustering of protein sequences
-Positive and negative datasets were clustered independently using **MMseqs2** in order to reduce redundancy and ensure that no highly similar proteins appear in both training and benchmarking sets.
-
-**Main outputs:**
-- `pos_cluster-results_cluster.tsv` / `neg-cluster-results_cluster.tsv`  
-  Tables mapping each input sequence to its cluster representative.  
-- `pos-cluster-results_rep_seq.fasta` / `neg-cluster-results_rep_seq.fasta`  
-  FASTA files containing only the representative sequences (one per cluster).  
+## Table of Contents
+- [About](#about)
+- [Abstract](#abstract)
+- [Project Work Plan](#project-work-plan)
+- [Current Progress](#current-progress)
+- [Repository Structure](#repository-structure)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [References & Tools](#references--tools)
 
 ---
 
-### 2. Extraction of representative IDs
-Representative identifiers were retrieved directly from the FASTA headers of the MMseqs2 output.  
-
-**Generated files:**
-- `rep_positive.ids` → list of representative IDs for the positive dataset  
-- `rep_negative.ids` → list of representative IDs for the negative dataset  
+## About
+This repository contains the scripts, notebooks, and documentation for the **Laboratory of Bioinformatics II** project.  
+The project addresses the **prediction of secretory signal peptides in eukaryotic proteins**, a crucial step for **protein function prediction** and **subcellular localization**.
 
 ---
 
-### 3. Filtering of original TSV files
-The script **`get_tsv.py`** takes the representative ID lists (`.ids`) and the cluster mapping tables (`*_cluster.tsv`) as input. It produces reduced TSV files that contain only the representative entries.  
+## Abstract
+Predicting secretory signal peptides (SPs) is fundamental for understanding protein localization and function.  
+Traditional experimental methods are accurate but time-consuming, motivating the adoption of **computational approaches**.  
 
-**Outputs:**
-- `pos_cluster_results.tsv` → positive dataset, reduced to representatives  
-- `neg_cluster_results.tsv` → negative dataset, reduced to representatives  
+This project compares two main strategies for SP prediction:
+1. **Motif-based statistical approach** (von Heijne, 1986)  
+2. **Support Vector Machine (SVM)**-based classification (scikit-learn)  
 
-These files serve as the **non-redundant reference datasets** for downstream analysis.
-
----
-
-### 4. Splitting into training and benchmarking sets
-The script **`get_sets.py`** takes the reduced TSVs as input and generates:  
-
-- **Training set (80%)**  
-  Used for model training and hyperparameter tuning.  
-  Within this set, each sequence is also assigned to one of **five cross-validation folds**, preserving the positive/negative ratio.  
-
-- **Benchmarking set (20%)**  
-  Held out and never used during model training, providing an unbiased evaluation of generalization performance.  
-
-**Outputs:**
-- `pos-train.tsv` and `neg-train.tsv` → training data for positive and negative classes, including fold assignments  
-- `pos-bench.tsv` and `neg-bench.tsv` → benchmarking data for positive and negative classes  
+The aim is to evaluate their performance using curated datasets from **UniProtKB**, applying cross-validation and benchmarking on a blind test set.  
+In later stages, the pipeline may be extended to **neural networks** and **deep learning architectures** for advanced prediction.
 
 ---
 
-## About MMseqs2
+## Project Work Plan
 
-**MMseqs2 (Many-against-Many sequence searching)** was used in this project to:  
-- Cluster sequences based on **≥30% identity** and **≥40% alignment coverage**  
-- Select a single representative per cluster  
-- Prevent redundancy and overlap between subsets  
+**Tasks:**
+-  Retrieve relevant datasets from UniProtKB  
+-  Preprocess datasets for cross-validation and benchmarking  
+-  Analyze and visualize dataset statistics  
+-  Extract relevant features for classification  
+-  Implement von Heijne’s algorithm  
+-  Implement the SVM classifier  
+-  Evaluate methods with cross-validation and blind test set  
+-  Discuss and report results  
+-  Prepare manuscript in scientific article format  
+---
 
-These thresholds are specifically chosen to minimize the risk of **data leakage**, which occurs if similar sequences are present in both training and benchmarking datasets.  
+## Repository Structure
+```bash
+LB2_project_Group_5/
+│
+├── Data Collection/
+│   ├── Positive Set/
+│   │   ├── positive.fasta
+│   │   └── positive.tsv
+│   │
+│   ├── Negative Set/
+│   │   ├── negative.fasta
+│   │   └── negative.tsv
+│   │
+│   ├── Data_Collection.ipynb           # Jupyter/Colab for dataset retrieval
+│   └── README.md                       # specific README for data collection
+├── Data Preparation/
+├── README.md         # main project README (global overview)
+└── LICENSE
+```
+---
+## Authors
+This project has been developed by the following group members:
 
-Official repository: [soedinglab/MMseqs2](https://github.com/soedinglab/MMseqs2)  
+- **Martina Castellucci** – [@Martinaa1408](https://github.com/Martinaa1408)  
+- **Alessia Corica** – [@alessia-corica](https://github.com/alessia-corica)  
+- **Anna Rossi** – [@AnnaRossi01](https://github.com/AnnaRossi01)  
+- **Sofia Natale** – [@sofianatale](https://github.com/sofianatale)  
 
 ---
 
-## Current Results
-
-After clustering and representative selection:  
-
-| Dataset   | Total sequences | Representative sequences | File containing representatives |
-|-----------|----------------:|-------------------------:|---------------------------------|
-| Positive  |     2,949       |      1093                | `pos_cluster_results.tsv`        |
-| Negative  |     20,615      |      8934                | `neg_cluster_results.tsv`        |
-
-After splitting with `get_sets.py`:  
-
-| Subset        | Positive | Negative | Files generated                  |
-|---------------|---------:|---------:|----------------------------------|
-| Training (80%)|      |     | `train_pos.tsv`, `train_neg.tsv` |
-| Benchmarking (20%) |  |   | `bench_pos.tsv`, `bench_neg.tsv` |
-
-Each sequence in the training set is also annotated with a **cross-validation fold index** (1–5).  
+## License
+This project is released under the **[GPL-3.0 License](https://github.com/Martinaa1408/LB2_project_Group_5/tree/main?tab=License-1-ov-file)**.
 
 ---
+
+## Acknowledgements
+This project is part of the **[Laboratory of Bioinformatics II](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2025/504345)** course (University of Bologna, 2025). 
+We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi** for their guidance, feedback and continuous support throughout the project.
+
+---
+
+## References & Tools
+
