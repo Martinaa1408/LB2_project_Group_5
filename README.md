@@ -114,3 +114,18 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 
 ## References & Tools
 
+### Software stack
+- **MMseqs2**: clustering and redundancy reduction  
+- **Python 3**: data preprocessing and analysis (`pandas`, `scikit-learn`, `seaborn`)  
+- **Bash utils**: `grep`, `wc`, `tr` for quick FASTA/TSV operations  
+- **Jupyter/Colab**: environment for interactive workflows  
+- **conda environment tools**: package and environment management  
+
+### Key references 
+- UniProt Consortium (2023). UniProt: the Universal Protein Knowledgebase. *NAR*.  
+- MMseqs2 repository: [https://github.com/soedinglab/MMseqs2](https://github.com/soedinglab/MMseqs2)  
+- Seaborn documentation: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)  
+- WebLogo: [https://weblogo.berkeley.edu/logo.cgi](https://weblogo.berkeley.edu/logo.cgi)
+
+---
+
