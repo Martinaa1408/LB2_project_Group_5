@@ -50,19 +50,45 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 ```bash
 LB2_project_Group_5/
 │
-├── Data Collection/
-│   ├── Positive Set/
+├── Data_Collection/
+│   ├── Positive_Set/
 │   │   ├── positive.fasta
 │   │   └── positive.tsv
 │   │
-│   ├── Negative Set/
+│   ├── Negative_Set/
 │   │   ├── negative.fasta
 │   │   └── negative.tsv
 │   │
-│   ├── Data_Collection.ipynb           # Jupyter/Colab for dataset retrieval
-│   └── README.md                       # specific README for data collection
-├── Data Preparation/
-├── README.md         # main project README (global overview)
+│   ├── Data_Collection.ipynb     
+│   └── README.md                 
+│
+├── Data_Preparation/
+│   ├── Cross_Validation/         
+│   │   ├── pos_train.tsv
+│   │   ├── pos_bench.tsv
+│   │   ├── neg_train.tsv
+│   │   └── neg_bench.tsv
+│   │
+│   ├── Negative_Cluster/         
+│   │   ├── neg_cluster-results_all_seqs.fasta
+│   │   ├── neg_cluster-results_cluster.tsv
+│   │   ├── neg_cluster-results_rep_seq.fasta
+│   │   ├── neg_cluster_results.tsv
+│   │   └── rep_negative.ids
+│   │
+│   ├── Positive_Cluster/         
+│   │   ├── pos_cluster-results_all_seqs.fasta
+│   │   ├── pos_cluster-results_cluster.tsv
+│   │   ├── pos_cluster-results_rep_seq.fasta
+│   │   ├── pos_cluster_results.tsv
+│   │   └── rep_positive.ids
+│   │
+│   ├── clustering.sh             
+│   ├── get_sets.py               
+│   ├── get_tsv.py                
+│   └── README.md                 
+│
+├── README.md                    
 └── LICENSE
 ```
 ---
