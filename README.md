@@ -14,7 +14,7 @@
 ---
 
 ## About
-This repository contains the scripts, notebooks, and documentation for the **Laboratory of Bioinformatics II** project.  
+This repository contains the scripts , notebooks, and documentation for the **Laboratory of Bioinformatics II** project.  
 The project addresses the **prediction of secretory signal peptides in eukaryotic proteins**, a crucial step for **protein function prediction** and **subcellular localization**.
 
 ---
