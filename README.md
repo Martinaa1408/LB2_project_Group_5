@@ -4,7 +4,6 @@
 - [About](#about)
 - [Abstract](#abstract)
 - [Project Work Plan](#project-work-plan)
-- [Current Progress](#current-progress)
 - [Repository Structure](#repository-structure)
 - [Authors](#authors)
 - [License](#license)
