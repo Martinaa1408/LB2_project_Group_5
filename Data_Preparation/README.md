@@ -80,7 +80,7 @@ After splitting with `get_sets.py`:
 | Subset        | Positive | Negative | Files generated                  |
 |---------------|---------:|---------:|----------------------------------|
 | Training (80%)|   874   | 7147    | [POS TRAIN TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/pos_train.tsv), [NEG TRAIN TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/neg_train.tsv) |
-| Benchmarking (20%) | 219 | 1787  | [POS BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/pos_bench.tsv), [NEG BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/neg_bench.tsv)` |
+| Benchmarking (20%) | 219 | 1787  | [POS BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/pos_bench.tsv), [NEG BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/neg_bench.tsv) |
 
 Each sequence in the training set is also annotated with a **cross-validation fold index** (1–5).  
 
