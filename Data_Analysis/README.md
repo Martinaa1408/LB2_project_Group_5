@@ -1,59 +1,57 @@
-# LAB2_project - Data Analysis
+# LAB2_project – Data Analysis
 
-This stage focuses on exploring the **statistical and biological properties** of the curated datasets.  
-The goal is to verify dataset quality, uncover potential biases, and generate reference statistics for benchmarking predictive models.
-
----
-
-## Workflow Details
-
-### 1. Protein length distribution
-Analysis of the overall protein length across positive and negative datasets.  
-- Detects potential differences in sequence size.  
-- Identifies outliers and ensures data consistency.  
-
-**Outputs:**  
-- Histograms, density plots, and boxplots of sequence lengths.
+This stage of the pipeline explores the **statistical and biological properties** of the curated datasets using the Colab notebook `DataAnalysis.ipynb`.  
+The main goals are to:
+- Verify the **quality and balance** of the datasets,  
+- Detect potential **biases** that may affect model training,  
+- Generate **reference statistics** to benchmark predictive models.  
 
 ---
 
-### 2. Signal peptide (SP) length distribution
-Calculation of the distribution of SP lengths in the positive dataset.  
-- Confirms expected biological ranges (typically 15–30 aa).  
-- Useful for benchmarking cleavage-site predictions.  
+## Workflow
+
+### 1. Protein Length Distribution
+- **Objective:** Compare protein sequence lengths in the **positive** (SP-containing) and **negative** (non-SP) datasets.  
+- **Rationale:** Major differences in sequence size could bias classifiers or indicate systematic errors in dataset construction.    
 
 **Outputs:**  
-- Histogram and descriptive statistics of SP lengths.  
+- `length_distribution.png` → Histogram, density plot, and boxplot of protein lengths.  
 
 ---
 
-### 3. Amino acid composition
-Comparison of amino acid frequencies in SP sequences against a background (e.g., SwissProt).  
-- Highlights enrichment/depletion of specific residues.  
-- Provides evidence for known SP features (hydrophobic core, polar N-region, small residues near cleavage site).  
+### 2. Signal Peptide (SP) Length Distribution
+- **Objective:** Analyze the distribution of SP lengths within the **positive dataset**.  
+- **Rationale:** Signal peptides typically fall within a **15–30 amino acid range**; values outside this interval may indicate annotation errors.  
 
 **Outputs:**  
-- Barplots of amino acid composition (SP vs background).  
+- `sp_length_stats.png` → Histogram and table of descriptive statistics (mean, median, range).  
 
 ---
 
-### 4. Taxonomic classification
-Annotation of sequences by **kingdom** and **species**.  
-- Detects overrepresentation of specific organisms.  
-- Helps assess generalization of the dataset.  
+### 3. Amino Acid Composition
+- **Objective:** Compare the amino acid frequencies of SP sequences against a **background distribution** (SwissProt).  
+- **Rationale:** Signal peptides have well-known compositional biases (e.g., hydrophobic residues in the H-region, small residues near cleavage sites).  
 
 **Outputs:**  
-- Pie charts and barplots of taxonomic distribution.  
+- `aa_composition.png` → Combined barplot of SP vs SwissProt amino acid composition.  
 
 ---
 
-### 5. Cleavage-site motif analysis
-Extraction of sequence windows around annotated SP cleavage sites (typically -13 to +2).  
-- Conserved motifs are visualized as **sequence logos**.  
-- Provides benchmark motifs for predictive modeling.  
+### 4. Taxonomic Classification
+- **Objective:** Annotate sequences by **kingdom** (Eukaryotes, Bacteria, Archaea, etc.) and **species**.  
+- **Rationale:** Datasets heavily skewed towards certain taxa may reduce model generalization.  
 
 **Outputs:**  
-- WebLogo plots showing conserved positions around cleavage sites.  
+- `taxonomy_distribution.png` → Pie charts and barplots of taxonomic representation.  
+
+---
+
+### 5. Cleavage-Site Motif Analysis
+- **Objective:** Visualize conserved motifs around annotated cleavage sites.  
+- **Rationale:** The **(-13 to +2) window** captures the N-region, H-region end, and cleavage position, which contain conserved residues essential for recognition.  
+
+**Outputs:**  
+- `cleavage_logo.png` → Sequence logo highlighting conserved residues near cleavage sites.  
 
 ---
 
@@ -71,10 +69,10 @@ In this project it is applied to:
 
 | Step                        | Dataset(s)         | Output type             | Example file(s) / plot(s) |
 |-----------------------------|--------------------|-------------------------|---------------------------|
-| Protein length distribution | Positive / Negative| Histogram, Boxplot      | `length_distribution.png` |
-| SP length distribution      | Positive only      | Histogram, Stats table  | `sp_length_stats.png`     |
-| Amino acid composition      | SP vs SwissProt    | Barplot                 | `aa_composition.png`      |
-| Taxonomic classification    | Positive / Negative| Pie chart, Barplot      | `taxonomy_distribution.png` |
-| Cleavage-site motifs        | SP sequences       | WebLogo sequence logo   | `cleavage_logo.png`       |
+| Protein length distribution | Positive / Negative| Histogram, Boxplot      | [length_distribution.png]() |
+| SP length distribution      | Positive only      | Histogram, Stats table  | [sp_length_stats.png]()    |
+| Amino acid composition      | SP vs SwissProt    | Barplot                 | [aa_composition.png]()      |
+| Taxonomic classification    | Positive / Negative| Pie chart, Barplot      | [taxonomy_distribution.png]() |
+| Cleavage-site motifs        | SP sequences       | WebLogo sequence logo   | [cleavage_logo.png]()       |
 
 ---
