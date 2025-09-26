@@ -1,220 +1,220 @@
-seq_id	class
-Q62598 	positive
-P67788 	positive
-Q8TD06 	positive
-Q99372 	positive
-P06865 	positive
-P21956 	positive
-B1P0S1 	positive
-P33767 	positive
-P42579 	positive
-P21978 	positive
-Q6UWV2 	positive
-P15570 	positive
-O08795 	positive
-P83234 	positive
-P09586 	positive
-Q6UX52 	positive
-O75462 	positive
-Q94637 	positive
-Q8RUW5 	positive
-P16636 	positive
-Q9NYY1 	positive
-P48765 	positive
-P01076 	positive
-P26010 	positive
-P15289 	positive
-Q8T0W1 	positive
-Q6X4U4 	positive
-Q7ZZN8 	positive
-Q96LA5 	positive
-Q6UW56 	positive
-P04217 	positive
-P29241 	positive
-Q96F46 	positive
-P01033 	positive
-I6S7G5 	positive
-Q8MMH5 	positive
-P49767 	positive
-P27731 	positive
-O46167 	positive
-P52706 	positive
-P02765 	positive
-Q84ZX5 	positive
-Q9LLT1 	positive
-P16882 	positive
-Q60GF7 	positive
-Q96FE7 	positive
-P14217 	positive
-A9UGV5 	positive
-P35053 	positive
-P80060 	positive
-P45590 	positive
-Q28989 	positive
-Q8WWA0 	positive
-P81383 	positive
-P01027 	positive
-P22388 	positive
-P33559 	positive
-A0A1S6EK92 	positive
-Q5EPH2 	positive
-P82384 	positive
-Q5B833 	positive
-Q86Y78 	positive
-Q03383 	positive
-Q9LXD6 	positive
-P14925 	positive
-P85261 	positive
-P86929 	positive
-P07529 	positive
-Q9UNE0 	positive
-P51654 	positive
-P02814 	positive
-P48819 	positive
-Q84UV8 	positive
-Q9SLP4 	positive
-B0CPC6 	positive
-P23044 	positive
-Q805F3 	positive
-Q8T0W3 	positive
-Q9UBT3 	positive
-Q8GT41 	positive
-Q8L5J1 	positive
-P01830 	positive
-Q7M418 	positive
-P05367 	positive
-P27275 	positive
-P43307 	positive
-P13691 	positive
-Q14802 	positive
-P31419 	positive
-P86009 	positive
-Q05895 	positive
-P15226 	positive
-P07602 	positive
-P05164 	positive
-P59665 	positive
-P13686 	positive
-H6U1I8 	positive
-P10820 	positive
-Q92154 	positive
-P14625 	positive
-Q15465 	positive
-G4V4F9 	positive
-Q9NJ98 	positive
-Q95NK7 	positive
-O18994 	positive
-P81999 	positive
-Q61400 	positive
-P10762 	positive
-Q13162 	positive
-Q07654 	positive
-Q41161 	positive
-Q05359 	positive
-P14770 	positive
-Q9TT95 	positive
-P81492 	positive
-P51868 	positive
-Q42656 	positive
-P45561 	positive
-Q2U4L7 	positive
-O76076 	positive
-Q7YZS9 	positive
-Q86SC0 	positive
-Q6QD51 	positive
-P0DUT6 	positive
-P51460 	positive
-Q09117 	positive
-P15516 	positive
-P32802 	positive
-Q8MJV4 	positive
-I3LGZ3 	positive
-Q9BZR6 	positive
-P10675 	positive
-Q3UN54 	positive
-P58912 	positive
-Q14392 	positive
-Q7KRU8 	positive
-Q09098 	positive
-I1SB12 	positive
-C9K4X8 	positive
-P21837 	positive
-Q6RG02 	positive
-P00996 	positive
-Q9UBP4 	positive
-Q4V645 	positive
-P0C1B3 	positive
-P07204 	positive
-O75629 	positive
-Q9NRM6 	positive
-Q59Y31 	positive
-Q924B5 	positive
-P56202 	positive
-Q1HAY7 	positive
-P24792 	positive
-Q9NQ25 	positive
-P86872 	positive
-B2NHN2 	positive
-P28319 	positive
-Q9BZM5 	positive
-Q86T13 	positive
-Q9H6E4 	positive
-P39037 	positive
-P02760 	positive
-O42807 	positive
-Q95P08 	positive
-Q96PL1 	positive
-Q6UWY5 	positive
-P31723 	positive
-Q8MUP7 	positive
-P08236 	positive
-B9A8D7 	positive
-Q9R100 	positive
-P20507 	positive
-Q02083 	positive
-P20333 	positive
-Q6ZSA7 	positive
-Q42502 	positive
-P05113 	positive
-P11021 	positive
-P28825 	positive
-Q8NK90 	positive
-O61668 	positive
-P20013 	positive
-Q86YD3 	positive
-P02809 	positive
-Q6DWK3 	positive
-G3MYZ3 	positive
-Q7SCE9 	positive
-P83313 	positive
-P01888 	positive
-P20740 	positive
-P54660 	positive
-O54861 	positive
-P82103 	positive
-P25116 	positive
-P15018 	positive
-P18417 	positive
-P16144 	positive
-P34746 	positive
-P22301 	positive
-P28039 	positive
-P26732 	positive
-Q868Z9 	positive
-P55955 	positive
-P10562 	positive
-P07359 	positive
-O14773 	positive
-Q9NZV1 	positive
-Q9P0V8 	positive
-Q9UVI4 	positive
-Q95JC9 	positive
-Q8NAC3 	positive
-Q62632 	positive
-Q8H8C7 	positive
-O55038 	positive
-W1I921 	positive
-Q9H7M9 	positive
-P29794 	positive
-P31096 	positive
-P06727 	positive
+seq_id	class	Organism	Kingdom	Sequence length	SP cleavage
+Q62598	positive	Rattus norvegicus	Metazoa	687	17
+P67788	positive	Manduca sexta	Metazoa	65	19
+Q8TD06	positive	Homo sapiens	Metazoa	166	21
+Q99372	positive	Rattus norvegicus	Metazoa	870	27
+P06865	positive	Homo sapiens	Metazoa	529	22
+P21956	positive	Mus musculus	Metazoa	463	22
+B1P0S1	positive	Pseudopleuronectes americanus	Metazoa	218	23
+P33767	positive	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	430	20
+P42579	positive	Lymnaea stagnalis	Metazoa	100	23
+P21978	positive	Leishmania amazonensis	Other	476	32
+Q6UWV2	positive	Homo sapiens	Metazoa	235	31
+P15570	positive	Phytophthora cryptogea	Other	118	20
+O08795	positive	Mus musculus	Metazoa	521	14
+P83234	positive	Ophiophagus hannah	Metazoa	190	20
+P09586	positive	Mus musculus	Metazoa	222	31
+Q6UX52	positive	Homo sapiens	Metazoa	265	20
+O75462	positive	Homo sapiens	Metazoa	422	37
+Q94637	positive	Oscheius tipulae	Metazoa	1648	15
+Q8RUW5	positive	Arabidopsis thaliana	Viridiplantae	433	19
+P16636	positive	Rattus norvegicus	Metazoa	411	21
+Q9NYY1	positive	Homo sapiens	Metazoa	176	24
+P48765	positive	Bos taurus	Metazoa	970	32
+P01076	positive	Solanum lycopersicum	Viridiplantae	77	32
+P26010	positive	Homo sapiens	Metazoa	798	19
+P15289	positive	Homo sapiens	Metazoa	507	18
+Q8T0W1	positive	Pimpla hypochondriaca	Metazoa	115	22
+Q6X4U4	positive	Homo sapiens	Metazoa	206	23
+Q7ZZN8	positive	Naja atra	Metazoa	238	19
+Q96LA5	positive	Homo sapiens	Metazoa	508	19
+Q6UW56	positive	Homo sapiens	Metazoa	229	30
+P04217	positive	Homo sapiens	Metazoa	495	21
+P29241	positive	Aplysia californica	Metazoa	282	24
+Q96F46	positive	Homo sapiens	Metazoa	866	32
+P01033	positive	Homo sapiens	Metazoa	207	23
+I6S7G5	positive	Scolopendra mutilans	Metazoa	84	16
+Q8MMH5	positive	Pimpla hypochondriaca	Metazoa	61	20
+P49767	positive	Homo sapiens	Metazoa	419	31
+P27731	positive	Gallus gallus	Metazoa	150	20
+O46167	positive	Eratigena agrestis	Metazoa	68	17
+P52706	positive	Prunus serotina	Viridiplantae	563	27
+P02765	positive	Homo sapiens	Metazoa	367	18
+Q84ZX5	positive	Artemisia vulgaris	Viridiplantae	132	24
+Q9LLT1	positive	Juniperus virginiana	Viridiplantae	367	21
+P16882	positive	Mus musculus	Metazoa	650	24
+Q60GF7	positive	Rattus norvegicus	Metazoa	252	22
+Q96FE7	positive	Homo sapiens	Metazoa	263	21
+P14217	positive	Chlamydomonas reinhardtii	Viridiplantae	647	21
+A9UGV5	positive	Oryza sativa subsp. japonica	Viridiplantae	68	30
+P35053	positive	Rattus norvegicus	Metazoa	558	23
+P80060	positive	Locusta migratoria	Metazoa	92	19
+P45590	positive	Hyalophora cecropia	Metazoa	129	17
+Q28989	positive	Sus scrofa	Metazoa	421	26
+Q8WWA0	positive	Homo sapiens	Metazoa	313	18
+P81383	positive	Ophiophagus hannah	Metazoa	491	20
+P01027	positive	Mus musculus	Metazoa	1663	24
+P22388	positive	Rattus norvegicus	Metazoa	202	25
+P33559	positive	Aspergillus kawachii (strain NBRC 4308)	Fungi	327	25
+A0A1S6EK92	positive	Moringa oleifera	Viridiplantae	79	20
+Q5EPH2	positive	Rhipicephalus bursa	Metazoa	97	22
+P82384	positive	Drosophila melanogaster	Metazoa	92	16
+Q5B833	positive	Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139)	Fungi	387	24
+Q86Y78	positive	Homo sapiens	Metazoa	171	22
+Q03383	positive	Bombyx mori	Metazoa	400	16
+Q9LXD6	positive	Arabidopsis thaliana	Viridiplantae	773	23
+P14925	positive	Rattus norvegicus	Metazoa	976	25
+P85261	positive	Actinidia chinensis var. chinensis	Viridiplantae	213	24
+P86929	positive	Metaphire guillelmi	Metazoa	73	14
+P07529	positive	Naganishia albida	Fungi	332	21
+Q9UNE0	positive	Homo sapiens	Metazoa	448	26
+P51654	positive	Homo sapiens	Metazoa	580	24
+P02814	positive	Homo sapiens	Metazoa	79	22
+P48819	positive	Sus scrofa	Metazoa	459	19
+Q84UV8	positive	Nicotiana langsdorffii x Nicotiana sanderae	Viridiplantae	274	25
+Q9SLP4	positive	Tulipa saxatilis subsp. bakeri	Viridiplantae	314	26
+B0CPC6	positive	Laccaria bicolor (strain S238N-H82 / ATCC MYA-4686)	Fungi	206	21
+P23044	positive	Robillarda sp. (strain Y-20)	Fungi	385	17
+Q805F3	positive	Xenopus laevis	Metazoa	397	16
+Q8T0W3	positive	Pimpla hypochondriaca	Metazoa	63	25
+Q9UBT3	positive	Homo sapiens	Metazoa	224	18
+Q8GT41	positive	Platanus acerifolia	Viridiplantae	179	23
+Q8L5J1	positive	Solanum lycopersicum	Viridiplantae	399	26
+P01830	positive	Rattus norvegicus	Metazoa	161	19
+Q7M418	positive	Oligobrachia mashikoi	Metazoa	163	16
+P05367	positive	Mus musculus	Metazoa	122	19
+P27275	positive	Amaranthus caudatus	Viridiplantae	86	25
+P43307	positive	Homo sapiens	Metazoa	286	18
+P13691	positive	Hordeum vulgare	Viridiplantae	152	30
+Q14802	positive	Homo sapiens	Metazoa	87	20
+P31419	positive	Manduca sexta	Metazoa	161	20
+P86009	positive	Dromaius novaehollandiae	Metazoa	238	17
+Q05895	positive	Mus musculus	Metazoa	956	21
+P15226	positive	Tityus serrulatus	Metazoa	84	20
+P07602	positive	Homo sapiens	Metazoa	524	16
+P05164	positive	Homo sapiens	Metazoa	745	48
+P59665	positive	Homo sapiens	Metazoa	94	19
+P13686	positive	Homo sapiens	Metazoa	325	21
+H6U1I8	positive	Tanacetum cinerariifolium	Viridiplantae	365	27
+P10820	positive	Mus musculus	Metazoa	554	20
+Q92154	positive	Coturnix japonica	Metazoa	620	17
+P14625	positive	Homo sapiens	Metazoa	803	21
+Q15465	positive	Homo sapiens	Metazoa	462	23
+G4V4F9	positive	Cupiennius salei	Metazoa	97	19
+Q9NJ98	positive	Manduca sexta	Metazoa	487	19
+Q95NK7	positive	Olivierus martensii	Metazoa	54	23
+O18994	positive	Sus scrofa	Metazoa	219	21
+P81999	positive	Canis lupus familiaris	Metazoa	358	22
+Q61400	positive	Mus musculus	Metazoa	265	33
+P10762	positive	Locusta migratoria	Metazoa	179	16
+Q13162	positive	Homo sapiens	Metazoa	271	37
+Q07654	positive	Homo sapiens	Metazoa	80	21
+Q41161	positive	Robinia pseudoacacia	Viridiplantae	285	31
+Q05359	positive	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	219	22
+P14770	positive	Homo sapiens	Metazoa	177	16
+Q9TT95	positive	Sus scrofa	Metazoa	120	22
+P81492	positive	Hirudinaria manillensis	Metazoa	84	20
+P51868	positive	Rattus norvegicus	Metazoa	413	19
+Q42656	positive	Coffea arabica	Viridiplantae	378	15
+P45561	positive	Sus scrofa	Metazoa	189	16
+Q2U4L7	positive	Aspergillus oryzae (strain ATCC 42149 / RIB 40)	Fungi	690	20
+O76076	positive	Homo sapiens	Metazoa	250	23
+Q7YZS9	positive	Conus virgo	Metazoa	67	26
+Q86SC0	positive	Oryctes rhinoceros	Metazoa	66	26
+Q6QD51	positive	Rattus norvegicus	Metazoa	949	27
+P0DUT6	positive	Doratifera vulnerans	Metazoa	66	20
+P51460	positive	Homo sapiens	Metazoa	131	20
+Q09117	positive	Populus deltoides	Viridiplantae	312	24
+P15516	positive	Homo sapiens	Metazoa	51	19
+P32802	positive	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	667	22
+Q8MJV4	positive	Bos taurus	Metazoa	122	24
+I3LGZ3	positive	Sus scrofa	Metazoa	81	24
+Q9BZR6	positive	Homo sapiens	Metazoa	473	26
+P10675	positive	Schistocerca americana	Metazoa	662	24
+Q3UN54	positive	Mus musculus	Metazoa	99	21
+P58912	positive	Phyllodiscus semoni	Metazoa	488	21
+Q14392	positive	Homo sapiens	Metazoa	662	19
+Q7KRU8	positive	Drosophila melanogaster	Metazoa	205	19
+Q09098	positive	Mus musculus	Metazoa	99	23
+I1SB12	positive	Microdochium nivale	Fungi	495	22
+C9K4X8	positive	Patiria pectinifera	Metazoa	116	29
+P21837	positive	Dictyostelium discoideum	Other	550	19
+Q6RG02	positive	Penaeus merguiensis	Metazoa	2586	18
+P00996	positive	Bos taurus	Metazoa	79	23
+Q9UBP4	positive	Homo sapiens	Metazoa	350	21
+Q4V645	positive	Drosophila melanogaster	Metazoa	108	29
+P0C1B3	positive	Aspergillus oryzae (strain ATCC 42149 / RIB 40)	Fungi	499	21
+P07204	positive	Homo sapiens	Metazoa	575	18
+O75629	positive	Homo sapiens	Metazoa	220	31
+Q9NRM6	positive	Homo sapiens	Metazoa	502	17
+Q59Y31	positive	Candida albicans (strain SC5314 / ATCC MYA-2876)	Fungi	533	21
+Q924B5	positive	Rattus norvegicus	Metazoa	250	25
+P56202	positive	Homo sapiens	Metazoa	376	21
+Q1HAY7	positive	Holotrichia diomphalia	Metazoa	317	23
+P24792	positive	Cucurbita maxima	Viridiplantae	579	30
+Q9NQ25	positive	Homo sapiens	Metazoa	335	22
+P86872	positive	Margaritifera margaritifera	Metazoa	260	19
+B2NHN2	positive	Talaromyces funiculosus	Fungi	339	20
+P28319	positive	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	239	20
+Q9BZM5	positive	Homo sapiens	Metazoa	246	25
+Q86T13	positive	Homo sapiens	Metazoa	490	21
+Q9H6E4	positive	Homo sapiens	Metazoa	229	22
+P39037	positive	Sus scrofa	Metazoa	232	15
+P02760	positive	Homo sapiens	Metazoa	352	19
+O42807	positive	Aspergillus niger	Fungi	281	21
+Q95P08	positive	Scutigera coleoptrata	Metazoa	656	18
+Q96PL1	positive	Homo sapiens	Metazoa	93	21
+Q6UWY5	positive	Homo sapiens	Metazoa	402	28
+P31723	positive	Penicillium citrinum	Fungi	511	35
+Q8MUP7	positive	Ixodes scapularis	Metazoa	102	21
+P08236	positive	Homo sapiens	Metazoa	651	22
+B9A8D7	positive	Crassostrea virginica	Metazoa	85	18
+Q9R100	positive	Mus musculus	Metazoa	827	25
+P20507	positive	Chlamydomonas reinhardtii	Viridiplantae	377	20
+Q02083	positive	Homo sapiens	Metazoa	359	28
+P20333	positive	Homo sapiens	Metazoa	461	22
+Q6ZSA7	positive	Homo sapiens	Metazoa	298	34
+Q42502	positive	Solanum tuberosum	Viridiplantae	386	23
+P05113	positive	Homo sapiens	Metazoa	134	19
+P11021	positive	Homo sapiens	Metazoa	654	18
+P28825	positive	Mus musculus	Metazoa	747	20
+Q8NK90	positive	Aspergillus kawachii (strain NBRC 4308)	Fungi	628	25
+O61668	positive	Olivierus martensii	Metazoa	88	18
+P20013	positive	Trametes versicolor	Fungi	372	26
+Q86YD3	positive	Homo sapiens	Metazoa	366	26
+P02809	positive	Macaca fascicularis	Metazoa	61	19
+Q6DWK3	positive	Colletotrichum lindemuthianum	Fungi	248	26
+G3MYZ3	positive	Bos taurus	Metazoa	604	21
+Q7SCE9	positive	Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987)	Fungi	385	18
+P83313	positive	Opistophthalmus carinatus	Metazoa	82	22
+P01888	positive	Bos taurus	Metazoa	118	20
+P20740	positive	Gallus gallus	Metazoa	1473	36
+P54660	positive	Dictyostelium discoideum	Other	143	22
+O54861	positive	Rattus norvegicus	Metazoa	825	31
+P82103	positive	Mytilus galloprovincialis	Metazoa	96	20
+P25116	positive	Homo sapiens	Metazoa	425	21
+P15018	positive	Homo sapiens	Metazoa	202	22
+P18417	positive	Catharanthus roseus	Viridiplantae	352	31
+P16144	positive	Homo sapiens	Metazoa	1822	27
+P34746	positive	Oreochromis mossambicus	Metazoa	204	17
+P22301	positive	Homo sapiens	Metazoa	178	18
+P28039	positive	Homo sapiens	Metazoa	575	23
+P26732	positive	Bombyx mori	Metazoa	92	19
+Q868Z9	positive	Drosophila melanogaster	Metazoa	2898	26
+P55955	positive	Caenorhabditis elegans	Metazoa	132	19
+P10562	positive	Canavalia gladiata	Viridiplantae	445	26
+P07359	positive	Homo sapiens	Metazoa	652	16
+O14773	positive	Homo sapiens	Metazoa	563	19
+Q9NZV1	positive	Homo sapiens	Metazoa	1036	34
+Q9P0V8	positive	Homo sapiens	Metazoa	285	22
+Q9UVI4	positive	Claviceps fusiformis	Fungi	394	16
+Q95JC9	positive	Sus scrofa	Metazoa	676	16
+Q8NAC3	positive	Homo sapiens	Metazoa	791	20
+Q62632	positive	Rattus norvegicus	Metazoa	306	18
+Q8H8C7	positive	Oryza sativa subsp. japonica	Viridiplantae	356	28
+O55038	positive	Mus musculus	Metazoa	109	21
+W1I921	positive	Achatina achatina	Metazoa	184	26
+Q9H7M9	positive	Homo sapiens	Metazoa	311	32
+P29794	positive	Canis lupus familiaris	Metazoa	180	20
+P31096	positive	Bos taurus	Metazoa	278	16
+P06727	positive	Homo sapiens	Metazoa	396	20

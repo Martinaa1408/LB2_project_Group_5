@@ -16,31 +16,32 @@ neg_input = base_dir / "Negative_Cluster" / "rep_negative.ids"
 neg_train = base_dir / "Cross_Validation" / "neg_train.tsv"
 neg_bench = base_dir / "Cross_Validation" / "neg_bench.tsv"
 
+# File with extra info
+info_file_pos = "LB2_project_Group_5/Data_Collection/Positive Set/positive.tsv"
+info_file_neg = "LB2_project_Group_5/Data_Collection/Negative Set/negative.tsv"
 
-def split_dataset(input_file, train_file, bench_file, label):
+
+def split_dataset(input_file, train_file, bench_file, label, info_file):
     """
-    Split a dataset into:
-      - 80% training set
-      - 20% benchmarking set
-    Assign folds to the training set in a simple round-robin cycle (1–5).
-
-    Parameters
-    ----------
-    input_file : Path
-        Representative dataset in TSV format (seq_id, rep_id).
-    train_file : Path
-        Output training set with folds.
-    bench_file : Path
-        Output benchmarking set.
-    label : str
-        Class label ("positive" or "negative").
+    Split a dataset into training and benchmarking sets, adding extra info.
+    Keep only seq_id present in the input file.
     """
 
-    # Load dataset (2 columns: seq_id, rep_id)
+    # Load dataset (1 column: seq_id)
     df = pd.read_csv(input_file, sep="\t", header=None, names=["seq_id"])
+    df["seq_id"] = df["seq_id"].str.strip()   
     df["class"] = label
+  
 
-    # Train/test split (80/20), reproducible with random_state
+    # Load extra info
+    info_df = pd.read_csv(info_file, sep="\t")
+    info_df = info_df.rename(columns={"Accession": "seq_id"})  
+    info_df["seq_id"] = info_df["seq_id"].str.strip()  
+    
+    # Merge only seq_id present in input_file
+    df = df.merge(info_df, on="seq_id", how="inner")
+
+    # Train/test split (80/20)
     train, bench = train_test_split(df, test_size=0.2, random_state=42)
 
     # Assign folds in round-robin order
@@ -58,8 +59,8 @@ def split_dataset(input_file, train_file, bench_file, label):
 
 if __name__ == "__main__":
     # Positive dataset
-    split_dataset(pos_input, pos_train, pos_bench, "positive")
+    split_dataset(pos_input, pos_train, pos_bench, "positive", info_file_pos)
 
     # Negative dataset
-    split_dataset(neg_input, neg_train, neg_bench, "negative")
+    split_dataset(neg_input, neg_train, neg_bench, "negative", info_file_neg)
 
