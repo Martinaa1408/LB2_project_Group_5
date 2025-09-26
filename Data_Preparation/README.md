@@ -53,6 +53,16 @@ The script **`get_sets.py`** takes the representative ID lists (`.ids`) as input
 
 ---
 
+## Reproducibility
+
+All data preparation steps (clustering, representative selection, TSV filtering, and train/benchmark splitting)  
+are automated in the script **`clustering.sh`**:
+
+```bash
+bash clustering.sh
+```
+
+---
 ## About MMseqs2
 
 **MMseqs2 (Many-against-Many sequence searching)** was used in this project to:  
