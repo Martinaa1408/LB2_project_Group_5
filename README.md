@@ -87,6 +87,9 @@ LB2_project_Group_5/
 │   ├── get_tsv.py                
 │   └── README.md                 
 ├── Data_Analysis/
+│   ├── DataAnalysis.ipynb
+│   ├── Plots/
+│   └── README.md   
 ├── README.md                    
 └── LICENSE
 ```
