@@ -67,7 +67,7 @@ In this project it is applied to:
 
 ## Current Results
 
-| Step                        | Dataset(s)         | Output type             | Example file(s) / plot(s) |
+| Step                        | Dataset(s)         | Output type             | Content of `Plots/` |
 |-----------------------------|--------------------|-------------------------|---------------------------|
 | Protein length distribution | Positive / Negative| Histogram, Boxplot      | [length_distribution.png]() |
 | SP length distribution      | Positive only      | Histogram, Stats table  | [sp_length_stats.png]()    |
