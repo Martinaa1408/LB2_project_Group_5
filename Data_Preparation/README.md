@@ -72,15 +72,15 @@ After clustering and representative selection:
 
 | Dataset   | Total sequences | Representative sequences | File containing representatives |
 |-----------|----------------:|-------------------------:|---------------------------------|
-| Positive  |     2,949       |      1093                | `pos_cluster_results.tsv`        |
-| Negative  |     20,615      |      8934                | `neg_cluster_results.tsv`        |
+| Positive  |     2,949       |      1093                | [POS CLUSTER TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Positive_Cluster/pos_cluster_results.tsv)      |
+| Negative  |     20,615      |      8934                | [NEG CLUSTER TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Negative_Cluster/neg_cluster_results.tsv)        |
 
 After splitting with `get_sets.py`:  
 
 | Subset        | Positive | Negative | Files generated                  |
 |---------------|---------:|---------:|----------------------------------|
-| Training (80%)|   874   | 7147    | `train_pos.tsv`, `train_neg.tsv` |
-| Benchmarking (20%) | 219 | 1787  | `bench_pos.tsv`, `bench_neg.tsv` |
+| Training (80%)|   874   | 7147    | [POS TRAIN TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/pos_train.tsv), [NEG TRAIN TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/neg_train.tsv) |
+| Benchmarking (20%) | 219 | 1787  | [POS BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/pos_bench.tsv), [NEG BENCH TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/Cross_Validation/neg_bench.tsv)` |
 
 Each sequence in the training set is also annotated with a **cross-validation fold index** (1–5).  
 
