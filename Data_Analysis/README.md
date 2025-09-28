@@ -1,78 +1,87 @@
 # LAB2_project – Data Analysis
 
-This stage of the pipeline explores the **statistical and biological properties** of the curated datasets using the Colab notebook `DataAnalysis.ipynb`.  
-The main goals are to:
-- Verify the **quality and balance** of the datasets,  
-- Detect potential **biases** that may affect model training,  
-- Generate **reference statistics** to benchmark predictive models.  
+This stage explores the **statistical and biological properties** of the curated datasets using the Colab notebook `DataAnalysis.ipynb`.  
+Training and benchmarking datasets are analysed **independently**, following the Practical Session guidelines.
+
+Main goals:
+- Verify the **quality and balance** of the datasets (handled per set),
+- Detect potential **biases** (SP length, AA composition, taxonomy),
+- Produce **reference statistics** and **sequence logos** around SP cleavage sites,
+- Compare SP amino-acid composition against **SwissProt statistics** (see: https://web.expasy.org/docs/relnotes/relstat.html).
 
 ---
 
-## Workflow
+## Repository contents (this folder)
 
-### 1. Protein Length Distribution
-- **Objective:** Compare protein sequence lengths in the **positive** (SP-containing) and **negative** (non-SP) datasets.  
-- **Rationale:** Major differences in sequence size could bias classifiers or indicate systematic errors in dataset construction.    
+**Data / intermediates**
+- `train_SP.seq` → SP sequences (training set), one sequence per line (plain text).
+- `bench_SP.seq` → SP sequences (benchmark set), one per line.
+- `train_logo.seq` → windows **[-13, +2]** around the annotated cleavage site (training), one per line.
+- `bench_logo.seq` → windows **[-13, +2]** (benchmark), one per line.
 
-**Outputs:**  
-- `length_distribution.png` → Histogram, density plot, and boxplot of protein lengths.  
-
----
-
-### 2. Signal Peptide (SP) Length Distribution
-- **Objective:** Analyze the distribution of SP lengths within the **positive dataset**.  
-- **Rationale:** Signal peptides typically fall within a **15–30 amino acid range**; values outside this interval may indicate annotation errors.  
-
-**Outputs:**  
-- `sp_length_stats.png` → Histogram and table of descriptive statistics (mean, median, range).  
+> These `.seq` files are the **intermediate inputs** used to compute SP length stats and to generate the **WebLogo** figures.
 
 ---
 
-### 3. Amino Acid Composition
-- **Objective:** Compare the amino acid frequencies of SP sequences against a **background distribution** (SwissProt).  
-- **Rationale:** Signal peptides have well-known compositional biases (e.g., hydrophobic residues in the H-region, small residues near cleavage sites).  
+## Workflow (per dataset: *training* and *benchmarking*)
 
-**Outputs:**  
-- `aa_composition.png` → Combined barplot of SP vs SwissProt amino acid composition.  
+> The **protein length distribution of full sequences** is **not included** in this repo.  
+> The workflow below focuses on the analyses supported by the files actually present.
 
----
-
-### 4. Taxonomic Classification
-- **Objective:** Annotate sequences by **kingdom** (Eukaryotes, Bacteria, Archaea, etc.) and **species**.  
-- **Rationale:** Datasets heavily skewed towards certain taxa may reduce model generalization.  
-
-**Outputs:**  
-- `taxonomy_distribution.png` → Pie charts and barplots of taxonomic representation.  
+### 1) Signal Peptide (SP) Length Distribution
+- **Objective:** analyse the distribution of SP lengths in the **positive** set.
+- **Input:** `train_SP.seq`, `bench_SP.seq`
+- **Rationale:** SPs typically fall in the **15–30 aa** range; outliers may indicate annotation issues.
+- **Visualization:** histogram / density / boxplot (done in `DataAnalysis.ipynb`).
+- **Expected output names:** `SP_lengths.png`
 
 ---
 
-### 5. Cleavage-Site Motif Analysis
-- **Objective:** Visualize conserved motifs around annotated cleavage sites.  
-- **Rationale:** The **(-13 to +2) window** captures the N-region, H-region end, and cleavage position, which contain conserved residues essential for recognition.  
-
-**Outputs:**  
-- `cleavage_logo.png` → Sequence logo highlighting conserved residues near cleavage sites.  
+### 2) Amino Acid Composition (SP vs SwissProt)
+- **Objective:** compare AA frequencies in SP sequences against the **SwissProt background**.
+- **Input:** `train_SP.seq`, `bench_SP.seq` + SwissProt AA frequencies (see relnotes: https://web.expasy.org/docs/relnotes/relstat.html).
+- **Rationale:** SPs show hydrophobic enrichment (H-region) and small residues near the cleavage site.
+- **Visualization:** combined barplot (SP vs SwissProt).
+- **Expected output names:** `residues_composition_.png`
 
 ---
 
-## Seaborn Notes
+### 3) Taxonomic Classification (optional, when metadata available)
+- **Objective:** distribution by **kingdom** and **species** to check dataset bias.
+- **Input:** metadata table (not committed in this folder).
+- **Visualization:** pie chart / barplot.
+- **Expected output names:** `kingdom_pie.png`, `taxonomy_distribution.png`
 
-Seaborn (built on Matplotlib) provides high-level functions for statistical plotting directly from Pandas dataframes.  
-In this project it is applied to:  
-- **displot** for distributions (hist/kde),  
-- **boxplot/violinplot** for group comparisons,  
-- **barplot/countplot** for categorical data.  
+---
+
+### 4) Cleavage-Site Motif Logos (WebLogo)
+- **Objective:** visualize conserved motifs around SP cleavage sites using the **[-13, +2] window**.
+- **Inputs (intermediate):**  
+  - `train_logo.seq` (training windows)  
+  - `bench_logo.seq` (benchmark windows)
+- **Visualization:** sequence logos (AA) with WebLogo / Logomaker.
+- **Output names:** `seq_logo_train.png`, `seq_logo_bench.png`
+
+---
+
+## Seaborn / Logomaker Notes
+
+- **Seaborn** (Matplotlib-based) is used for quick statistical plotting directly from Pandas dataframes:
+  - `displot` → distributions (histogram / kde),
+  - `boxplot` / `violinplot` → group comparisons,
+  - `barplot` / `countplot` → categorical data.
+- **Logomaker** (Python) or **WebLogo** (CLI) are used to generate amino-acid logos from aligned or fixed-window sequences (provided in `*_logo.seq`).
 
 ---
 
 ## Current Results
 
-| Step                        | Dataset(s)         | Output type             | Content of `Plots/` |
-|-----------------------------|--------------------|-------------------------|---------------------------|
-| Protein length distribution | Positive / Negative| Histogram, Boxplot      | [length_distribution.png]() |
-| SP length distribution      | Positive only      | Histogram, Stats table  | [sp_length_stats.png]()    |
-| Amino acid composition      | SP vs SwissProt    | Barplot                 | [aa_composition.png]()      |
-| Taxonomic classification    | Positive / Negative| Pie chart, Barplot      | [taxonomy_distribution.png]() |
-| Cleavage-site motifs        | SP sequences       | WebLogo sequence logo   | [cleavage_logo.png]()       |
+| Step                        | Inputs                        | Output type            | Files now in repo / generated |
+|-----------------------------|-------------------------------|------------------------|-------------------------------|
+| SP sequences (intermediate) | curated positives             | `.seq` (plain text)    | `train_SP.seq`, `bench_SP.seq` |
+| Cleavage windows (intermed.)| SP cleavage windows [-13,+2]  | `.seq` for logos       | `train_logo.seq`, `bench_logo.seq` |
+| SP length distribution      | `train_SP.seq`, `bench_SP.seq`| Histogram / Boxplot    | `SP_lengths.png` |
+| AA composition vs SwissProt | `*_SP.seq` + SwissProt stats  | Combined barplot       | `residues_composition_.png` |
+| Motif logos                 | `*_logo.seq`                  | WebLogo / Logomaker    | `seq_logo_train.png`, `seq_logo_bench.png` |
 
 ---
