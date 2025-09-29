@@ -56,7 +56,7 @@ The script **`get_sets.py`** takes the representative ID lists (`.ids`) as input
 ## Reproducibility
 
 All data preparation steps (clustering, representative selection, TSV filtering, and train/benchmark splitting)  
-are automated in the script **`clustering.sh`**:
+are automated in the script [clustering.sh](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/clustering.sh):
 
 ```bash
 bash clustering.sh
