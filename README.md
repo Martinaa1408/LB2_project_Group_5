@@ -46,40 +46,31 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 ---
 
 ## Repository Structure
-```bash
-LB2_project_Group_5/
-│
-├── Data_Collection/
-│   ├── Positive_Set/
-│   │   ├── positive.fasta
-│   │   └── positive.tsv
-│   │
-│   ├── Negative_Set/
-│   │   ├── negative.fasta
-│   │   └── negative.tsv
-│   │
-│   ├── Data_Collection.ipynb     
-│   └── README.md                 
-│
-├── Data_Preparation/
-│   ├── Cross_Validation/   
-│   ├── Negative_Cluster/         
-│   ├── Positive_Cluster/         
-│   ├── clustering.sh             
-│   ├── get_sets.py               
-│   ├── get_tsv.py                
-│   └── README.md                 
-├── Data_Analysis/
-│   ├── DataAnalysis.ipynb
-│   ├── Plots/
-│   ├──train_SP.seq
-│   ├──train_logo.seq
-│   ├──bench_SP.seq
-│   ├──bench_logo.seq
-│   └── README.md   
-├── README.md                    
-└── LICENSE
-```
+
+## Repository Structure
+
+- [**Data_Collection/**](./Data_Collection)  
+  Retrieval of raw datasets from UniProtKB.  
+  → Main notebook: [`Data_Collection.ipynb`](./Data_Collection/Data_Collection.ipynb)
+
+- [**Data_Preparation/**](./Data_Preparation)  
+  Redundancy reduction with MMseqs2 and generation of train/benchmark sets with CV folds.  
+  → Key scripts: [`clustering.sh`](./Data_Preparation/clustering.sh), [`get_tsv.py`](./Data_Preparation/get_tsv.py), [`get_sets.py`](./Data_Preparation/get_sets.py)
+
+- [**Data_Analysis/**](./Data_Analysis)  
+  Exploratory analysis of datasets (length distributions, amino acid composition, taxonomy, cleavage motifs).  
+  → Main notebook: [`DataAnalysis.ipynb`](./Data_Analysis/DataAnalysis.ipynb)
+
+- [**von Heijne/**](./vonHeijne)  
+  Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
+  → Main notebook: 
+
+- [**README.md**](./README.md)  
+  General project overview and workflow description.
+
+- [**LICENSE**](./LICENSE)  
+  Open-source license (GPL-3.0).
+
 ---
 ## Authors
 This project has been developed by the following group members:
