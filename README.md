@@ -116,6 +116,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - MMseqs2 repository: [https://github.com/soedinglab/MMseqs2](https://github.com/soedinglab/MMseqs2)  
 - Seaborn documentation: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)  
 - WebLogo: [https://weblogo.berkeley.edu/logo.cgi](https://weblogo.berkeley.edu/logo.cgi)
-
+- SwissProt statistics: [https://web.expasy.org/docs/relnotes/relstat.html](https://web.expasy.org/docs/relnotes/relstat.html)
+  
 ---
 
