@@ -117,6 +117,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - Seaborn documentation: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)  
 - WebLogo: [https://weblogo.berkeley.edu/logo.cgi](https://weblogo.berkeley.edu/logo.cgi)
 - SwissProt statistics: [https://web.expasy.org/docs/relnotes/relstat.html](https://web.expasy.org/docs/relnotes/relstat.html)
+- von Heijne G. (1986). A new method for predicting signal sequence cleavage sites. *Nucleic Acids Res*.  
   
 ---
 
