@@ -62,26 +62,9 @@ LB2_project_Group_5/
 │   └── README.md                 
 │
 ├── Data_Preparation/
-│   ├── Cross_Validation/         
-│   │   ├── pos_train.tsv
-│   │   ├── pos_bench.tsv
-│   │   ├── neg_train.tsv
-│   │   └── neg_bench.tsv
-│   │
+│   ├── Cross_Validation/   
 │   ├── Negative_Cluster/         
-│   │   ├── neg_cluster-results_all_seqs.fasta
-│   │   ├── neg_cluster-results_cluster.tsv
-│   │   ├── neg_cluster-results_rep_seq.fasta
-│   │   ├── neg_cluster_results.tsv
-│   │   └── rep_negative.ids
-│   │
 │   ├── Positive_Cluster/         
-│   │   ├── pos_cluster-results_all_seqs.fasta
-│   │   ├── pos_cluster-results_cluster.tsv
-│   │   ├── pos_cluster-results_rep_seq.fasta
-│   │   ├── pos_cluster_results.tsv
-│   │   └── rep_positive.ids
-│   │
 │   ├── clustering.sh             
 │   ├── get_sets.py               
 │   ├── get_tsv.py                
@@ -89,6 +72,10 @@ LB2_project_Group_5/
 ├── Data_Analysis/
 │   ├── DataAnalysis.ipynb
 │   ├── Plots/
+│   ├──train_SP.seq
+│   ├──train_logo.seq
+│   ├──bench_SP.seq
+│   ├──bench_logo.seq
 │   └── README.md   
 ├── README.md                    
 └── LICENSE
