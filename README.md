@@ -61,7 +61,7 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
   Exploratory analysis of datasets (length distributions, amino acid composition, taxonomy, cleavage motifs).  
   → Main notebook: [`DataAnalysis.ipynb`](./Data_Analysis/DataAnalysis.ipynb)
 
-- [**von Heijne/**](./von Heijne)  
+- [**von_Heijne/**](./von_Heijne)  
   Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
   → Main notebook: 
 
