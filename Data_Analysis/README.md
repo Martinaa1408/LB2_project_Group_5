@@ -46,7 +46,7 @@ The outputs are:
 
 ### Cleavage-site motifs  
 Finally, we visualized the conserved motifs around annotated cleavage sites by extracting the **[-13, +2] window** from each SP.  
-These sequences were stored in `train_logo.seq` and `bench_logo.seq` and then visualized using WebLogo/Logomaker.  
+These sequences were stored in [train_logo.seq](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/train_logo.seq) and [bench_logo.seq](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/bench_logo.seq) and then visualized using WebLogo/Logomaker.  
 The resulting logos clearly show conserved small residues at the -1 and -3 positions.  
 Plots:  
 - `seq_logo_train.png`  
@@ -65,11 +65,11 @@ For the cleavage-site motifs we used **Logomaker** inside the notebook and **Web
 
 | Analysis                    | What we checked                                   | Output files |
 |-----------------------------|--------------------------------------------------|--------------|
-| Protein lengths             | Differences between positive and negative sets   | `density_protein_lengths.png`, `boxplot_protein_length.png` |
-| SP lengths                  | Typical SP range (15–30 aa) and outliers         | `SP_lengths.png` |
-| Amino acid composition      | Biases in SPs compared to SwissProt              | `residues_composition.png` |
-| Taxonomy                    | Balance across kingdoms and species              | `kingdom_pie.png`, `barplot_species_train.png`, `barplot_species_bench.png` |
-| Cleavage-site motifs        | Conserved residues around cleavage site          | `seq_logo_train.png`, `seq_logo_bench.png` |
+| Protein lengths             | Differences between positive and negative sets   | [Density protein lengths](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/density_protein_lengths.png), [Boxplot protein length](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/boxplot_protein_length.png) |
+| SP lengths                  | Typical SP range (15–30 aa) and outliers         | [SP lengths](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/SP_lengths.png) |
+| Amino acid composition      | Biases in SPs compared to SwissProt              | [Residues compositions](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/residues_compositions.png) |
+| Taxonomy                    | Balance across kingdoms and species              | [Kingdom pie](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/kingdom_pie.png), [Barplot species train](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/barplot_species_train.png), [Barplot species bench](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/barplot_species_bench.png) |
+| Cleavage-site motifs        | Conserved residues around cleavage site          | [Seq Logo train](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/seq_logo_train.png), [Seq Logo bench](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/Plots/seq_logo_bench.png) |
 
 ---
 
