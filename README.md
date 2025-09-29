@@ -47,19 +47,17 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 
 ## Repository Structure
 
-## Repository Structure
-
 - [**Data_Collection/**](./Data_Collection)  
   Retrieval of raw datasets from UniProtKB.  
-  → Main notebook: [`Data_Collection.ipynb`](./Data_Collection/Data_Collection.ipynb)
+  → Main notebook: `Data_Collection.ipynb`
 
 - [**Data_Preparation/**](./Data_Preparation)  
   Redundancy reduction with MMseqs2 and generation of train/benchmark sets with CV folds.  
-  → Key scripts: [`clustering.sh`](./Data_Preparation/clustering.sh), [`get_tsv.py`](./Data_Preparation/get_tsv.py), [`get_sets.py`](./Data_Preparation/get_sets.py)
+  → Key scripts: `clustering.sh`, `get_tsv.py`, `get_sets.py`
 
 - [**Data_Analysis/**](./Data_Analysis)  
   Exploratory analysis of datasets (length distributions, amino acid composition, taxonomy, cleavage motifs).  
-  → Main notebook: [`DataAnalysis.ipynb`](./Data_Analysis/DataAnalysis.ipynb)
+  → Main notebook: `DataAnalysis.ipynb`
 
 - [**von_Heijne/**](./von_Heijne)  
   Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
