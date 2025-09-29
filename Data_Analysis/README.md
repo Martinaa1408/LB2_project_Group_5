@@ -1,6 +1,6 @@
 # LAB2_project – Data Analysis
 
-In this stage we explored the **statistical and biological properties** of our curated datasets using the notebook `DataAnalysis.ipynb`.  
+In this stage we explored the **statistical and biological properties** of our curated datasets using the notebook [DataAnalysis.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/DataAnalysis.ipynb).  
 Both the **training** and **benchmarking** sets were analysed independently.
 The idea was to check that the data are well balanced, to spot possible biases, and to generate reference plots that can also provide biological insight into signal peptide (SP) features.
 
