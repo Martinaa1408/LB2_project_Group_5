@@ -67,7 +67,8 @@ S = \sum_{j=-13}^{+2} W_{a_j,j}
 - Final discriminant:
   ```math
   \Delta S = S_{pos} - S_{neg}
-  
+  ```
+  ```math
   \Delta S \geq \theta
   ```
 
