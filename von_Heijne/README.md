@@ -52,11 +52,11 @@ Gives observed amino acid probabilities at each position.
 Transform PSPM into log-odds ratios vs **SwissProt background frequencies**:  
 ```math
 W_{a,j} = \log_2 \frac{P(a,j)}{b_a}
-\]
-where:  
-- \(P(a,j)\) = probability of amino acid *a* at position *j*  
-- \(b_a\) = SwissProt frequency of *a*  
 ```
+where:  
+- (P(a,j)) = probability of amino acid *a* at position *j*  
+- (b_a) = SwissProt frequency of *a*  
+
 5. **Scoring**  
 For a candidate 16-aa window:
 ```math
