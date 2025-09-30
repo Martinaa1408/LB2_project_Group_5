@@ -2,6 +2,7 @@
 
 This module implements the **von Heijne (1986) statistical method** for detecting signal peptide (SP) cleavage sites.  
 It provides an interpretable, frequency-based baseline that complements machine learning classifiers.
+The full pipeline is implemented in the following Jupyter notebooks: 
 
 ---
 
@@ -55,7 +56,7 @@ W_{a,j} = \log_2 \frac{P(a,j)}{b_a}
 ```
 where:  
 - (P(a,j)) = probability of amino acid *a* at position *j*  
-- (b_a) = SwissProt frequency of *a*  
+- (ba) = SwissProt frequency of *a*  
 
 5. **Scoring**  
 For a candidate 16-aa window:
