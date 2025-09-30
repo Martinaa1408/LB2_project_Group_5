@@ -70,7 +70,7 @@ S = \sum_{j=-13}^{+2} W_{a_j,j}
   ```
 If 
 ```math 
-(\Delta S \geq \theta\)
+\Delta S \geq \theta\
 ```
 classify as **signal peptide**.
 
