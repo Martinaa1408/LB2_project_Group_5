@@ -67,9 +67,9 @@ S = \sum_{j=-13}^{+2} W_{a_j,j}
 - Final discriminant:
   ```math
   \Delta S = S_{pos} - S_{neg}
+  
   \Delta S \geq \theta
   ```
-  classify as **signal peptide**.
 
 6. **Sliding window**  
 To scan a full protein, apply the PSWM in a sliding window (first 90 aa).  
