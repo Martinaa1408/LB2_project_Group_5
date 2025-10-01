@@ -95,8 +95,8 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 
 ### Software stack
 - **MMseqs2**: clustering and redundancy reduction  
-- **Python 3**: data preprocessing and analysis (`pandas`, `scikit-learn`, `seaborn`)  
-- **Bash utils**: `grep`, `wc`, `tr` for quick FASTA/TSV operations  
+- **Python 3**: data preprocessing and analysis 
+- **Bash utils**: for quick FASTA/TSV operations  
 - **Jupyter/Colab**: environment for interactive workflows  
 - **conda environment tools**: package and environment management  
 
@@ -107,6 +107,6 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - WebLogo: [https://weblogo.berkeley.edu/logo.cgi](https://weblogo.berkeley.edu/logo.cgi)
 - SwissProt statistics: [https://web.expasy.org/docs/relnotes/relstat.html](https://web.expasy.org/docs/relnotes/relstat.html)
 - von Heijne G. (1986). A new method for predicting signal sequence cleavage sites. *Nucleic Acids Res*.  
-  
+- Numpy documentation: [https://numpy.org/doc/stable/](https://numpy.org/doc/stable/) 
 ---
 
