@@ -32,12 +32,6 @@ W_{k,j}: \text{ log-odds weight}
 
 ---
 
-## **About NumPy**
-
-**NumPy** was used for efficient array manipulation, linear algebra routines, and mathematical functions such as logarithms and means, which are essential in scientific computing.
-
----
-
 ## **Implementation**
 
 All steps are contained in a single notebook: [vonHeijne.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne.ipynb)
@@ -75,6 +69,12 @@ Results are averaged over **5-fold cross-validation**, reported as **mean ± sta
 | F1 Score     | 0.728 ± 0.011        |
 | MCC          | 0.697 ± 0.013        |
 | Threshold    | 9.123                |
+
+---
+
+## **About NumPy**
+
+**NumPy** was used for efficient array manipulation, linear algebra routines, and mathematical functions such as logarithms and means, which are essential in scientific computing.
 
 ---
 
