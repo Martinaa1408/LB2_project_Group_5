@@ -24,7 +24,7 @@ W_{k,j} = \log \left( \frac{M_{k,j}}{b_k} \right)
 M_{k,j}: \text{ probability of amino acid } k \text{ at position } j 
 ```
 ```math
-b_k: \text{ background frequency of amino acid } k 
+b_k: \text{ background frequency of amino acid } k //
 W_{k,j}: \text{ log-odds weight}
 ```
 
