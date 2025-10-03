@@ -96,6 +96,17 @@ We report:
 All results are averaged over **k-fold cross-validation**, reported as mean ± standard error.  
 **Threshold optimization is performed only on validation sets, never on the test set**.
 
+| **Metric**   |      **Value**       |
+|------------- |----------------------|
+| Accuracy     |   ±   |
+| Precision    |  ±      |
+| Recall       |  ±     |
+| F1 Score     |  ±       |
+| MCC          | ±       |
+| Threshold    |  ±       |
+
+
+
 ---
 
 
