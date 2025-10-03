@@ -1,0 +1,50 @@
+
+Test set {cycle[2]} results:
+Accuracy: 0.946
+Sensitivity: 0.760
+PPV: 0.751
+F1 Score: 0.756
+MCC: 0.726
+Confusion Matrix:
+[[1386   44]
+ [  42  133]]
+
+Test set {cycle[2]} results:
+Accuracy: 0.941
+Sensitivity: 0.686
+PPV: 0.755
+F1 Score: 0.719
+MCC: 0.687
+Confusion Matrix:
+[[1391   39]
+ [  55  120]]
+
+Test set {cycle[2]} results:
+Accuracy: 0.932
+Sensitivity: 0.703
+PPV: 0.683
+F1 Score: 0.693
+MCC: 0.655
+Confusion Matrix:
+[[1372   57]
+ [  52  123]]
+
+Test set {cycle[2]} results:
+Accuracy: 0.936
+Sensitivity: 0.743
+PPV: 0.695
+F1 Score: 0.718
+MCC: 0.683
+Confusion Matrix:
+[[1372   57]
+ [  45  130]]
+
+Test set {cycle[2]} results:
+Accuracy: 0.938
+Sensitivity: 0.891
+PPV: 0.657
+F1 Score: 0.756
+MCC: 0.732
+Confusion Matrix:
+[[1348   81]
+ [  19  155]]

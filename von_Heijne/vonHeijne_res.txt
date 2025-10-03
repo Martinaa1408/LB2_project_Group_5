@@ -1,0 +1,6 @@
+The average threshold is: 9.123404191991899
+Accuracy: 0.939 ± 0.002
+Sensitivity: 0.756 ± 0.032
+PPV: 0.708 ± 0.017
+F1 Score: 0.728 ± 0.011
+MCC: 0.697 ± 0.013
