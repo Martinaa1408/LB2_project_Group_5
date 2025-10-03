@@ -61,7 +61,7 @@ Results are averaged over **5-fold cross-validation**, reported as **mean ± sta
 
 ### Final Metrics
 
--->[vonHeijne_res.txt]()
+-->Reported in the file: [vonHeijne_res.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne_res.txt)
 
 | **Metric**   | **Value**            |
 |--------------|----------------------|
