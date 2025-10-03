@@ -18,12 +18,11 @@ Pseudocounts (+1) are added to avoid zero probabilities.
 The log-odds formula for PSWM is:
 
 ```math
-W_{k,j} = \log \left( \frac{M_{k,j}}{b_k} \right)
+W_{k,j} = \log \left( \frac{M_{k,j}}{b_k} \right) \\
+M_{k,j}: \text{ probability of amino acid } k \text{ at position } j \\
+b_k: \text{ background frequency of amino acid } k \\
+W_{k,j}: \text{ log-odds weight}
 ```
-where:
-M k,j: probability of amino acid 𝑘 at position 𝑗
-bk: background frequency of amino acid 
-W k,j: log-odds weight
 
 ---
 
