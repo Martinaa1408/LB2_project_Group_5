@@ -72,6 +72,23 @@ Reported in the file: [vonHeijne_res.txt](https://github.com/Martinaa1408/LB2_pr
 | MCC          | 0.697 ± 0.013        |
 | Threshold    | 9.123                |
 
+### Per-Fold Results
+
+Detailed results of each fold are provided in [results_cv_set.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/results_cv_set.txt):  
+
+| Fold | Accuracy | Sensitivity | PPV | F1 Score | MCC  | Confusion Matrix          |
+|------|----------|-------------|-----|----------|------|---------------------------|
+| 1    | 0.946    | 0.760       | 0.751 | 0.756  | 0.726 | [[1386, 44], [42, 133]]  |
+| 2    | 0.941    | 0.686       | 0.755 | 0.719  | 0.687 | [[1391, 39], [55, 120]]  |
+| 3    | 0.932    | 0.703       | 0.683 | 0.693  | 0.655 | [[1372, 57], [52, 123]]  |
+| 4    | 0.936    | 0.743       | 0.695 | 0.718  | 0.683 | [[1372, 57], [45, 130]]  |
+| 5    | 0.938    | 0.891       | 0.657 | 0.756  | 0.732 | [[1348, 81], [19, 155]]  |
+
+**Observation:**  
+- Performance is consistent across folds.  
+- MCC remains stable (0.65–0.73), robust against class imbalance.  
+- Fold 5 shows higher sensitivity but slightly lower precision.
+  
 ---
 
 ## **About NumPy**
