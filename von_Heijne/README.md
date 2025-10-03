@@ -51,11 +51,11 @@ Binary classification task:
 - Class 0 = protein without signal peptide  
 
 Metrics reported:  
-- Accuracy (ACC)  
-- Precision (PPV)  
-- Recall / Sensitivity (SEN)  
-- F1-score  
-- Matthews Correlation Coefficient (MCC)  
+- **Accuracy (ACC):** proportion of correctly classified samples  
+- **Precision (PPV):** fraction of predicted positives that are true positives  
+- **Recall / Sensitivity:** fraction of actual positives correctly identified  
+- **F1-score:** harmonic mean of precision and recall  
+- **Matthews Correlation Coefficient (MCC):** balanced measure of binary classification quality (–1 to +1)  
 
 Results are averaged over **5-fold cross-validation**, reported as **mean ± standard error**.  
 
@@ -64,7 +64,7 @@ Results are averaged over **5-fold cross-validation**, reported as **mean ± sta
 | **Metric**   | **Value**            |
 |--------------|----------------------|
 | Accuracy     | 0.939 ± 0.002        |
-| Precision    | 0.708 ± 0.017        |
+| PPV          | 0.708 ± 0.017        |
 | Sensitivity  | 0.756 ± 0.032        |
 | F1 Score     | 0.728 ± 0.011        |
 | MCC          | 0.697 ± 0.013        |
