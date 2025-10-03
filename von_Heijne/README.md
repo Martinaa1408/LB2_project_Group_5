@@ -34,7 +34,7 @@ W_{k,j}: \text{ log-odds weight}
 
 ## **Implementation**
 
-All steps are contained in a single notebook: [`vonHeijne.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne.ipynb)
+All steps are contained in a single notebook: [vonHeijne.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne.ipynb)
 
 Pipeline:  
 1. **Window extraction** from annotated cleavage sites  
