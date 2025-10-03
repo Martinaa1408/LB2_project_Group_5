@@ -25,8 +25,8 @@ M_{k,j}: \text{ probability of amino acid } k \text{ at position } j
 ```
 ```math
 b_k: \text{ background frequency of amino acid } k
-
-
+```
+```math
 W_{k,j}: \text{ log-odds weight}
 ```
 
