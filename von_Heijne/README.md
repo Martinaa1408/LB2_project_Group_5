@@ -89,7 +89,6 @@ We report:
 - Accuracy  
 - Precision  
 - Recall / Sensitivity  
-- Specificity  
 - F1-score  
 - MCC (Matthews correlation coefficient)  
 
@@ -98,14 +97,12 @@ All results are averaged over **k-fold cross-validation**, reported as mean ± s
 
 | **Metric**   |      **Value**       |
 |------------- |----------------------|
-| Accuracy     |   ±   |
-| Precision    |  ±      |
-| Recall       |  ±     |
-| F1 Score     |  ±       |
-| MCC          | ±       |
-| Threshold    |  ±       |
-
-
+| Accuracy     |  0.939 ± 0.002       |
+| PPV          |  0.708 ± 0.017       |
+| Sensitivity  |  0.756 ± 0.032       |
+| F1 Score     |  0.728 ± 0.011       |
+| MCC          |  0.697 ± 0.013       |
+| Threshold    |  9.123               |
 
 ---
 
