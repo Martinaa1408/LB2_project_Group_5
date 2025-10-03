@@ -1,109 +1,81 @@
 # LAB2_project - von Heijne Method 
 
-This module implements the **von Heijne (1986) statistical method** for detecting signal peptide (SP) cleavage sites.  
-It provides an interpretable, frequency-based baseline that complements machine learning classifiers.
-The full pipeline is implemented in the following Jupyter notebooks: 
+This repository contains an implementation of the **Von Heijne statistical method (1986)** for signal peptide cleavage site prediction.  
+It provides an interpretable, frequency-based baseline to compare against machine learning classifiers.
 
 ---
 
-## Data
+## **Method Overview**
 
-We use two datasets:
+The method builds a **Position-Specific Weight Matrix (PSWM)** from experimentally validated signal peptide sequences and compares them to background amino acid frequencies (SwissProt).  
+Pseudocounts (+1) are added to avoid zero probabilities.  
 
-- **Positive set**: `von_pos.tsv`  
-  Proteins with experimentally validated signal peptides.  
-  Columns:  
-  1. UniProt ID  
-  2. Signal peptide sequence  
-  3. Cleavage annotation  
-  4. Additional info  
-  5. Full protein sequence  
+- **Window size**: 16 amino acids (–13 upstream, +2 downstream of cleavage site)  
+- **Background distribution**: SwissProt amino acid frequencies  
+- **PSWM**: constructed from positive examples  
+- **Scoring**: candidate windows are scored with the PSWM; the maximum score in the N-terminal region is used as prediction  
 
-- **Negative set**: `von_neg.tsv`  
-  Proteins without signal peptides, used as background.
+The log-odds formula for PSWM is:
 
-From each entry, we extract a **16-residue window** around the cleavage site:
-- 13 residues upstream (–13..–1)  
-- 2 residues downstream (+1..+2)  
-
-Only complete windows are retained.  
-Typical results:  
-- Positive windows (N_pos) = XXX  
-- Negative windows (N_neg) = YYY  
-
----
-
-## Methodology
-
-1. **Window extraction**  
-   Cleavage site is set at the **end of the annotated signal peptide** (length of column 2).  
-
-2. **Count matrix**  
-- Initialize with pseudocount = 1.  
-- Matrix dimensions: 16 × 20 (positions × amino acids).  
-- Rows = positions (–13..+2).  
-- Columns = amino acids (`GAVPLIMFWYSTCNQHDEKR`).  
-- Each window contributes +1 to the corresponding cell.
-
-3. **PSPM (Position Specific Probability Matrix)**  
-Normalize counts by *(N + 20)*, where *N* = number of sequences.  
-Gives observed amino acid probabilities at each position.
-
-4. **PSWM (Position Specific Weight Matrix)**  
-Transform PSPM into log-odds ratios vs **SwissProt background frequencies**:  
 ```math
-W_{a,j} = \log_2 \frac{P(a,j)}{b_a}
+W_{k,j} = \log \left( \frac{M_{k,j}}{b_k} \right)
 ```
-where:  
-- (P(a,j)) = probability of amino acid *a* at position *j*  
-- (ba) = SwissProt frequency of *a*  
-
-5. **Scoring**  
-For a candidate 16-aa window:
-```math
-S = \sum_{j=-13}^{+2} W_{a_j,j}
-```
-- Compute **S_pos** using PSWM from positives.  
-- Compute **S_neg** using PSWM from negatives.  
-- Final discriminant:
-  ```math
-  \Delta S = S_{pos} - S_{neg}
-  ```
-  ```math
-  \Delta S \geq \theta
-  ```
-
-6. **Sliding window**  
-To scan a full protein, apply the PSWM in a sliding window (first 90 aa).  
-The **maximum positional score** is taken as the global score for that sequence.
+where:
+M k,j: probability of amino acid 𝑘 at position 𝑗
+bk: background frequency of amino acid 
+W k,j: log-odds weight
 
 ---
 
-## Evaluation
+## **Implementation**
 
-Prediction is a **binary classification problem**:  
+All steps are contained in a single notebook: [`vonHeijne.ipynb`](vonHeijne.ipynb)
+
+Pipeline:  
+1. **Window extraction** from annotated cleavage sites  
+2. **Count → PSPM → PSWM** (with pseudocount normalization)  
+3. **Sliding window scoring** (scan N-terminal region, keep max score)  
+4. **Threshold optimization** on validation set (F1 maximization)  
+5. **Testing and cross-validation** with evaluation metrics  
+
+---
+## **Evaluation**
+
+Binary classification task:  
 - Class 1 = protein with signal peptide  
 - Class 0 = protein without signal peptide  
 
-We report:  
-- Accuracy  
-- Precision  
-- Recall / Sensitivity  
+Metrics reported:  
+- Accuracy (ACC)  
+- Precision (PPV)  
+- Recall / Sensitivity (SEN)  
 - F1-score  
-- MCC (Matthews correlation coefficient)  
+- Matthews Correlation Coefficient (MCC)  
 
-All results are averaged over **k-fold cross-validation**, reported as mean ± standard error.  
-**Threshold optimization is performed only on validation sets, never on the test set**.
+Results are averaged over **5-fold cross-validation**, reported as **mean ± standard error**.  
 
-| **Metric**   |      **Value**       |
-|------------- |----------------------|
-| Accuracy     |  0.939 ± 0.002       |
-| PPV          |  0.708 ± 0.017       |
-| Sensitivity  |  0.756 ± 0.032       |
-| F1 Score     |  0.728 ± 0.011       |
-| MCC          |  0.697 ± 0.013       |
-| Threshold    |  9.123               |
+### Final Metrics
+
+| **Metric**   | **Value**            |
+|--------------|----------------------|
+| Accuracy     | 0.939 ± 0.002        |
+| Precision    | 0.708 ± 0.017        |
+| Sensitivity  | 0.756 ± 0.032        |
+| F1 Score     | 0.728 ± 0.011        |
+| MCC          | 0.697 ± 0.013        |
+| Threshold    | 9.123                |
 
 ---
+
+## **Visualization**
+
+All plots are generated by the notebook and saved in: Plots/
+
+| **Plot** | **Description** |
+|----------|-----------------|
+| `pr_curve_foldX.png` | Precision–Recall curve with optimal threshold (per fold) |
+| `cm_foldX.png` | Confusion matrix for corresponding fold |
+| `pr_curve_all.png` | Combined Precision–Recall curves (all folds, with thresholds) |
+| `pswm_heatmap.png` | Heatmap visualization of the Position-Specific Weight Matrix |
 
 
