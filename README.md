@@ -6,7 +6,6 @@
 [![Data Analysis](https://img.shields.io/badge/Data%20Analysis-PDF-red)](https://virtuale.unibo.it/pluginfile.php/2682971/mod_resource/content/3/02c-Data%20analysis.pdf)
 [![Von Heijne Method](https://img.shields.io/badge/Von%20Heijne-Method-purple)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
 [![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
-[![License](https://img.shields.io/badge/License-MIT-black)](https://github.com/Martinaa1408/LB2_project_Group_5/tree/main?tab=License-1-ov-file)
 
 
 ## Table of Contents
