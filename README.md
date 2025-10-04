@@ -1,5 +1,13 @@
 # LAB2 Project Group 5 – Prediction of Secretory Signal Peptides
 
+[![Introduction – Signal Peptide Prediction](https://img.shields.io/badge/Introduction-Signal%20Peptide%20Prediction-blue)](https://virtuale.unibo.it/pluginfile.php/2682963/mod_resource/content/2/01c-IntroSP.pdf)
+[![Data Collection](https://img.shields.io/badge/Data%20Collection-PDF-green)](https://virtuale.unibo.it/pluginfile.php/2682966/mod_resource/content/3/02a-Data%20collection.pdf)
+[![Data Preparation](https://img.shields.io/badge/Data%20Preparation-PDF-orange)](https://virtuale.unibo.it/pluginfile.php/2682969/mod_resource/content/2/02b-Data%20preparation.pdf)
+[![Data Analysis](https://img.shields.io/badge/Data%20Analysis-PDF-red)](https://virtuale.unibo.it/pluginfile.php/2682971/mod_resource/content/3/02c-Data%20analysis.pdf)
+[![Von Heijne Method](https://img.shields.io/badge/Von%20Heijne-Method-purple)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
+[![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
+
+
 ## Table of Contents
 - [About](#about)
 - [Abstract](#abstract)
