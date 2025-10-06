@@ -6,9 +6,8 @@
 [![Data Analysis](https://img.shields.io/badge/Data%20Analysis-PDF-red)](https://virtuale.unibo.it/pluginfile.php/2682971/mod_resource/content/3/02c-Data%20analysis.pdf)
 [![Von Heijne Method](https://img.shields.io/badge/Von%20Heijne-Method-purple)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
 [![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
-[![Feature extraction](https://img.shields.io/badge/Feature-extraction-PDF-%23ffb6c1)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
-[![SVM for SP detection](https://img.shields.io/badge/SVM-for-SP-detection-%23ffa500)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
-
+[![Feature extraction](https://img.shields.io/badge/Feature%20Extraction-PDF-yellowgreen)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
+[![SVM for SP detection](https://img.shields.io/badge/SVM%20for%20SP%20Detection-PDF-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
 
 
 
