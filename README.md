@@ -8,15 +8,6 @@
 [![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
 [![Feature extraction](https://img.shields.io/badge/Feature%20Extraction-PDF-yellowgreen)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
 [![SVM for SP detection](https://img.shields.io/badge/SVM%20for%20SP%20Detection-PDF-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![Biopython](https://img.shields.io/badge/Biopython-Sequence%20Analysis-green?logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-SVM%20%7C%20ML-orange?logo=scikitlearn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-Data%20Handling-lightblue?logo=numpy&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Viz-blueviolet?logo=plotly&logoColor=white)
-![MMseqs2](https://img.shields.io/badge/MMseqs2-Clustering%20Tool-red?logo=github&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-Scripting%20Utils-4EAA25?logo=gnu-bash&logoColor=white)
-![Conda](https://img.shields.io/badge/Conda-Env%20Management-44A833?logo=anaconda&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook%20%7C%20Colab-F37626?logo=jupyter&logoColor=white)
 
 
 
