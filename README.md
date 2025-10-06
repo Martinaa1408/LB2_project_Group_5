@@ -107,20 +107,34 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 
 ## References & Tools
 
-### Software stack
-- **MMseqs2**: clustering and redundancy reduction  
-- **Python 3**: data preprocessing and analysis 
-- **Bash utils**: for quick FASTA/TSV operations  
-- **Jupyter/Colab**: environment for interactive workflows  
-- **conda environment tools**: package and environment management  
+### Tech Stack Badges
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![Biopython](https://img.shields.io/badge/Biopython-Sequence%20Analysis-green?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-SVM%20%7C%20ML-orange?logo=scikitlearn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Data%20Handling-lightblue?logo=numpy&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Viz-blueviolet?logo=plotly&logoColor=white)
+![MMseqs2](https://img.shields.io/badge/MMseqs2-Clustering%20Tool-red?logo=github&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Scripting%20Utils-4EAA25?logo=gnu-bash&logoColor=white)
+![Conda](https://img.shields.io/badge/Conda-Env%20Management-44A833?logo=anaconda&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook%20%7C%20Colab-F37626?logo=jupyter&logoColor=white)
 
-### Key references 
-- UniProt Consortium (2023). UniProt: the Universal Protein Knowledgebase. *NAR*.  
-- MMseqs2 repository: [https://github.com/soedinglab/MMseqs2](https://github.com/soedinglab/MMseqs2)  
-- Seaborn documentation: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)  
-- WebLogo: [https://weblogo.berkeley.edu/logo.cgi](https://weblogo.berkeley.edu/logo.cgi)
-- SwissProt statistics: [https://web.expasy.org/docs/relnotes/relstat.html](https://web.expasy.org/docs/relnotes/relstat.html)
-- von Heijne G. (1986). A new method for predicting signal sequence cleavage sites. *Nucleic Acids Res*.  
-- Numpy documentation: [https://numpy.org/doc/stable/](https://numpy.org/doc/stable/) 
 ---
 
+### Software stack
+- **[MMseqs2](https://github.com/soedinglab/MMseqs2)** — clustering and redundancy reduction  
+- **Python 3** — data preprocessing and analysis  
+- **[Biopython](https://biopython.org/wiki/Documentation)** — sequence handling, FASTA/TSV parsing, and biological data processing  
+- **[scikit-learn (sklearn)](https://scikit-learn.org/stable/)** — machine learning framework (SVM, evaluation metrics, preprocessing)  
+- **[NumPy](https://numpy.org/doc/stable/)** — numerical computation and matrix operations  
+- **[Seaborn](https://seaborn.pydata.org/)** — statistical data visualization  
+- **Bash utils** — quick FASTA/TSV operations  
+- **Jupyter / Google Colab** — environment for interactive workflows  
+- **conda environment tools** — package and environment management  
+
+---
+
+### Key references
+- UniProt Consortium (2023). *UniProt: the Universal Protein Knowledgebase.* **Nucleic Acids Research**.  
+- von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.  
+- [SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)  
+- [WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)
