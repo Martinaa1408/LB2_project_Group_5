@@ -76,6 +76,10 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
   Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
   → Main notebook: `vonHeijne.ipynb`
 
+- [**SVM_method/**](./SVM_method)
+  
+  → Main notebook: 
+  
 - [**README.md**](./README.md)  
   General project overview and workflow description.
 
