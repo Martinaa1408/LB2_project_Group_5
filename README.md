@@ -128,3 +128,4 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.  
 - [SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)  
 - [WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)
+- [scikit-learn SVM documentation](https://scikit-learn.org/stable/modules/svm.html)
