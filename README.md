@@ -16,6 +16,7 @@
 - [Abstract](#abstract)
 - [Project Work Plan](#project-work-plan)
 - [Repository Structure](#repository-structure)
+- [Results Summary](#results-summary)
 - [Authors](#authors)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -87,6 +88,11 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
   Open-source license (GPL-3.0).
 
 ---
+
+## Results Summary
+
+---
+
 ## Authors
 This project has been developed by the following group members:
 
