@@ -80,6 +80,11 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 - [**SVM_method/**](./SVM_method)
   
   → Main notebook: 
+
+- [**Supplementary_materials/**](./Supplementary_materials)
+  
+- [**Report/**](./Report)
+  PDF version of the final report.
   
 - [**README.md**](./README.md)  
   General project overview and workflow description.
