@@ -128,7 +128,10 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - **[Biopython](https://biopython.org/wiki/Documentation)** — sequence handling, FASTA/TSV parsing, and biological data processing  
 - **[scikit-learn (sklearn)](https://scikit-learn.org/stable/)** — machine learning framework (SVM, evaluation metrics, preprocessing)  
 - **[NumPy](https://numpy.org/doc/stable/)** — numerical computation and matrix operations  
-- **[Seaborn](https://seaborn.pydata.org/)** — statistical data visualization  
+- **[Seaborn](https://seaborn.pydata.org/)** — statistical data visualization
+- **[ProtScale (ExPASy)](https://web.expasy.org/protscale/)** — computation of physicochemical property scales (e.g. hydrophobicity)
+- **[SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)** — summary of protein counts, taxonomy coverage, and annotation status in                        UniProtKB/SwissProt releases.
+- **[WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)** — tool for visualizing sequence motifs and residue conservation (used for cleavage site motif analysis).
 - **Bash utils** — quick FASTA/TSV operations  
 - **Jupyter / Google Colab** — environment for interactive workflows  
 - **conda environment tools** — package and environment management  
@@ -138,6 +141,4 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 ### Key references
 - UniProt Consortium (2023). *UniProt: the Universal Protein Knowledgebase.* **Nucleic Acids Research**.  
 - von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.  
-- [SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)  
-- [WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)
 - [scikit-learn SVM documentation](https://scikit-learn.org/stable/modules/svm.html)
