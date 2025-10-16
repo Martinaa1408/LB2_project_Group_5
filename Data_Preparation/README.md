@@ -95,3 +95,6 @@ After splitting with `get_sets.py`:
 Each sequence in the training set is also annotated with a **cross-validation fold index** (1–5).  
 
 ---
+
+**Next step →** The non-redundant training and benchmarking sets generated in this stage  
+are used as input for the [Data_Analysis](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/Data_Analysis) module, where exploratory data analysis (EDA) is performed to assess dataset quality, visualize protein length distributions, and identify conserved sequence motifs before proceeding to feature extraction and modeling.
