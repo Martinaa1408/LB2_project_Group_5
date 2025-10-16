@@ -55,5 +55,5 @@ This file will be used as input for the next stage: **SVM model implementation a
 
 ---
 
-**Next step →** proceed to [SVM_method]('https://github.com/Martinaa1408/LB2_project_Group_5/tree/main/SVM_method')  
+**Next step →** proceed to [SVM_method](https://github.com/Martinaa1408/LB2_project_Group_5/tree/main/SVM_method)  
 where the extracted features are normalized, selected (RandomForest/RFE), and used to train the Support Vector Machine classifier.
