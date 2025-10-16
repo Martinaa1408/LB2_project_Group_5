@@ -154,4 +154,4 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 ---
 
-**Next step →** Integrate SVM results with the rule-based *von Heijne* method and perform final comparative evaluation in the `Evaluation_and_Comparison/` module.
+**Next step →** Integrate SVM results with the rule-based *von Heijne* method and perform final comparative evaluation in the Evaluation_and_Comparison/(../Evaluation_and_Comparison)  module.
