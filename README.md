@@ -143,6 +143,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 ### Key references
 - UniProt Consortium (2023). *UniProt: the Universal Protein Knowledgebase.* **Nucleic Acids Research**.  
 - von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.
+- Cortes C. & Vapnik V. (1995). *Support-Vector Networks.* **Machine Learning**, 20(3): 273–297.  
 - Kyte J. & Doolittle R.F. (1982). *A simple method for displaying the hydropathic character of a protein.* **J. Mol.        Biol.**  
 - Chou P.Y. & Fasman G.D. (1978). *Prediction of protein conformation.* **Biochemistry**.
 - Grantham, R. (1974). *Amino acid difference formula to help explain protein evolution.* **Science**.  
