@@ -77,7 +77,10 @@ This set of analyses ensures that our datasets are well characterized and provid
 
 ---
 
-**Next step →** The results of the exploratory analysis serve as the foundation for the [von_Heijne](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/von_Heijne) module,  
-where a rule-based statistical model is implemented to identify conserved cleavage-site motifs using the **Position-Specific Weight Matrix (PSWM)** approach.  
-This stage provides an interpretable baseline for comparison with machine learning classifiers trained on the extracted features.
+**Next step →**  
+The exploratory analyses performed in this stage support two downstream modules:
 
+- [von_Heijne](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/von_Heijne): implementation of a rule-based PSWM method to identify conserved cleavage-site motifs and provide a biological baseline.  
+- [Feature_Extraction](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/Feature_Extraction)): generation of numerical feature matrices (composition and physicochemical properties) for SVM-based classification.
+
+Together, these two branches connect statistical motif discovery and machine learning–based modeling within a unified predictive framework.
