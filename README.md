@@ -78,15 +78,24 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
   → Main notebook: `vonHeijne.ipynb`
   
 - [**Features_extraction/**](./Features_extraction)
-  → Main notebook:
+  Feature extraction from N-terminal regions (AA composition + physicochemical scales) and export of the feature matrix.  
+  → Main notebook: `Features_extraction_SVM.ipynb`
 
 - [**SVM_method/**](./SVM_method)
-  → Main notebook: 
+  Implementation of the Support Vector Machine (SVM) classifier with feature selection and hyperparameter optimization.  
+  → Main notebook: `SVM_Method.ipynb`
+
+- [**Evaluation_and_Comparison/**](./Evaluation_and_Comparison)
+  Comparative analysis of SVM and von Heijne models using independent test sets and performance metrics visualization.  
+  → Main notebook: `Evaluation_Comparison.ipynb`
 
 - [**Supplementary_materials/**](./Supplementary_materials)
-  
+  Additional resources, figures, and intermediate files supporting the main notebooks and report.  
+  → `Support_materials_LB2_Group5.pdf`.
+
 - [**Report/**](./Report)
   PDF version of the final report related to the project.
+  → `Report_LB2_Group5.pdf`
   
 - [**README.md**](./README.md)  
   General project overview and workflow description.
