@@ -124,13 +124,13 @@ The model demonstrates **high precision and recall**, especially for the majorit
 ---
 
 ## Visualization Outputs: 
-`Plot/`
 
 | Plot | Description | File |
 |------|--------------|------|
-| **Confusion Matrix** | Visualization of classification outcomes. | `Plot/confusion_matrix.png` |
-| **Validation Accuracy vs Top k Features** | Performance trend by number of RF-selected features. | `Plot/Accuracy_vs_Features.png` |
-| **Random Forest Gini Importances** | Feature importance plot for biophysical descriptors. | `Plot/RF_Gini_importance.png` |
+| **Confusion Matrix** | Visualization of classification outcomes. | `Plots/confusion_matrix.png` |
+| **Validation Accuracy vs Top k Features** | SVM accuracy trend across selected feature subsets. | `Plots/Accuracy_vs_Features.png` |
+| **Random Forest Gini Importances** | Barplot of top biophysical feature contributions. | `Plots/RF_Gini_importance.png` |
+| **Precision–Recall Curve** | Trade-off between model precision and recall across thresholds. | `Plots/Precision_Recall_curve.png` |
 
 ---
 
@@ -138,11 +138,11 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 | File | Description |
 |------|--------------|
-| **`svm_gridsearch_results.csv`** | Cross-validation results from parameter search |
-| **`svm_metrics_folds.csv`** | Per-fold evaluation metrics |
-| **`confusion_matrix.png`** | Final model confusion matrix |
+| **`final_svm_metrics.tsv`** | Summary of final performance metrics |
+| **`confusion_matrix.png`** | Visualization of classification results |
 | **`RF_Gini_importance.png`** | Feature importance plot |
-| **`final_svm_model.pkl`**, **`scaler.pkl`** | Serialized model and normalization object |
+| **`Accuracy_vs_Features.png`** | Feature selection performance trend |
+| **`Precision_Recall_curve.png`** | PR diagnostic curve |
 
 ---
 
