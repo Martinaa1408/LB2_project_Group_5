@@ -1,7 +1,7 @@
 # LAB2_project – Features extraction
 
 This folder contains the notebook dedicated to the **Feature extraction** phase of the project: `Features_extraction_SVM.ipynb`.  
-The main goal is to translate biological sequences into **numerical representations** that describe the biochemical characteristics of their **N-terminal region** — the part where signal peptides (SPs) are located.
+The main goal is to translate biological sequences into **numerical representations** that describe the biochemical characteristics of their **N-terminal region** the part where signal peptides (SPs) are located.
 
 ---
 
