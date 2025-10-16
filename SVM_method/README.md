@@ -25,13 +25,10 @@ For non-linear data, the **RBF (Radial Basis Function) kernel** projects samples
 
 The optimization problem:
 ```math
-\[
 \min_{w,b,\xi} \frac{1}{2}\|w\|^2 + C\sum_i \xi_i
 \quad \text{s.t.} \quad y_i (w \cdot \phi(x_i) + b) \ge 1 - \xi_i
-\]
-```
-where 
-```
+
+where:
 - \(C\) controls the **regularization strength**,  
 - \(\phi(x)\) is the **feature mapping function**,  
 - \(\xi_i\) are **slack variables** allowing soft margins.
