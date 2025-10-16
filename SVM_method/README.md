@@ -1,11 +1,11 @@
 # LAB2_project – SVM Method
 
 This directory contains the **Support Vector Machine (SVM)** module of the project.  
-It represents the **classification and optimization phase**, where the model is trained on the numerical features produced during the [`Features_extraction`](../Features_extraction/) stage.
+It represents the **classification and optimization phase**, where the model is trained on the numerical features produced during the [Features_extraction](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/Features_extraction) stage.
 
 The goal is to train a supervised classifier able to distinguish **signal peptide (SP)** from **non-SP** sequences based on physicochemical and compositional features extracted from the N-terminal region.
 
-→ Notebook: `SVM_Method.ipynb`
+→ Notebook: [SVM_Method.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/SVM_Method.ipynb)
 
 ---
 
@@ -127,10 +127,10 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 | Plot | Description | File |
 |------|--------------|------|
-| **Confusion Matrix** | Visualization of classification outcomes. | `Plots/confusion_matrix.png` |
-| **Validation Accuracy vs Top k Features** | SVM accuracy trend across selected feature subsets. | `Plots/Accuracy_vs_Features.png` |
-| **Random Forest Gini Importances** | Barplot of top biophysical feature contributions. | `Plots/RF_Gini_importance.png` |
-| **Precision–Recall Curve** | Trade-off between model precision and recall across thresholds. | `Plots/Precision_Recall_curve.png` |
+| **Confusion Matrix** | Visualization of classification outcomes. | [confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/confusion_matrix.png) |
+| **Validation Accuracy vs Top k Features** | SVM accuracy trend across selected feature subsets. | [Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/Accuracy_vs_Features.png) |
+| **Random Forest Gini Importances** | Barplot of top biophysical feature contributions. | [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/RF_Gini_importance.png) |
+| **Precision–Recall Curve** | Trade-off between model precision and recall across thresholds. | [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/Precision_Recall_curve.png) |
 
 ---
 
@@ -138,11 +138,11 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 | File | Description |
 |------|--------------|
-| **`final_svm_metrics.tsv`** | Summary of final performance metrics |
-| **`confusion_matrix.png`** | Visualization of classification results |
-| **`RF_Gini_importance.png`** | Feature importance plot |
-| **`Accuracy_vs_Features.png`** | Feature selection performance trend |
-| **`Precision_Recall_curve.png`** | PR diagnostic curve |
+| **[final_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/final_svm_metrics.tsv)** | Summary of final performance metrics |
+| **[confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/confusion_matrix.png)** | Visualization of classification results |
+| **[RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/RF_Gini_importance.png)** | Feature importance plot |
+| **[Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/Accuracy_vs_Features.png)** | Feature selection performance trend |
+| **[Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/SVM_Method/Plots/Precision_Recall_curve.png)** | PR diagnostic curve |
 
 ---
 
@@ -154,4 +154,4 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 ---
 
-**Next step →** Integrate SVM results with the rule-based *von Heijne* method and perform final comparative evaluation in the [`Evaluation_and_Comparison`](../Evaluation_and_Comparison)  module.
+**Next step →** Integrate SVM results with the rule-based *von Heijne* method and perform final comparative evaluation in the [Evaluation_and_Comparison](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/Evaluation_and_Comparison)  module.
