@@ -1,6 +1,6 @@
 # LAB2_project – Features extraction
 
-This folder contains the notebook dedicated to the **Feature extraction** phase of the project: `Features_extraction_SVM.ipynb`.  
+This folder contains the notebook dedicated to the **Feature extraction** phase of the project: [Features_extraction_SVM.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Features_extraction/Features_extraction_SVM.ipynb)  
 The main goal is to translate biological sequences into **numerical representations** that describe the biochemical characteristics of their **N-terminal region** the part where signal peptides (SPs) are located.
 
 ---
@@ -49,7 +49,7 @@ These resources were used to define custom **property dictionaries**, ensuring t
 
 | File | Description |
 |------|--------------|
-| **`ML_features.tsv`** | Final feature matrix (rows = proteins, columns = extracted features). |
+| **[ML_features.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Features_extraction/ML_features.tsv)** | Final feature matrix (rows = proteins, columns = extracted features). |
 
 This file will be used as input for the next stage: **SVM model implementation and feature selection**.
 
