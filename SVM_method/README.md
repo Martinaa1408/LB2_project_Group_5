@@ -30,7 +30,7 @@ The optimization problem:
 ```
 where:
 - (C) controls the **regularization strength**,  
-- (phi(x)) is the **feature mapping function**,  
+- ϕ(xi) is the **feature mapping function**,  
 - (xi_i) are **slack variables** allowing soft margins.
 
 This formulation ensures a trade-off between **margin maximization** and **classification flexibility**, preventing overfitting on noisy biological data.
