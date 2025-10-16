@@ -91,11 +91,11 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 
 - [**Supplementary_materials/**](./Supplementary_materials)
   Additional resources, figures, and intermediate files supporting the main notebooks and report.  
-  → `Support_materials_LB2_Group5.pdf`.
+  → PDF document: `Support_materials_LB2_Group5.pdf`.
 
 - [**Report/**](./Report)
   PDF version of the final report related to the project.
-  → `Report_LB2_Group5.pdf`
+  →PDF document: `Report_LB2_Group5.pdf`
   
 - [**README.md**](./README.md)  
   General project overview and workflow description.
