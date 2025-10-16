@@ -74,3 +74,10 @@ For the cleavage-site motifs we used **Logomaker** inside the notebook and **Web
 ---
 
 This set of analyses ensures that our datasets are well characterized and provides biological validation of known SP features, while also highlighting potential biases that could influence downstream machine learning models.
+
+---
+
+**Next step →** The results of the exploratory analysis serve as the foundation for the [von_Heijne](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/von_Heijne) module,  
+where a rule-based statistical model is implemented to identify conserved cleavage-site motifs using the **Position-Specific Weight Matrix (PSWM)** approach.  
+This stage provides an interpretable baseline for comparison with machine learning classifiers trained on the extracted features.
+
