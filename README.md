@@ -76,15 +76,16 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 - [**von_Heijne/**](./von_Heijne)  
   Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
   → Main notebook: `vonHeijne.ipynb`
+  
+- [**Features_extraction/**](./Features_extraction)
+  → Main notebook:
 
 - [**SVM_method/**](./SVM_method)
-  
   → Main notebook: 
 
 - [**Supplementary_materials/**](./Supplementary_materials)
   
 - [**Report/**](./Report)
-  
   PDF version of the final report related to the project.
   
 - [**README.md**](./README.md)  
@@ -130,6 +131,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - **[NumPy](https://numpy.org/doc/stable/)** — numerical computation and matrix operations  
 - **[Seaborn](https://seaborn.pydata.org/)** — statistical data visualization
 - **[ProtScale (ExPASy)](https://web.expasy.org/protscale/)** — computation of physicochemical property scales (e.g. hydrophobicity)
+- **AAindex: [https://www.genome.jp/aaindex/](https://www.genome.jp/aaindex/)**
 - **[SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)** — summary of protein counts, taxonomy coverage, and annotation status in                        UniProtKB/SwissProt releases.
 - **[WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)** — tool for visualizing sequence motifs and residue conservation (used for cleavage site motif analysis).
 - **Bash utils** — quick FASTA/TSV operations  
@@ -140,5 +142,8 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 
 ### Key references
 - UniProt Consortium (2023). *UniProt: the Universal Protein Knowledgebase.* **Nucleic Acids Research**.  
-- von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.  
+- von Heijne G. (1986). *A new method for predicting signal sequence cleavage sites.* **Nucleic Acids Research**.
+- Kyte J. & Doolittle R.F. (1982). *A simple method for displaying the hydropathic character of a protein.* **J. Mol.        Biol.**  
+- Chou P.Y. & Fasman G.D. (1978). *Prediction of protein conformation.* **Biochemistry**.
+- Grantham, R. (1974). *Amino acid difference formula to help explain protein evolution.* **Science**.  
 - [scikit-learn SVM documentation](https://scikit-learn.org/stable/modules/svm.html)
