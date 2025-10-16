@@ -140,7 +140,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - **[NumPy](https://numpy.org/doc/stable/)** — numerical computation and matrix operations  
 - **[Seaborn](https://seaborn.pydata.org/)** — statistical data visualization
 - **[ProtScale (ExPASy)](https://web.expasy.org/protscale/)** — computation of physicochemical property scales (e.g. hydrophobicity)
-- **AAindex: [https://www.genome.jp/aaindex/](https://www.genome.jp/aaindex/)**
+- **[AAindex](https://www.genome.jp/aaindex/)** - is a curated database of numerical indices describing the physicochemical and biochemical properties of amino acids.
 - **[SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)** — summary of protein counts, taxonomy coverage, and annotation status in                        UniProtKB/SwissProt releases.
 - **[WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)** — tool for visualizing sequence motifs and residue conservation (used for cleavage site motif analysis).
 - **Bash utils** — quick FASTA/TSV operations  
