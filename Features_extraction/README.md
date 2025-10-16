@@ -51,7 +51,7 @@ These resources were used to define custom **property dictionaries**, ensuring t
 |------|--------------|
 | **`ML_features.tsv`** | Final feature matrix (rows = proteins, columns = extracted features). |
 
-This file will be used as input for the next stage — **SVM model implementation and feature selection**.
+This file will be used as input for the next stage: **SVM model implementation and feature selection**.
 
 ---
 
