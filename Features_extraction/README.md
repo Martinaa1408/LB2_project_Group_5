@@ -1,49 +1,59 @@
-# LAB2_project - Features Extraction
+# LAB2_project – Features extraction
 
-This module implements the **feature extraction and selection stage** of the LB2 Signal Peptide Prediction project.  
-The aim is to represent each protein sequence as a **numerical feature vector**, capturing both **compositional** and **physicochemical** information from its **N-terminal region** — the portion most relevant to signal peptide (SP) identification.
-
----
-
-## Concept
-Machine learning models require numeric input.  
-To predict biological properties from sequences, each protein is **encoded** through a set of **biochemical descriptors** that summarize:
-- Amino acid composition (first 22 residues)
-- Local physicochemical trends (hydrophobicity, charge, α-helix, transmembrane, size)
-
-These features can later be used as input for **SVM-based classification** (see the `SVM_Method` module).
+This folder contains the notebook dedicated to the **Feature extraction** phase of the project: `Features_extraction_SVM.ipynb`.  
+The main goal is to translate biological sequences into **numerical representations** that describe the biochemical characteristics of their **N-terminal region** — the part where signal peptides (SPs) are located.
 
 ---
 
-## Workflow Summary
-| Step | Description | Output |
-|------|--------------|---------|
-| **1. Data preparation** | Merge FASTA sequences with TSV annotations for positive and negative datasets. | Combined DataFrame with `seq_id`, `sequence`, `Class`. |
-| **2. Scale definition** | Define residue property scales from ProtScale / AAindex (Kyte–Doolittle, Chou–Fasman, etc.). | Property dictionaries. |
-| **3. Feature computation** | Calculate mean and max values of physicochemical scales using sliding windows. | Numerical descriptors. |
-| **4. Amino acid composition** | Compute frequency of 20 amino acids in the first 22 residues. | 20D composition vector. |
-| **5. Feature aggregation** | Concatenate all computed descriptors into a single feature matrix. | `ML_features.tsv`. |
-| **6. Feature selection (optional)** | Identify the most informative features (RandomForest, RFE). | Reduced matrix. |
+## Objective
+To extract a consistent set of **sequence-derived descriptors** that capture the compositional and physicochemical differences between proteins containing a signal peptide (SP+) and those without (SP–).
 
----
+This step produces a feature matrix that will serve as input for the next step.
 
 ---
 
 ## Feature Overview
 
-### **Compositional Features**
-- Frequencies of the 20 standard amino acids in the **first 22 residues**.  
-- Captures the distinctive residue distribution of signal peptides (non-polar enrichment).
+| Category | Description | Purpose |
+|-----------|--------------|----------|
+| **Amino Acid Composition** | Frequency of the 20 amino acids in the **first 22 residues**. | Captures overall residue bias of SPs (hydrophobic enrichment). |
+| **Hydrophobicity** | Mean and maximum Kyte–Doolittle hydropathy values within the first 40 residues. | Quantifies the hydrophobic core typical of SPs. |
+| **Charge** | Average and net positive charge (K/R vs D/E). | Detects positively charged N-regions. |
+| **α-Helix Propensity** | Based on Chou–Fasman scale. | Reflects structural tendencies of the signal sequence. |
+| **Size / Volume** | Mean and max residue volume. | Represents steric effects in the N-terminal. |
 
-### **Physicochemical Features**
-Computed using **Biopython’s ProteinAnalysis** and numeric scales from ProtScale/AAindex:
-| Property | Description | Features |
-|-----------|-------------|-----------|
-| Hydrophobicity | Kyte–Doolittle scale | max, mean |
-| Charge | positive residue index | max, mean |
-| α-helix propensity | Chou–Fasman scale | max, mean |
-| Transmembrane propensity | TM helix scale | max, mean |
-| Size | residue volume | max, mean |
+Each sequence is represented by approximately **30 numeric features**.
 
-Total of **10 physicochemical + 20 compositional = ~30 features per sequence**.
+---
 
+## ProtScale and AAindex
+Some residue property scales used in this step were derived from:
+- **ProtScale (ExPASy)** – a collection of amino acid property scales (e.g., hydrophobicity, flexibility, charge, polarity).  
+- **AAindex** – a curated database of numerical indices representing physical and chemical properties of amino acids.
+
+These resources were used to define custom **property dictionaries**, ensuring that the computed features reflect biologically validated residue properties.
+
+---
+
+## Workflow Summary
+1. **Data loading:** import curated positive and negative sets (FASTA + TSV).  
+2. **Truncation:** select N-terminal subsequences (first 22–40 residues).  
+3. **Compositional features:** calculate relative frequency of amino acids.  
+4. **Physicochemical features:** compute mean and max values from ProtScale and AAindex scales.  
+5. **Aggregation:** combine all descriptors into a single table.  
+6. **Export:** save the final feature matrix as `ML_features.tsv`.
+
+---
+
+## Output File
+
+| File | Description |
+|------|--------------|
+| **`ML_features.tsv`** | Final feature matrix (rows = proteins, columns = extracted features). |
+
+This file will be used as input for the next stage — **SVM model implementation and feature selection**.
+
+---
+
+**Next step →** proceed to [`SVM_method`](../SVM_method)  
+where the extracted features are normalized, selected (RandomForest/RFE), and used to train the Support Vector Machine classifier.
