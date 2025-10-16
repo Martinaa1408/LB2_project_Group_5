@@ -29,9 +29,9 @@ The optimization problem:
 \quad \text{s.t.} \quad y_i (w \cdot \phi(x_i) + b) \ge 1 - \xi_i
 ```
 where:
-- (C) controls the **regularization strength**,  
+-  controls the **regularization strength**,  
 - ϕ(xi) is the **feature mapping function**,  
-- (xi_i) are **slack variables** allowing soft margins.
+- ξi are **slack variables** allowing soft margins.
 
 This formulation ensures a trade-off between **margin maximization** and **classification flexibility**, preventing overfitting on noisy biological data.
 
