@@ -78,4 +78,8 @@ This notebook:
 | Positive Set | 2,949          | 2,932             |         –              | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Collection/Positive%20Set/positive.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Collection/Positive%20Set/positive.tsv)|
 | Negative Set | 20,615         | 20,615            |    1,384                    | [FASTA](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Collection/Negative%20Set/negative.fasta) · [TSV](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Collection/Negative%20Set/negative.tsv)  |
 
+---
+
+**Next step →** The collected datasets will be used as input for the [Data_Preparation](https://github.com/Martinaa1408/LB2_project_Group_5/edit/main/Data_Preparation) module,  
+where redundancy reduction is performed using **MMseqs2** to generate clean, non-redundant sets for downstream analysis and cross-validation.
 
