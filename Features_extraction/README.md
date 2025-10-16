@@ -1,4 +1,4 @@
-# LAB2_project - Features Selection
+# LAB2_project - Features Extraction
 
 This module implements the **feature extraction and selection stage** of the LB2 Signal Peptide Prediction project.  
 The aim is to represent each protein sequence as a **numerical feature vector**, capturing both **compositional** and **physicochemical** information from its **N-terminal region** — the portion most relevant to signal peptide (SP) identification.
