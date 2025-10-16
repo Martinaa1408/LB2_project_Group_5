@@ -24,17 +24,19 @@ Support Vector Machines (SVMs) are **margin-based classifiers** that find an opt
 For non-linear data, the **RBF (Radial Basis Function) kernel** projects samples into a higher-dimensional space where separation becomes possible.
 
 The optimization problem:
-`math
-\[
-\min_{w,b,\xi} \frac{1}{2}\|w\|^2 + C\sum_i \xi_i
-\quad \text{s.t.} \quad y_i (w \cdot \phi(x_i) + b) \ge 1 - \xi_i
-\]
-`
+$$
+\begin{aligned}
+\min_{w,b,\xi} \quad & \frac{1}{2}\|w\|^2 + C \sum_i \xi_i \\
+\text{subject to} \quad & y_i \big( w \cdot \phi(x_i) + b \big) \ge 1 - \xi_i, \\
+& \xi_i \ge 0
+\end{aligned}
+$$
 
 where  
-- \(C\) controls the regularization strength,  
-- \(\phi(x)\) is the feature mapping function,  
-- and \(\xi_i\) are slack variables allowing soft margins.
+- **\(C\)** controls the *regularization strength*,  
+- **\(\phi(x)\)** is the *feature mapping function* that projects the data into a higher-dimensional space,  
+- **\(\xi_i\)** are *slack variables* that allow soft margins to handle non-separable data.
+
   
 ---
 
