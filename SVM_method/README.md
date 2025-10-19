@@ -139,7 +139,7 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 | File | Description |
 |------|--------------|
-| **[final_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/final_svm_metrics.tsv)** | Summary of final performance metrics |
+| **[final_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/final_svm_metrics.tsv)** | Summary of final performance metrics |
 | **[confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix.png)** | Visualization of classification results |
 | **[RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png)** | Feature importance plot |
 | **[Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png)** | Feature selection performance trend |
