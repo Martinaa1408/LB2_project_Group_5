@@ -5,7 +5,7 @@ It represents the **classification and optimization phase**, where the model is 
 
 The goal is to train a supervised classifier able to distinguish **signal peptide (SP)** from **non-SP** sequences based on physicochemical and compositional features extracted from the N-terminal region.
 
-→ Notebook: [SVM_Method.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/SVM_Method.ipynb)
+→ Notebook: [SVM_Method.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/SVM_Method.ipynb)
 
 ---
 
