@@ -128,10 +128,10 @@ The model demonstrates **high precision and recall**, especially for the majorit
 
 | Plot | Description | File |
 |------|--------------|------|
-| **Confusion Matrix** | Visualization of classification outcomes. | [confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/confusion_matrix.png) |
-| **Validation Accuracy vs Top k Features** | SVM accuracy trend across selected feature subsets. | [Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/Accuracy_vs_Features.png) |
-| **Random Forest Gini Importances** | Barplot of top biophysical feature contributions. | [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/RF_Gini_importance.png) |
-| **Precision–Recall Curve** | Trade-off between model precision and recall across thresholds. | [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/Precision_Recall_curve.png) |
+| **Confusion Matrix** | Visualization of classification outcomes. | [confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix.png) |
+| **Validation Accuracy vs Top k Features** | SVM accuracy trend across selected feature subsets. | [Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png) |
+| **Random Forest Gini Importances** | Barplot of top biophysical feature contributions. | [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png) |
+| **Precision–Recall Curve** | Trade-off between model precision and recall across thresholds. | [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_curve.png) |
 
 ---
 
@@ -140,10 +140,10 @@ The model demonstrates **high precision and recall**, especially for the majorit
 | File | Description |
 |------|--------------|
 | **[final_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/final_svm_metrics.tsv)** | Summary of final performance metrics |
-| **[confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/confusion_matrix.png)** | Visualization of classification results |
-| **[RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/RF_Gini_importance.png)** | Feature importance plot |
-| **[Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/Accuracy_vs_Features.png)** | Feature selection performance trend |
-| **[Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_Method/Plots/Precision_Recall_curve.png)** | PR diagnostic curve |
+| **[confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix.png)** | Visualization of classification results |
+| **[RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png)** | Feature importance plot |
+| **[Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png)** | Feature selection performance trend |
+| **[Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_curve.png)** | PR diagnostic curve |
 
 ---
 
