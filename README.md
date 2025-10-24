@@ -8,7 +8,7 @@
 [![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
 [![Feature extraction](https://img.shields.io/badge/Feature%20Extraction-PDF-yellowgreen)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
 [![SVM for SP detection](https://img.shields.io/badge/SVM%20for%20SP%20Detection-PDF-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
-[![Training Final Models and Analysis of Benchmarking Results](https://img.shields.io/badge/Download-Benchmarking%20and%20Analysis-PDF-blue.svg)](https://virtuale.unibo.it/pluginfile.php/2682977/mod_resource/content/2/06-Benchmarking%20and%20analysis%20of%20results.pdf)
+[![Training Final Models and Analysis of Benchmarking Results](https://img.shields.io/badge/Download-Benchmarking%20and%20Analysis-PDF-blue)](https://virtuale.unibo.it/pluginfile.php/2682977/mod_resource/content/2/06-Benchmarking%20and%20analysis%20of%20results.pdf)
 
 
 ## Table of Contents
@@ -68,22 +68,23 @@ Python 3.8+ is required, along with the following main libraries:
 To set up the environment and run the project, follow these steps:
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Martinaa1408/LB2_project_Group_5.git
-   cd LB2_project_Group_5
-   ```
-# 2. Create and activate a virtual environment
+  ```bash
+  git clone https://github.com/Martinaa1408/LB2_project_Group_5.git
+  cd LB2_project_Group_5
+  ```
+
+2. **Create and activate a virtual environment**
   ```bash
   python -m venv env
   source env/bin/activate        # On Windows use: env\Scripts\activate
   ```
 
-# 3. Install the required libraries
+3. **Install the required libraries**
   ```bash
   pip install numpy pandas scikit-learn matplotlib seaborn
   ```
 
-# 4. Run the main scripts
+4. **Run the main scripts**
 
 Depending on the analysis you want to perform, execute the following notebooks or scripts:
 
@@ -111,7 +112,7 @@ jupyter notebook von_Heijne/vonHeijne.ipynb
 ```bash
 jupyter notebook SVM_method/SVM_Method.ipynb
 ```
-# Evaluation and benchmarking
+- Evaluation and benchmarking
 ```bash
 jupyter notebook Evaluation_and_Comparison/Evaluation_Comparison.ipynb
 ```
