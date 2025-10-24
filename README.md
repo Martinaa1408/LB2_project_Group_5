@@ -8,7 +8,7 @@
 [![Evaluation of Classifiers](https://img.shields.io/badge/Evaluation-Classifiers-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682972/mod_resource/content/2/03-Methods-vonHeijne.pdf)
 [![Feature extraction](https://img.shields.io/badge/Feature%20Extraction-PDF-yellowgreen)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
 [![SVM for SP detection](https://img.shields.io/badge/SVM%20for%20SP%20Detection-PDF-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
-[![Training Final Models and Analysis of Benchmarking Results](https://img.shields.io/badge/Download-Benchmarking%20and%20Analysis-PDF-blue)](https://virtuale.unibo.it/pluginfile.php/2682977/mod_resource/content/2/06-Benchmarking%20and%20analysis%20of%20results.pdf)
+[![Training Final Models and Analysis of Benchmarking Results](https://img.shields.io/badge/Benchmarking%20and%20Analysis-PDF-blue)](https://virtuale.unibo.it/pluginfile.php/2682977/mod_resource/content/2/06-Benchmarking%20and%20analysis%20of%20results.pdf)
 
 
 ## Table of Contents
@@ -84,38 +84,8 @@ To set up the environment and run the project, follow these steps:
   pip install numpy pandas scikit-learn matplotlib seaborn
   ```
 
-4. **Run the main scripts**
-
-Depending on the analysis you want to perform, execute the following notebooks or scripts:
-
-- Data collection
-```bash
-jupyter notebook Data_Collection/Data_Collection.ipynb
-```
-- Data preparation
-```bash
-python Data_Preparation/get_tsv.py
-```
-- Exploratory data analysis
-```bash
-jupyter notebook Data_Analysis/DataAnalysis.ipynb
-```
-- Feature extraction
-```bash
-jupyter notebook Features_extraction/Features_extraction_SVM.ipynb
-```
-- Von Heijne signal peptide analysis
-```bash
-jupyter notebook von_Heijne/vonHeijne.ipynb
-```
-- Model training (SVM)
-```bash
-jupyter notebook SVM_method/SVM_Method.ipynb
-```
-- Evaluation and benchmarking
-```bash
-jupyter notebook Evaluation_and_Comparison/Evaluation_Comparison.ipynb
-```
+4. **Run the Main Scripts**
+   
 ---
 
 ## Repository Structure
