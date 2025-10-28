@@ -123,7 +123,7 @@ The model shows **consistent behavior** with the cross-validation phase, maintai
 This confirms the **robustness and interpretability** of the Von Heijne approach as a strong **baseline model** for signal peptide prediction.
 
 
---> The test sequences used for this benchmarking are provided in `vonHeijne_pos_test.tsv` and `vonHeijne_neg_test.tsv`, while `vonHeijne_final.tsv`
+The test sequences used for this benchmarking are provided in `vonHeijne_pos_test.tsv` and `vonHeijne_neg_test.tsv`, while `vonHeijne_final.tsv`
  contains all predicted scores and final classifications.
 
 ---
