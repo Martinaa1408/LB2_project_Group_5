@@ -111,8 +111,7 @@ Reported in the file: [vonHeijne_bench_res.txt](https://github.com/Martinaa1408/
 **Confusion Matrix:**
 <p align="center">
 
-[1707   80]  
-[ 60   159]
+$$\begin{bmatrix} 1707 & 80 \\ 60 & 159 \end{bmatrix}$$
 
 </p>
 
