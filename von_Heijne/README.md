@@ -109,14 +109,11 @@ Reported in the file: [vonHeijne_bench_res.txt](https://github.com/Martinaa1408/
 | Threshold   | 1.824     |
 
 **Confusion Matrix:**
+
 <p align="center">
 
-\[
-\begin{bmatrix}
-1707 & 80 \\
-60 & 159
-\end{bmatrix}
-\]
+[1707   80]
+[ 60   159]
 
 </p>
 
