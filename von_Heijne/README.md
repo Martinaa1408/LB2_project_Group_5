@@ -88,7 +88,33 @@ Detailed results of each fold are provided in [results_cv_set.txt](https://githu
 - Performance is consistent across folds.  
 - MCC remains stable (0.65–0.73), robust against class imbalance.  
 - Fold 5 shows higher sensitivity but slightly lower precision.
-  
+---
+
+## **Benchmarking**
+
+After model optimization through cross-validation, the final evaluation was performed on an **independent test set** to assess the generalization ability of the Von Heijne statistical model.
+Each sequence was scanned using the PSWM across the N-terminal region, and the **maximum score** was compared to the optimized threshold (**1.82**) to determine the presence of a signal peptide.
+
+### Final Test Metrics
+
+Reported in the file: [vonHeijne_bench_res.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne_bench_res.txt)
+
+| **Metric**  | **Value** |
+| ----------- | --------- |
+| Accuracy    | 0.930     |
+| PPV         | 0.665     |
+| Sensitivity | 0.726     |
+| F1 Score    | 0.694     |
+| MCC         | 0.656     |
+| Threshold   | 1.824     |
+
+**Confusion Matrix:**
+[[1707, 80], [60, 159]]
+
+**Observation:**
+The model shows **consistent behavior** with the cross-validation phase, maintaining a good balance between **precision** and **sensitivity**.
+This confirms the **robustness and interpretability** of the Von Heijne approach as a strong **baseline model** for signal peptide prediction.
+
 ---
 
 ## **About NumPy**
