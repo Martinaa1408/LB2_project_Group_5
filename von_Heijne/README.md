@@ -109,6 +109,7 @@ Reported in the file: [vonHeijne_bench_res.txt](https://github.com/Martinaa1408/
 | Threshold   | 1.824     |
 
 **Confusion Matrix:**
+
 <p align="center">
 
 | | Predicted Negative | Predicted Positive |
@@ -117,6 +118,7 @@ Reported in the file: [vonHeijne_bench_res.txt](https://github.com/Martinaa1408/
 | **Actual Positive** | 60 | 159 |
 
 </p>
+
 
 **Observation:**
 The model shows **consistent behavior** with the cross-validation phase, maintaining a good balance between **precision** and **sensitivity**.
