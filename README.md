@@ -172,6 +172,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - **[AAindex](https://www.genome.jp/aaindex/)** - is a curated database of numerical indices describing the physicochemical and biochemical properties of amino acids.
 - **[SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)** — summary of protein counts, taxonomy coverage, and annotation status in                        UniProtKB/SwissProt releases.
 - **[WebLogo generator](https://weblogo.berkeley.edu/logo.cgi)** — tool for visualizing sequence motifs and residue conservation (used for cleavage site motif analysis).
+- **[PyTorch](https://www.geeksforgeeks.org/deep-learning/getting-started-with-pytorch/)** — deep learning framework for neural network modeling.
 - **Bash utils** — quick FASTA/TSV operations  
 - **Jupyter / Google Colab** — environment for interactive workflows  
 - **conda environment tools** — package and environment management  
