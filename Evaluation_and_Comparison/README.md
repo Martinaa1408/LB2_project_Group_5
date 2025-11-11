@@ -35,13 +35,11 @@ To evaluate and compare the performance of the **Von Heijne rule-based method** 
 
 | Metric | Von Heijne | SVM |
 |:-------|:-----------:|:---:|
-| **Accuracy** | 0.884 | **0.971** |
-| **Precision** | 0.824 | **0.902** |
-| **Recall (TPR)** | 0.801 | **0.853** |
-| **Specificity (TNR)** | 0.902 | **0.986** |
-| **F1-score** | 0.812 | **0.877** |
-| **MCC** | 0.742 | **0.857** |
-| **ROC-AUC** | 0.905 | **0.981** |
+| **Accuracy** | 0.930 | **0.953** |
+| **Precision** | 0.665 | **0.796** |
+| **Recall (TPR)** | 0.726 | **0.767** |
+| **F1-score** | 0.694 | **0.781** |
+| **MCC** | 0.656 | **0.755** |
 
 **Interpretation:**  
 The SVM outperforms the Von Heijne model across all metrics, achieving both higher sensitivity and specificity.  
@@ -54,7 +52,15 @@ The rule-based matrix remains a valuable baseline for motif interpretation and b
 | Model | True Negatives | False Positives | False Negatives | True Positives |
 |--------|----------------|-----------------|-----------------|----------------|
 | **Von Heijne** | 1707 | 80 | 60 | 159 |
-| **SVM** | 1594 | 193 | 201 | 181 |
+| **SVM** | 1594 | 193 | 201 | 18 |
+
+Von heijne: 
+FP: 80 
+FN: 60
+
+SVM:
+FP: 193
+FN: 201
 
 **Interpretation:**  
 - **Von Heijne** is conservative and misses some true SPs (higher FN).  
@@ -62,7 +68,7 @@ The rule-based matrix remains a valuable baseline for motif interpretation and b
 
 ---
 
-## 🔬 False Positive Analysis
+## False Positive Analysis
 
 ### (a) **By Transmembrane Content**
 | Method | FP Transmembrane (%) | FP Non-Transmembrane (%) |
