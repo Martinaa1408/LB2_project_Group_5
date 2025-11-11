@@ -268,3 +268,4 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - Chou P.Y. & Fasman G.D. (1978). *Prediction of protein conformation.* **Biochemistry**.
 - Grantham, R. (1974). *Amino acid difference formula to help explain protein evolution.* **Science**.  
 - [scikit-learn SVM documentation](https://scikit-learn.org/stable/modules/svm.html)
+- [MLP-tensorflow](https://www.geeksforgeeks.org/deep-learning/multi-layer-perceptron-learning-in-tensorflow/)
