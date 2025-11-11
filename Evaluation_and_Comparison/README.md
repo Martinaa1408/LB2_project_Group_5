@@ -62,10 +62,6 @@ This trade-off reflects their distinct nature: heuristic motif scoring versus le
 - Von Heijne achieves higher recall but is more prone to FP misclassifications caused by transmembrane helices.  
 - SVM minimizes FP but occasionally fails on marginal or short SPs, leading to slightly higher FN.
 
-<p align="center">
-  <img src="./Plots/FP_comparisons.png" width="70%">
-</p>
-
 ---
 
 ## False Positive Analysis
@@ -79,12 +75,6 @@ This trade-off reflects their distinct nature: heuristic motif scoring versus le
 The rule-based PSWM often confuses hydrophobic transmembrane helices with SPs due to similar N-terminal composition.  
 The SVM integrates additional descriptors (charge, TM propensity, size) that reduce this bias.
 
-<p align="center">
-  <img src="./Plots/FP_comparisons.png" width="70%">
-</p>
-
----
-
 ### (b) By Taxonomic Kingdom
 | Kingdom | Von Heijne FP (%) | SVM FP (%) |
 |----------|-------------------|-------------|
@@ -96,10 +86,6 @@ The SVM integrates additional descriptors (charge, TM propensity, size) that red
 Von Heijne is tuned toward **Metazoan** sequences, while the SVM distributes errors more evenly.  
 Fungal sequences remain a weak point for both methods due to taxon-specific motif deviations.
 
-<p align="center">
-  <img src="./Plots/FP_kingdom_comparisons.png" width="70%">
-</p>
-
 ---
 
 ## Motif Consistency and Length Distribution
@@ -110,18 +96,10 @@ Figures show the cleavage-site sequence logos and SP length profiles.
 - **False Negatives (FN)** display weakened `[A,V]XA` motifs and reduced upstream hydrophobicity.  
 - **True Positives (TP)** retain canonical hydrophobic H-regions with the sharp H→C transition expected by Von Heijne’s rule.
 
-<p align="center">
-  <img src="./Plots/logo_vonheijne_FN.png" width="45%"> 
-  <img src="./Plots/logo_vonheijne_TP.png" width="45%">
-</p>
 
 **Signal Peptide Length Profile:**  
 SPs cluster around **22 amino acids**, typical for eukaryotic signals.  
 Misclassified SPs are often **shorter (<18 aa)** or **longer (25–30 aa)**, the latter primarily in fungal and plant proteins.
-
-<p align="center">
-  <img src="./Plots/SP_lengths.png" width="70%">
-</p>
 
 ---
 
@@ -130,10 +108,6 @@ Misclassified SPs are often **shorter (<18 aa)** or **longer (25–30 aa)**, the
 True positives display higher frequencies of **L, A, V**, defining the hydrophobic core critical for translocation.  
 False negatives are enriched in **S, T, D, E**, polar residues that weaken hydrophobic signal and cleavage recognition.  
 These patterns confirm that misclassifications originate from compositional shifts, not annotation bias.
-
-<p align="center">
-  <img src="./Plots/residues_composition.png" width="70%">
-</p>
 
 ---
 
@@ -144,15 +118,6 @@ Feature distributions (hydrophobicity, charge, TM propensity, etc.) reveal disti
 - **Charge (mean/max):** reduced in FN sequences  
 - **TM Propensity:** elevated in FP regions  
 - **Hydrophobicity:** remains the main discriminant feature
-
-<p align="center">
-  <img src="./Plots/FN_features_distribution.png" width="45%">
-  <img src="./Plots/TP_features_distribution.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="./Plots/boxplots_features_distribution_comparison.png" width="70%">
-</p>
 
 ---
 
@@ -166,21 +131,21 @@ Overall, both models capture biologically meaningful trends:
 > In conclusion, SPs generally show enrichment in **L, A, V, M**, a conserved `[A,V]XA` motif, and average lengths around 22 residues.  
 > FNs exhibit polar enrichment (S, T, D, E) and shortened hydrophobic cores (<18 aa), confirming that **compositional variability** is the main cause of reduced recognition.
 
+
 ---
 
 ## Output Files
 
 | File | Description |
 |------|--------------|
-| `metrics_comparison.tsv` | Quantitative performance summary |
-| `confusion_matrices.png` | Confusion matrix visualization |
-| `FP_comparisons.png` | FP composition and TM bias |
-| `FP_kingdom_comparisons.png` | FP distribution by kingdom |
-| `residues_composition.png` | Amino acid frequency plot |
-| `SP_lengths.png` | Signal peptide length distribution |
-| `FN_features_distribution.png`, `TP_features_distribution.png` | Density plots for main features |
-| `boxplots_features_distribution_comparison.png` | Feature-level TP vs. FN comparison |
-| `logo_vonheijne_FN.png`, `logo_vonheijne_TP.png` | Sequence logos around cleavage sites |
+| [metrics_comparison] | Quantitative performance summary |
+| [FP_comparisons](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/FP_comparisons.png) | FP composition and TM bias |
+| [FP_kingdom_comparisons](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/FP_kingdom_comparisons.png) | FP distribution by kingdom |
+| [residues_composition](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/residues_composition.png) | Amino acid frequency plot |
+| [SP_lengths.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/SP_lenghts.png) | Signal peptide length distribution |
+| [FN_features_distribution](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/FN_features_distribution.png), [TP_features_distribution](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/TP_features_distribution.png) | Density plots for main features |
+| [boxplots_features_distribution_comparison](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/boxplots_features_distribution_comparison.png) | Feature-level TP vs. FN comparison |
+| [logo_vonheijne_FN.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/logo_vonheijne_FN.png), [logo_vonheijne_TP.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/logo_vonheijne_TP.png) | Sequence logos around cleavage sites |
 
 ---
 
