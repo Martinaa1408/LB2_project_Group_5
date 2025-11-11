@@ -92,7 +92,7 @@ To set up the environment and run the project, follow these steps:
 
 - [**Data_Collection/**](./Data_Collection)  
   Retrieval of raw datasets from UniProtKB.  
-  → Main notebook: `Data_Collection.ipynb`
+  → Main notebook: [`Data_Collection.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Collection/Data_Collection.ipynb)
 
 - [**Data_Preparation/**](./Data_Preparation)  
   Redundancy reduction with MMseqs2 and generation of train/benchmark sets with CV folds.  
@@ -100,23 +100,27 @@ To set up the environment and run the project, follow these steps:
 
 - [**Data_Analysis/**](./Data_Analysis)  
   Exploratory analysis of datasets (length distributions, amino acid composition, taxonomy, cleavage motifs).  
-  → Main notebook: `DataAnalysis.ipynb`
+  → Main notebook: [`DataAnalysis.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Analysis/DataAnalysis.ipynb)
 
 - [**von_Heijne/**](./von_Heijne)  
   Implementation of the von Heijne (1986) statistical method for SP cleavage site prediction.  
-  → Main notebook: `vonHeijne.ipynb`
+  → Main notebook: [`vonHeijne.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/von_Heijne/vonHeijne.ipynb)
   
 - [**Features_extraction/**](./Features_extraction)
   Feature extraction from N-terminal regions (AA composition + physicochemical scales) and export of the feature matrix.  
-  → Main notebook: `Features_extraction_SVM.ipynb`
+  → Main notebook: [`Features_extraction_SVM.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Features_extraction/Features_extraction_SVM.ipynb)
 
 - [**SVM_method/**](./SVM_method)
   Implementation of the Support Vector Machine (SVM) classifier with feature selection and hyperparameter optimization.  
-  → Main notebook: `SVM_Method.ipynb`
+  → Main notebook: [`SVM_Method.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/SVM_Method.ipynb)
 
 - [**Evaluation_and_Comparison/**](./Evaluation_and_Comparison)
   Comparative analysis of SVM and von Heijne models using independent test sets and performance metrics visualization.  
-  → Main notebook: `Evaluation_Comparison.ipynb`
+  → Main notebook: [`Evaluation_and_Comparisons.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison_Collection/Evaluation_and_comparisons.ipynb)
+  
+- [**Deep_Learning/**](./Deep_Learning)
+  
+  → Main notebook: [`DL_analysis.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_analysis.ipynb)
 
 - [**Supplementary_materials/**](./Supplementary_materials)
   Additional resources, figures, and intermediate files supporting the main notebooks and report.  
