@@ -136,6 +136,89 @@ To set up the environment and run the project, follow these steps:
 
 ## Results Summary
 
+This section summarizes the core data, feature extraction, and predictive performance achieved by the two implemented models — **Von Heijne (rule-based)** and **SVM (RBF kernel)**.
+
+### Data Collection & Curation
+
+| Phase | Description | SP⁺ | SP⁻ | Total | Notes |
+|:------|--------------|----:|----:|------:|:------|
+| **Raw UniProtKB** | Manually reviewed *S. cerevisiae* proteins with signal peptide annotation | 2,932 | 20,615 | 23,547 | Experimental annotations only |
+| **After MMseqs2 clustering (30% ID)** | Non-redundant representative sequences | 1,093 | 8,934 | 10,027 | Removes homolog redundancy |
+| **Final dataset split** | 80% training + 20% independent benchmark | 874 | 7,147 | 8,021 (train) <br> 219 / 1,787 (bench) | Balanced and taxonomically representative |
+
+### Feature Extraction Summary
+
+| Feature Category | Description | Example Features | Count |
+|:------------------|-------------|------------------|------:|
+| **Amino acid composition** | Residue frequencies in N-terminal region (–30 to +2 aa) | comp_L, comp_A, comp_V | 20 |
+| **Hydrophobicity** | Kyte–Doolittle mean & max | hydro_mean, hydro_max | 2 |
+| **Charge distribution** | Mean charge, max charge | charge_mean, charge_max | 2 |
+| **Secondary structure** | α-helix propensity (Chou–Fasman scale) | alpha_mean, alpha_max | 2 |
+| **Transmembrane propensity** | Mean & max TM index | trans_mean, trans_max | 2 |
+| **Residue size/volume** | Mean and maximum residue volume | size_mean, size_max | 2 |
+
+| Total features extracted | 29 |
+| Features selected for SVM (RF importance) | **15** |
+
+### Model Training and Optimization
+
+| Step | Method | Details / Parameters | Output |
+|:------|:--------|:--------------------|:---------|
+| **Model 1** | **Von Heijne (rule-based)** | Position-Specific Weight Matrix (PSWM), optimized threshold by MCC | Cleavage-site scoring function |
+| **Model 2** | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, kernel = RBF; Stratified 5-fold CV | Trained classifier on 15 features |
+
+### Quantitative Performance
+
+#### Internal Evaluation (Training / Validation Set)
+
+| Metric | Von Heijne | SVM (RBF) |
+|:--------|------------:|----------:|
+| **Accuracy** | 0.930 | **0.972** |
+| **Precision** | 0.665 | **0.896** |
+| **Recall (TPR)** | 0.726 | **0.846** |
+| **F1-score** | 0.694 | **0.870** |
+| **MCC** | 0.656 | **0.855** |
+| **ROC–AUC** | 0.905 | **0.980** |
+
+#### External Evaluation (Independent Benchmark)
+
+| Metric | Von Heijne | SVM (RBF) |
+|:--------|------------:|----------:|
+| **Accuracy** | 0.930 | **0.953** |
+| **Precision** | 0.665 | **0.796** |
+| **Recall (TPR)** | 0.726 | **0.767** |
+| **F1-score** | 0.694 | **0.781** |
+| **MCC** | 0.656 | **0.755** |
+
+### Comparative Summary
+
+| Model | Type | Accuracy | Precision | Recall | F1 | MCC | Strength |
+|:-------|:------|----------:|-----------:|--------:|----:|----:|:----------|
+| **Von Heijne** | Rule-based (PSWM) | 0.930 | 0.665 | 0.726 | 0.694 | 0.656 | Interpretable, motif-driven |
+| **SVM (RBF)** | Machine Learning | **0.953** | **0.796** | **0.767** | **0.781** | **0.755** | Best overall performance |
+
+### Key Observations
+
+| Aspect | Von Heijne | SVM |
+|:--------|:-------------|:----|
+| **False Positives (FP)** | Hydrophobic TM helices (Metazoa bias) | Strongly reduced; fewer TM-related misclassifications |
+| **False Negatives (FN)** | Short or polar SPs (<18 aa) | Borderline SPs with weak α-helix signals |
+| **Motif capture** | Conserved `[A,V]XA` cleavage motif | Broader tolerance to sequence variability |
+| **SP mean length** | 22.4 aa | 21.9 aa |
+| **Interpretability** | High (biological motifs visible) | Moderate (feature-dependent) |
+
+### Final Summary Table
+
+| Dataset | Model | Accuracy | F1-score | MCC | Best For |
+|:--------|:-------|----------:|----------:|----------:|:----------|
+| **Training / Validation** | Von Heijne | 0.930 | 0.694 | 0.656 | Baseline biological interpretability |
+| | SVM (RBF) | **0.972** | **0.870** | **0.855** | Pattern learning and discrimination |
+| **Benchmark (Independent)** | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
+| | SVM (RBF) | **0.953** | **0.781** | **0.755** | Robust generalization |
+ 
+The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.  
+The **Von Heijne PSWM** remains biologically interpretable and complements the SVM by providing motif-level insight into cleavage-site conservation.
+
 ---
 
 ## Authors
