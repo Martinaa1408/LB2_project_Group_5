@@ -22,7 +22,7 @@ This step produces a feature matrix that will serve as input for the next step.
 | **α-Helix Propensity** | Based on Chou–Fasman scale. | Reflects structural tendencies of the signal sequence. |
 | **Size / Volume** | Mean and max residue volume. | Represents steric effects in the N-terminal. |
 
-Each sequence is represented by approximately **30 numeric features**.
+Each sequence is represented by **29 numeric features**.
 
 ---
 
