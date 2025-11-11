@@ -178,11 +178,11 @@ MCC values above 0.75 indicate strong predictive correlation and minimal bias to
 
 | File | Description |
 |------|--------------|
-| [training_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_.png)**  | Summary of model performance metrics |
-| `confusion_matrix.png`( | Final confusion matrix |
-| `RF_Gini_importance.png` | Feature importance visualization |
-| `Accuracy_vs_Features.png` | Feature selection performance trend |
-| `Precision_Recall_curve.png` | PR diagnostic curve |
+| [training_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/.png)**  | Summary of model performance metrics |
+| [confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix.png) | Final confusion matrix |
+| [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png) | Feature importance visualization |
+| [Accuracy_vs_Features](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png) | Feature selection performance trend |
+| [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_curve.png) | PR diagnostic curve |
 
 ---
 
