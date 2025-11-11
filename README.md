@@ -150,7 +150,7 @@ This section summarizes the core data, feature extraction, and predictive perfor
 
 | Feature Category | Description | Example Features | Count |
 |:------------------|-------------|------------------|------:|
-| **Amino acid composition** | Residue frequencies in N-terminal region (–30 to +2 aa) | comp_L, comp_A, comp_V | 20 |
+| **Amino acid composition** | Residue frequencies in N-terminal region (–30 to +2 aa) | comp_L, comp_A, comp_V | 19 |
 | **Hydrophobicity** | Kyte–Doolittle mean & max | hydro_mean, hydro_max | 2 |
 | **Charge distribution** | Mean charge, max charge | charge_mean, charge_max | 2 |
 | **Secondary structure** | α-helix propensity (Chou–Fasman scale) | alpha_mean, alpha_max | 2 |
