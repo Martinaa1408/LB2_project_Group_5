@@ -204,7 +204,7 @@ Features selected for SVM (RF importance): **15**
 
 | Dataset | Model | Accuracy | F1-score | MCC | Best For |
 |:--------|:-------|----------:|----------:|----------:|:----------|
-| **Training / Validation** | Von Heijne | 0.930 | 0.694 | 0.656 | Baseline biological interpretability |
+| **Training / Validation** | Von Heijne | 0.930 | 0.728 | 0.697 | Baseline biological interpretability |
 | | SVM (RBF) | **0.972** | **0.870** | **0.855** | Pattern learning and discrimination |
 | **Benchmark (Independent)** | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
 | | SVM (RBF) | **0.953** | **0.781** | **0.755** | Robust generalization |
