@@ -24,13 +24,13 @@ The aim of this analysis is to quantitatively and qualitatively assess the predi
 
 ## Workflow Summary
 
-| Step | Description | Output |
-|------|--------------|--------|
-| **1. Benchmark dataset** | Curated subset of SP⁺ and SP⁻ proteins (SwissProt Yeast) | `benchmark_set.tsv` |
-| **2. Model training** | PSWM built on canonical motifs; SVM retrained on extracted physicochemical features | Trained models |
-| **3. Prediction** | Classification of unseen benchmark proteins | `predictions_vonHeijne.tsv`, `predictions_SVM.tsv` |
-| **4. Evaluation** | Metric computation and confusion matrices | `metrics_comparison.tsv` |
-| **5. Biological analysis** | Cleavage motif, AA composition, length, TM bias | Comparative plots |
+| Step | Description | 
+|------|--------------|
+| **1. Benchmark dataset** | Curated subset of SP⁺ and SP⁻ proteins `benchmark_set.tsv` |
+| **2. Model training** | PSWM built on canonical motifs; SVM retrained on extracted physicochemical features |
+| **3. Prediction** | Classification of unseen benchmark proteins | 
+| **4. Evaluation** | Metric computation and confusion matrices | 
+| **5. Biological analysis** | Cleavage motif, AA composition, length, TM bias | 
 
 ---
 
