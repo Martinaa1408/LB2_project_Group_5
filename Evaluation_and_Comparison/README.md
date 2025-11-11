@@ -1,21 +1,24 @@
 # LAB2 Project – Evaluation and Comparison of Methods
 
-This directory summarizes the **final benchmarking and comparative evaluation** of the two predictive approaches implemented for **signal peptide (SP) prediction**:
+This section presents the **final benchmarking and comparative evaluation** of two predictive strategies for **signal peptide (SP) prediction**:
 
 | Method | Type | Implementation |
 |---------|------|----------------|
 | **Von Heijne** | Rule-based | Position-Specific Weight Matrix (PSWM) |
 | **SVM** | Machine Learning | Support Vector Machine (RBF kernel, optimized) |
 
-→ Notebook: Evaluation_and_comparison.ipynb
+ **Notebook:** `Evaluation_and_comparison.ipynb`  
+
 
 ## Objective
 
-To evaluate and compare the performance of the **Von Heijne rule-based method** and the **SVM classifier** on the **benchmark dataset**, analyzing:
-- classification metrics and confusion matrices,  
-- false positive (FP) and false negative (FN) distributions,  
-- amino acid and SP length characteristics of misclassified proteins,  
-- feature-level deviations between correctly and incorrectly predicted signal peptides.
+The aim of this analysis is to quantitatively and qualitatively assess the predictive behavior of the **Von Heijne** model and the **SVM classifier** on an independent benchmark dataset, focusing on:
+
+- **Classification metrics** and confusion matrices  
+- **False positive (FP)** and **false negative (FN)** trends  
+- **Cleavage-site motif conservation**  
+- **Amino acid composition** and **signal peptide length**  
+- **Feature-level deviations** (hydrophobicity, charge, TM propensity)
 
 ---
 
@@ -23,15 +26,15 @@ To evaluate and compare the performance of the **Von Heijne rule-based method** 
 
 | Step | Description | Output |
 |------|--------------|--------|
-| **1. Benchmark dataset** | Independent subset of SP⁺ / SP⁻ proteins | `` |
-| **2. Model retraining** | Von Heijne matrix rebuilt on positive training data; SVM retrained with best hyperparameters | Trained models |
-| **3. Threshold calibration** | Optimized via validation set or ROC curve | Final cut-off |
-| **4. Evaluation** | Prediction on benchmark dataset | Predictions & confusion matrices |
-| **5. Biological analysis** | False positives, false negatives, sequence features | Comparative plots |
+| **1. Benchmark dataset** | Curated subset of SP⁺ and SP⁻ proteins (SwissProt Yeast) | `benchmark_set.tsv` |
+| **2. Model training** | PSWM built on canonical motifs; SVM retrained on extracted physicochemical features | Trained models |
+| **3. Prediction** | Classification of unseen benchmark proteins | `predictions_vonHeijne.tsv`, `predictions_SVM.tsv` |
+| **4. Evaluation** | Metric computation and confusion matrices | `metrics_comparison.tsv` |
+| **5. Biological analysis** | Cleavage motif, AA composition, length, TM bias | Comparative plots |
 
 ---
 
-## Quantitative Evaluation
+## 📊 Quantitative Evaluation
 
 | Metric | Von Heijne | SVM |
 |:-------|:-----------:|:---:|
@@ -42,8 +45,9 @@ To evaluate and compare the performance of the **Von Heijne rule-based method** 
 | **MCC** | 0.656 | **0.755** |
 
 **Interpretation:**  
-The SVM outperforms the Von Heijne model across all metrics, achieving both higher sensitivity and specificity.  
-The rule-based matrix remains a valuable baseline for motif interpretation and biological consistency.
+The **Von Heijne** model exhibits higher recall, identifying most true SPs but with slightly more false positives.  
+Conversely, the **SVM** classifier adopts a stricter decision boundary, reducing false positives at the cost of marginally lower sensitivity.  
+This trade-off reflects their distinct nature: heuristic motif scoring versus learned feature boundaries.
 
 ---
 
@@ -54,38 +58,34 @@ The rule-based matrix remains a valuable baseline for motif interpretation and b
 | **Von Heijne** | 1707 | 80 | 60 | 159 |
 | **SVM** | 1594 | 193 | 201 | 18 |
 
-Von heijne: 
-FP: 80 
-FN: 60
-
-SVM:
-FP: 193
-FN: 201
-
 **Interpretation:**  
-- **Von Heijne** is conservative and misses some true SPs (higher FN).  
-- **SVM** detects more positives but misclassifies a few transmembrane helices as SPs (higher FP).
+- Von Heijne achieves higher recall but is more prone to FP misclassifications caused by transmembrane helices.  
+- SVM minimizes FP but occasionally fails on marginal or short SPs, leading to slightly higher FN.
+
+<p align="center">
+  <img src="./Plots/FP_comparisons.png" width="70%">
+</p>
 
 ---
 
-## False Positive Analysis
+## 🔬 False Positive Analysis
 
-### (a) **By Transmembrane Content**
+### (a) By Transmembrane Content
 | Method | FP Transmembrane (%) | FP Non-Transmembrane (%) |
 |---------|----------------------|---------------------------|
 | **Von Heijne** | 53.8 | 46.2 |
 | **SVM** | 15.0 | 85.0 |
 
-**Interpretation:**  
-The Von Heijne model misclassifies hydrophobic **transmembrane helices** as SPs due to similar composition at the N-terminus.  
-SVM’s inclusion of charge and structural descriptors drastically reduces this bias.
+The rule-based PSWM often confuses hydrophobic transmembrane helices with SPs due to similar N-terminal composition.  
+The SVM integrates additional descriptors (charge, TM propensity, size) that reduce this bias.
 
-![FP Transmembrane Analysis](./261f068b-e6ca-47d1-a775-587b971a8def.png)
+<p align="center">
+  <img src="./Plots/FP_comparisons.png" width="70%">
+</p>
 
 ---
 
-### (b) **By Taxonomic Kingdom**
-
+### (b) By Taxonomic Kingdom
 | Kingdom | Von Heijne FP (%) | SVM FP (%) |
 |----------|-------------------|-------------|
 | **Metazoa** | 66.2 | 52.8 |
@@ -93,74 +93,78 @@ SVM’s inclusion of charge and structural descriptors drastically reduces this 
 | **Fungi** | 10.0 | 25.9 |
 | **Other** | 3.8 | 1.6 |
 
-**Interpretation:**  
-Von Heijne shows a strong **Metazoan bias**, whereas the SVM distributes errors more evenly across taxa.  
-However, fungal proteins remain challenging for both models.
+Von Heijne is tuned toward **Metazoan** sequences, while the SVM distributes errors more evenly.  
+Fungal sequences remain a weak point for both methods due to taxon-specific motif deviations.
 
-![FP by Kingdom](./112faf17-035b-45e7-8142-0e84a6464afd.png)
-
----
-
-## Amino Acid and Motif Analysis
-
-### (a) **Cleavage Motif Consistency**
-
-Sequence logos highlight that:
-- **True Positives (TP)** follow canonical (-3, -1) motifs such as **A/V–x–A**,  
-- **False Negatives (FN)** often lack these hydrophobic residues and show enrichment in polar amino acids (S, T, D, E).
-
-![Logo FN](./65be0d5b-4d69-4c13-8dd7-ebba2d09f859.png)
-![Logo TP](./fcac7059-2642-4cb9-b943-28be3154a71c.png)
+<p align="center">
+  <img src="./Plots/FP_kingdom_comparisons.png" width="70%">
+</p>
 
 ---
 
-### (b) **Amino Acid Composition**
+## Motif Consistency and Length Distribution
 
-Comparison of amino acid composition between positive training, FN, and TP sets:
+Figures show the cleavage-site sequence logos and SP length profiles.
 
-- **TP** sequences are enriched in **Leucine (L)**, **Alanine (A)**, and **Valine (V)**.  
-- **FN** sequences show increased **Serine (S)**, **Threonine (T)**, **Aspartate (D)**, and **Glutamate (E)** content.  
-- This shift towards polar residues suggests reduced hydrophobic core and weaker secretion signal.
+**Cleavage Motif:**  
+- **False Negatives (FN)** display weakened `[A,V]XA` motifs and reduced upstream hydrophobicity.  
+- **True Positives (TP)** retain canonical hydrophobic H-regions with the sharp H→C transition expected by Von Heijne’s rule.
 
-![Residue Composition](./19d84eb3-2dac-4505-9720-7c54a6fd5ad4.png)
+<p align="center">
+  <img src="./Plots/logo_vonheijne_FN.png" width="45%"> 
+  <img src="./Plots/logo_vonheijne_TP.png" width="45%">
+</p>
+
+**Signal Peptide Length Profile:**  
+SPs cluster around **22 amino acids**, typical for eukaryotic signals.  
+Misclassified SPs are often **shorter (<18 aa)** or **longer (25–30 aa)**, the latter primarily in fungal and plant proteins.
+
+<p align="center">
+  <img src="./Plots/SP_lengths.png" width="70%">
+</p>
 
 ---
 
-### (c) **SP Length Distribution**
+## Amino Acid Frequency and Composition
 
-| Set | Mean SP Length (aa) |
-|-----|----------------------:|
-| **Training** | 23.02 |
-| **FN** | 22.48 |
-| **TP** | 21.22 |
+True positives display higher frequencies of **L, A, V**, defining the hydrophobic core critical for translocation.  
+False negatives are enriched in **S, T, D, E**, polar residues that weaken hydrophobic signal and cleavage recognition.  
+These patterns confirm that misclassifications originate from compositional shifts, not annotation bias.
 
-**Observation:**  
-False negatives tend to have **shorter or less hydrophobic SPs**, consistent with atypical or marginal signal regions.
-
-![SP Lengths](./1a23b6f5-1d47-4248-8f15-1a87134630d3.png)
+<p align="center">
+  <img src="./Plots/residues_composition.png" width="70%">
+</p>
 
 ---
 
 ## Feature-Level Comparison
 
-Feature distribution analysis across the benchmark set shows distinct differences between correctly and incorrectly classified proteins.
+Feature distributions (hydrophobicity, charge, TM propensity, etc.) reveal distinct profiles between FN and TP:
 
-- **Charge Max** and **Charge Mean** are lower in FN sequences.  
-- **Transmembrane Propensity (mean and max)** are higher in FP.  
-- **Hydrophobicity (hydro_mean, hydro_max)** clearly separates TP from FN.
+- **Charge (mean/max):** reduced in FN sequences  
+- **TM Propensity:** elevated in FP regions  
+- **Hydrophobicity:** remains the main discriminant feature
 
-![Feature Distributions](./a4675f0b-9668-429b-bd68-3e0d269c3c57.png)
-![Boxplot TP vs FN](./4b736fc0-d730-4660-9b40-39da2c43afd5.png)
+<p align="center">
+  <img src="./Plots/FN_features_distribution.png" width="45%">
+  <img src="./Plots/TP_features_distribution.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="./Plots/boxplots_features_distribution_comparison.png" width="70%">
+</p>
 
 ---
 
 ## Discussion
 
-The comparison confirms clear behavioral differences between the two methods:
+Overall, both models capture biologically meaningful trends:
+- **Von Heijne** provides an interpretable and sensitive heuristic that effectively identifies canonical motifs but tends to overpredict hydrophobic TM helices.  
+- **SVM** leverages nonlinear boundaries in physicochemical space, achieving higher precision and lower FP.  
+- Errors in both models largely arise from **local deviations in hydrophobicity** and **motif strength**, not from dataset bias.
 
-- **Von Heijne** successfully detects canonical eukaryotic SP motifs but struggles with non-standard or weakly hydrophobic peptides.  
-- **SVM** integrates multiple descriptors (hydrophobicity, charge, α-helix, TM propensity), providing better generalization and fewer TM false positives.  
-- Both methods reveal biologically coherent trends: **SPs tend to be hydrophobic, short, and enriched in small neutral residues**, while errors occur mainly in sequences with atypical composition or mixed topologies.
+> In conclusion, SPs generally show enrichment in **L, A, V, M**, a conserved `[A,V]XA` motif, and average lengths around 22 residues.  
+> FNs exhibit polar enrichment (S, T, D, E) and shortened hydrophobic cores (<18 aa), confirming that **compositional variability** is the main cause of reduced recognition.
 
 ---
 
@@ -168,23 +172,19 @@ The comparison confirms clear behavioral differences between the two methods:
 
 | File | Description |
 |------|--------------|
-| `metrics_comparison.tsv` | Summary table of evaluation metrics |
-| `confusion_matrices.png` | Combined visualization of both confusion matrices |
-| `FP_transmembrane.png` | Pie chart showing FP caused by TM helices |
-| `FP_by_kingdom.png` | FP distribution by taxonomic kingdom |
-| `AA_composition.png` | Comparative amino acid frequency plot |
-| `SP_length_distribution.png` | Length distribution of signal peptides |
-| `feature_distribution_FN_TP.png` | Density plots of key features |
-| `boxplot_TP_FN.png` | Boxplot comparison between FN and TP |
-| `logos_FN_TP.png` | Sequence logos of cleavage motifs |
+| `metrics_comparison.tsv` | Quantitative performance summary |
+| `confusion_matrices.png` | Confusion matrix visualization |
+| `FP_comparisons.png` | FP composition and TM bias |
+| `FP_kingdom_comparisons.png` | FP distribution by kingdom |
+| `residues_composition.png` | Amino acid frequency plot |
+| `SP_lengths.png` | Signal peptide length distribution |
+| `FN_features_distribution.png`, `TP_features_distribution.png` | Density plots for main features |
+| `boxplots_features_distribution_comparison.png` | Feature-level TP vs. FN comparison |
+| `logo_vonheijne_FN.png`, `logo_vonheijne_TP.png` | Sequence logos around cleavage sites |
 
 ---
 
-## Summary
+## Next Step – Integration of MLP Deep Learning Module
 
-- The **SVM (RBF kernel)** provides the best trade-off between recall and specificity (Accuracy 0.97, ROC-AUC 0.98, MCC 0.86).  
-- The **Von Heijne matrix** retains high interpretability and identifies canonical motifs but exhibits higher FP in transmembrane proteins.  
-- Combined interpretation of both methods yields a more comprehensive understanding of SP diversity and model reliability.
-
-**Next step →** Extend the analysis to bacterial and archaeal datasets to test model transferability and evolutionary conservation of signal motifs.
+The next phase of the LAB2 project will integrate a **Multi-Layer Perceptron (MLP)** to extend the benchmark with a deep learning baseline.
 
