@@ -34,7 +34,7 @@ The aim of this analysis is to quantitatively and qualitatively assess the predi
 
 ---
 
-## 📊 Quantitative Evaluation
+## Quantitative Evaluation
 
 | Metric | Von Heijne | SVM |
 |:-------|:-----------:|:---:|
@@ -68,7 +68,7 @@ This trade-off reflects their distinct nature: heuristic motif scoring versus le
 
 ---
 
-## 🔬 False Positive Analysis
+## False Positive Analysis
 
 ### (a) By Transmembrane Content
 | Method | FP Transmembrane (%) | FP Non-Transmembrane (%) |
@@ -184,7 +184,5 @@ Overall, both models capture biologically meaningful trends:
 
 ---
 
-## Next Step – Integration of MLP Deep Learning Module
-
-The next phase of the LAB2 project will integrate a **Multi-Layer Perceptron (MLP)** to extend the benchmark with a deep learning baseline.
+**Next step →** Integration of a **Multi-Layer Perceptron (MLP)** to extend the benchmark with a deep learning baseline.
 
