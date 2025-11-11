@@ -149,5 +149,5 @@ Overall, both models capture biologically meaningful trends:
 
 ---
 
-**Next step →** Integration of a **Multi-Layer Perceptron (MLP)** to extend the benchmark with a deep learning baseline.
+**Next step →** Integration of a **Multi-Layer Perceptron (MLP)** [Deep_Learning](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning).
 
