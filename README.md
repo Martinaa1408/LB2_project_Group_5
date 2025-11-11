@@ -158,6 +158,7 @@ This section summarizes the core data, feature extraction, and predictive perfor
 | **Residue size/volume** | Mean and maximum residue volume | size_mean, size_max | 2 |
 
 Total features extracted: **29** 
+
 Features selected for SVM (RF importance): **15** 
 
 ### Model Training and Optimization
@@ -216,8 +217,8 @@ Features selected for SVM (RF importance): **15**
 | **Benchmark (Independent)** | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
 | | SVM (RBF) | **0.953** | **0.781** | **0.755** | Robust generalization |
  
-***The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.  
-The **Von Heijne PSWM** remains biologically interpretable and complements the SVM by providing motif-level insight into cleavage-site conservation.***
+*The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.  
+The **Von Heijne PSWM** remains biologically interpretable and complements the SVM by providing motif-level insight into cleavage-site conservation.*
 
 ---
 
