@@ -96,7 +96,7 @@ To set up the environment and run the project, follow these steps:
 
 - [**Data_Preparation/**](./Data_Preparation)  
   Redundancy reduction with MMseqs2 and generation of train/benchmark sets with CV folds.  
-  → Key scripts: `clustering.sh`, `get_tsv.py`, `get_sets.py`
+  → Key scripts: [`clustering.sh`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/clustering.sh), [`get_tsv.py`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/get_tsv.py), [`get_sets.py`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Data_Preparation/get_sets.py)
 
 - [**Data_Analysis/**](./Data_Analysis)  
   Exploratory analysis of datasets (length distributions, amino acid composition, taxonomy, cleavage motifs).  
@@ -124,11 +124,11 @@ To set up the environment and run the project, follow these steps:
 
 - [**Supplementary_materials/**](./Supplementary_materials)
   Additional resources, figures, and intermediate files supporting the main notebooks and report.  
-  → PDF document: `Support_materials_LB2_Group5.pdf`.
+  → PDF document: [`Support_materials_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/).
 
 - [**Report/**](./Report)
   PDF version of the final report related to the project.
-  →PDF document: `Report_LB2_Group5.pdf`
+  →PDF document: [`Report_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Report/)
   
 - [**README.md**](./README.md)  
   General project overview and workflow description.
