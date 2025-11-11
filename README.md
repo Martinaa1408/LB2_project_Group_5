@@ -174,12 +174,11 @@ Features selected for SVM (RF importance): **15**
 
 | Metric | Von Heijne | SVM (RBF) |
 |:--------|------------:|----------:|
-| **Accuracy** | 0.930 | **0.972** |
-| **Precision** | 0.665 | **0.896** |
-| **Recall (TPR)** | 0.726 | **0.846** |
-| **F1-score** | 0.694 | **0.870** |
-| **MCC** | 0.656 | **0.855** |
-| **ROC–AUC** | 0.905 | **0.980** |
+| **Accuracy** | 0.939 ± 0.002 | **0.972** |
+| **Precision** | 0.708 ± 0.017 | **0.896** |
+| **Recall (TPR)** | 0.756 ± 0.032 | **0.846** |
+| **F1-score** | 0.728 ± 0.011 | **0.870** |
+| **MCC** | 0.697 ± 0.013 | **0.855** |
 
 #### External Evaluation (Independent Benchmark)
 
@@ -190,13 +189,6 @@ Features selected for SVM (RF importance): **15**
 | **Recall (TPR)** | 0.726 | **0.767** |
 | **F1-score** | 0.694 | **0.781** |
 | **MCC** | 0.656 | **0.755** |
-
-### Comparative Summary
-
-| Model | Type | Accuracy | Precision | Recall | F1 | MCC | Strength |
-|:-------|:------|----------:|-----------:|--------:|----:|----:|:----------|
-| **Von Heijne** | Rule-based (PSWM) | 0.930 | 0.665 | 0.726 | 0.694 | 0.656 | Interpretable, motif-driven |
-| **SVM (RBF)** | Machine Learning | **0.953** | **0.796** | **0.767** | **0.781** | **0.755** | Best overall performance |
 
 ### Key Observations
 
