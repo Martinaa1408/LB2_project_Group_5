@@ -7,6 +7,7 @@ This directory summarizes the **final benchmarking and comparative evaluation** 
 | **Von Heijne** | Rule-based | Position-Specific Weight Matrix (PSWM) |
 | **SVM** | Machine Learning | Support Vector Machine (RBF kernel, optimized) |
 
+→ Notebook: Evaluation_and_comparison.ipynb
 
 ## Objective
 
