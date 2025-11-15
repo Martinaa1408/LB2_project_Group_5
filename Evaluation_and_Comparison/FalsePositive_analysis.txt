@@ -1,0 +1,25 @@
+Confusion matrix von Heijne method:
+ [[1707   80]
+ [  60  159]]
+FP: 80
+FN: 60
+
+Confusion matrix SVM method:
+ [[1653  134]
+ [  23  196]]
+FP: 134
+FN: 23
+
+----
+Transmembrane proteins (von Heijne): (207, 9)
+Transmembrane proteins (svm): (207, 8)
+
+----
+
+von Heijne Method:
+ Overall False Positive Rate: 4.48%
+ Transmembrane Positive Rate: 20.77%
+
+SVM method:
+ Overall False Positive Rate: 7.50%
+ Transmembrane Positive Rate: 6.28%
