@@ -103,18 +103,18 @@ Model performance on the main dataset used for training and cross-validation.
 
 | Metric | Value |
 |:--------|-------:|
-| **Accuracy** | 0.972 |
-| **Precision** | 0.896 |
-| **Recall (TPR)** | 0.846 |
-| **F1-score** | 0.870 |
-| **MCC** | 0.855 |
+| **Accuracy** | 0.927 |
+| **Precision** | 0.619 |
+| **Recall (TPR)** | 0.857 |
+| **F1-score** | 0.719 |
+| **MCC** | 0.690 |
 
 **Confusion Matrix**
 
 | Actual / Predicted | Negative | Positive |
 |--------------------|----------:|----------:|
-| **Negative (SP–)** | 7061 | 86 |
-| **Positive (SP⁺)** | 135 | 739 |
+| **Negative (SP–)** | 1338 | 92 |
+| **Positive (SP⁺)** | 25 | 150 |
 
 **Interpretation:**  
 The model achieved a high classification accuracy (97.2%) with balanced sensitivity and precision.  
@@ -128,18 +128,18 @@ An independent dataset of 2006 yeast proteins was used to assess model generaliz
 
 | Metric | Value |
 |:--------|-------:|
-| **Accuracy** | 0.953 |
-| **Precision** | 0.796 |
-| **Recall (TPR)** | 0.767 |
-| **F1-score** | 0.781 |
-| **MCC** | 0.755 |
+| **Accuracy** | 0.921 |
+| **Precision** | 0.593 |
+| **Recall (TPR)** | 0.895 |
+| **F1-score** | 0.714|
+| **MCC** | 0.690 |
 
 **Confusion Matrix**
 
 | Actual / Predicted | Negative | Positive |
 |--------------------|----------:|----------:|
-| **Negative (SP–)** | 1787 | 39 |
-| **Positive (SP⁺)** | 51 | 168 |
+| **Negative (SP–)** | 1653 | 134 |
+| **Positive (SP⁺)** | 23 | 196 |
 
 **Interpretation:**  
 The benchmark results confirm the model’s strong generalization capability.  
