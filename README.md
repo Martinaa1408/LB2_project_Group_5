@@ -178,21 +178,21 @@ Features selected for SVM (RF importance): **15**
 
 | Metric | Von Heijne | SVM (RBF) |
 |:--------|------------:|----------:|
-| **Accuracy** | 0.939 ± 0.002 | **0.972** |
-| **Precision** | 0.708 ± 0.017 | **0.896** |
-| **Recall (TPR)** | 0.756 ± 0.032 | **0.846** |
-| **F1-score** | 0.728 ± 0.011 | **0.870** |
-| **MCC** | 0.697 ± 0.013 | **0.855** |
+| **Accuracy** | 0.939 ± 0.002 | **0.927** |
+| **Precision** | 0.708 ± 0.017 | **0.619** |
+| **Recall (TPR)** | 0.756 ± 0.032 | **0.857** |
+| **F1-score** | 0.728 ± 0.011 | **0.719** |
+| **MCC** | 0.697 ± 0.013 | **0.690** |
 
 #### External Evaluation (Independent Benchmark)
 
 | Metric | Von Heijne | SVM (RBF) |
 |:--------|------------:|----------:|
-| **Accuracy** | 0.930 | **0.953** |
-| **Precision** | 0.665 | **0.796** |
-| **Recall (TPR)** | 0.726 | **0.767** |
-| **F1-score** | 0.694 | **0.781** |
-| **MCC** | 0.656 | **0.755** |
+| **Accuracy** | 0.930 | **0.921** |
+| **Precision** | 0.665 | **0.594** |
+| **Recall (TPR)** | 0.726 | **0.895** |
+| **F1-score** | 0.694 | **0.714** |
+| **MCC** | 0.656 | **0.690** |
 
 ### Key Observations
 
@@ -209,9 +209,9 @@ Features selected for SVM (RF importance): **15**
 | Dataset | Model | Accuracy | F1-score | MCC | Best For |
 |:--------|:-------|----------:|----------:|----------:|:----------|
 | **Training / Validation** | Von Heijne | 0.930 | 0.728 | 0.697 | Baseline biological interpretability |
-| | SVM (RBF) | **0.972** | **0.870** | **0.855** | Pattern learning and discrimination |
+| | SVM (RBF) | **0.927** | **0.714** | **0.690** | Pattern learning and discrimination |
 | **Benchmark (Independent)** | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
-| | SVM (RBF) | **0.953** | **0.781** | **0.755** | Robust generalization |
+| | SVM (RBF) | **0.921** | **0.714** | **0.690** | Robust generalization |
 
 The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.
 
