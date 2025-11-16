@@ -174,15 +174,19 @@ MCC values above 0.75 indicate strong predictive correlation and minimal bias to
 
 ---
 
-## Output Files
+# Output Files
 
 | File | Description |
-|------|--------------|
-| [training_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/.png)**  | Summary of model performance metrics |
-| [confusion_matrix.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix.png) | Final confusion matrix |
-| [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png) | Feature importance visualization |
-| [Accuracy_vs_Features](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png) | Feature selection performance trend |
-| [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_curve.png) | PR diagnostic curve |
+|---|---|
+|[training_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/training_svm_metrics.tsv) | Summary of SVM model performance metrics on training data |
+|[bench_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/bench_svm_metrics.tsv) | Summary of SVM model performance metrics on benchmark data |
+| [svm_final.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/svm_final.tsv)] | Final SVM model results or processed dataset |
+| [confusion_matrix_test.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix_test.png) | Confusion matrix for training data |
+| [confusion_matrix_bench.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix_bench.png) | Confusion matrix for benchmark data |
+| [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png) | Random Forest feature importance visualization |
+| [top10_RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/top10_RF_Gini_importance.png) | Top 10 Random Forest feature importance visualization |
+| [Accuracy_vs_Features.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Accuracy_vs_Features.png) | Feature selection performance trend |
+| [Precision_Recall_curve.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/Precision_Recall_curve.png) | Precision-Recall diagnostic curve |
 
 ---
 
