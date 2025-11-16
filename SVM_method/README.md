@@ -154,19 +154,19 @@ Most false positives correspond to highly hydrophobic N-terminal regions, often 
 
 | Class | Precision | Recall | F1-score | Support |
 |:-------|:----------:|:-------:|:----------:|:---------:|
-| **Negative** | 0.98 | 0.99 | 0.98 | 7147 |
-| **Positive** | 0.90 | 0.85 | 0.87 | 874 |
-| **Macro avg** | 0.94 | 0.92 | 0.93 | — |
-| **Weighted avg** | 0.97 | 0.97 | 0.97 | — |
+| **Negative** | 0.98 | 0.94 | 0.96 | 1430 |
+| **Positive** | 0.62 | 0.86 | 0.72 | 175 |
+| **Macro avg** | 0.80 | 0.90 | 0.84 | 1605 |
+| **Weighted avg** | 0.94 | 0.93 | 0.93 | 1605 |
 
 **Benchmark Set**
 
 | Class | Precision | Recall | F1-score | Support |
 |:-------|:----------:|:-------:|:----------:|:---------:|
-| **Negative** | 0.97 | 0.98 | 0.97 | 1787 |
-| **Positive** | 0.80 | 0.77 | 0.78 | 219 |
-| **Macro avg** | 0.88 | 0.87 | 0.88 | — |
-| **Weighted avg** | 0.95 | 0.95 | 0.95 | — |
+| **Negative** | 0.99 | 0.93 | 0.95 | 1787 |
+| **Positive** | 0.59 | 0.89 | 0.71 | 219 |
+| **Macro avg** | 0.79 | 0.91 | 0.83 | 2006 |
+| **Weighted avg** | 0.94 | 0.92 | 0.93 | 2006 |
 
 **Summary:**  
 The SVM model shows consistent high performance across both datasets, maintaining balanced precision and recall.  
@@ -188,7 +188,7 @@ MCC values above 0.75 indicate strong predictive correlation and minimal bias to
 
 ## Summary and Interpretation
 
-- The **SVM (RBF kernel)** achieved **Acc = 0.972 / MCC = 0.855** on training data and **Acc = 0.953 / MCC = 0.755** on the independent benchmark.  
+- The **SVM (RBF kernel)** achieved **Acc = 0.927 / MCC = 0.691** on training data and **Acc = 0.922 / MCC = 0.690** on the independent benchmark.  
 - This confirms **strong generalization** and **minimal overfitting**.  
 - The **Leucine composition (comp_L)**, **α-helix propensity**, and **charge mean** emerged as the strongest predictors.  
 - The **Random Forest + SVM pipeline** captures non-linear feature dependencies, outperforming rule-based models.  
