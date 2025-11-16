@@ -117,7 +117,7 @@ Model performance on the main dataset used for training and cross-validation.
 | **Positive (SP⁺)** | 25 | 150 |
 
 **Interpretation:**  
-The model achieved a high classification accuracy (97.2%) with balanced sensitivity and precision.  
+The model achieved a high classification accuracy (92.7%) with balanced sensitivity and precision.  
 Misclassifications mainly involve borderline peptides with weak hydrophobicity or ambiguous α-helix signatures.
 
 ---
