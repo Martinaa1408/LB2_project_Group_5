@@ -56,18 +56,18 @@ From 29 total features, the model retained **15** above the median importance th
 | Rank | Feature | Importance |
 |------|----------|-------------|
 | 1 | comp_L | 0.187 |
-| 2 | α-helix mean | 0.078 |
-| 3 | Charge mean | 0.060 |
-| 4 | Transmembrane max | 0.054 |
-| 5 | α-helix max | 0.049 |
-| 6 | Hydrophobicity max | 0.047 |
-| 7 | Hydrophobicity mean | 0.046 |
-| 8 | Size mean | 0.043 |
+| 2 | α-helix mean | 0.083 |
+| 3 | Charge mean | 0.062 |
+| 4 | Transmembrane max | 0.055 |
+| 5 | Hydrophobicity max | 0.049 |
+| 6 | α-helix max | 0.048 |
+| 7 | Hydrophobicity mean | 0.043 |
+| 8 | Size mean | 0.041 |
 | 9 | Transmembrane mean | 0.041 |
-| 10 | comp_A | 0.034 |
+| 10 | comp_E | 0.036 |
 
 **Top selected subset:**  
-`['comp_L', 'alpha_mean', 'charge_mean', 'trans_max', 'alpha_max', 'hydro_max', 'hydro_mean', 'size_mean', 'trans_mean', 'comp_A']`
+`['comp_L', 'alpha_mean', 'charge_mean', 'trans_max', 'hydro_max', 'alpha_max', 'hydro_mean', 'size_mean', 'trans_mean', 'comp_E']`
 
 ---
 
@@ -78,14 +78,14 @@ From 29 total features, the model retained **15** above the median importance th
 |------------|----------------|----------|
 | **C** | [0.1, 1, 10] | Regularization strength |
 | **Kernel** | ['linear', 'poly', 'rbf', 'sigmoid'] | Defines mapping in feature space |
-| **Gamma** | ['scale', 'auto'] | Kernel coefficient for RBF/poly |
+| **Gamma** | ['scale', 'auto'] | Kernel coefficient for RBF, poly and sigmoid |
 
 **Best parameters:**  
 `C = 10`, `γ = 'scale'`, `kernel = 'rbf'`
 
-**Best CV accuracy:** 0.964  
-**Validation accuracy (selected features):** 0.945  
-**Optimal number of features:** k = 15 (val_acc = 0.952)
+**Best CV F1:** 0.720  
+**Validation accuracy (selected features):** 0.922  
+**Optimal number of features:** k = 15 (val_acc = 0.922)
 
 ---
 
