@@ -9,7 +9,7 @@
 [![Feature extraction](https://img.shields.io/badge/Feature%20Extraction-PDF-yellowgreen)](https://virtuale.unibo.it/pluginfile.php/2814411/mod_resource/content/1/04-Methods-FeatureExtractionSelection.pdf)
 [![SVM for SP detection](https://img.shields.io/badge/SVM%20for%20SP%20Detection-PDF-lightgrey)](https://virtuale.unibo.it/pluginfile.php/2682973/mod_resource/content/2/04-Methods-SVM.pdf)
 [![Training Final Models and Analysis of Benchmarking Results](https://img.shields.io/badge/Benchmarking%20and%20Analysis-PDF-blue)](https://virtuale.unibo.it/pluginfile.php/2682977/mod_resource/content/2/06-Benchmarking%20and%20analysis%20of%20results.pdf)
-[![Deep Learning - MLP](https://img.shields.io/badge/DeepLearning-MLP_lightblue)](https://virtuale.unibo.it/pluginfile.php/2682978/mod_resource/content/2/07a-Deep%20learning-MLP.pdf)
+[![Deep Learning - MLP](https://img.shields.io/badge/Deep-Learning-MLP_lightblue)](https://virtuale.unibo.it/pluginfile.php/2682978/mod_resource/content/2/07a-Deep%20learning-MLP.pdf)
 
 ## Table of Contents
 - [About](#about)
