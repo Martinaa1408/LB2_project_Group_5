@@ -93,7 +93,7 @@ The Deep Learning approach achieves a near-perfect classification with an MCC of
 | File | Description |
 |------|--------------|
 | [DL_bench_res_hyperparameter.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_bench_res_hyperparameter.txt)| Final confusion matrix and detailed metrics of the Optimized Model on the Test Set |
-| [DL_bench_res.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_bench_res.txt) | Supplementary test set metrics and confusion matrix |
+| [DL_bench_res.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_bench_res.txt) | Baseline model results (manual hyperparameters) on test set |
 | [training_validation_loss.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/Plots/training_validation_loss.png) | Plot of Training and Validation Loss curves over epochs |
 
 
