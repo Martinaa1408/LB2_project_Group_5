@@ -74,7 +74,7 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 | **Precision** | 0.973 |
 | **Recall** | 0.973 |
 | **F1 Score** | 0.973 |
-| **Matthews Corr. Coeff. (MCC)** | **0.969** |
+| **MCC** | **0.969** |
 
 **Confusion Matrix:**
 
