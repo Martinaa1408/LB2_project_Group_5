@@ -26,7 +26,7 @@ The aim of this analysis is to quantitatively and qualitatively assess the predi
 
 | Step | Description | 
 |------|--------------|
-| **1. Benchmark dataset** | Curated subset of SP⁺ and SP⁻ proteins `benchmark_set.tsv` |
+| **1. Benchmark dataset** | Curated subset of SP⁺ and SP⁻ proteins [benchmark_set.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/bench_svm_metrics.tsv) |
 | **2. Model training** | PSWM built on canonical motifs; SVM retrained on extracted physicochemical features |
 | **3. Prediction** | Classification of unseen benchmark proteins | 
 | **4. Evaluation** | Metric computation and confusion matrices | 
