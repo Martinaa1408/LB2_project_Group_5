@@ -81,8 +81,8 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 
 | | **Predicted Negative** | **Predicted Positive** |
 | :--- | :---: | :---: |
-| **Actual Negative** | 1781 (TN) | 6 (FP) |
-| **Actual Positive** | 6 (FN) | 213 (TP) |
+| **Actual Negative** | 1781  | 6  |
+| **Actual Positive** | 6  | 213  |
 
 
 **Interpretation:**
