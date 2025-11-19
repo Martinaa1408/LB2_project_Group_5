@@ -180,7 +180,7 @@ MCC values above 0.75 indicate strong predictive correlation and minimal bias to
 |---|---|
 |[training_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/training_svm_metrics.tsv) | Summary of SVM model performance metrics on training data |
 |[bench_svm_metrics.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/bench_svm_metrics.tsv) | Summary of SVM model performance metrics on benchmark data |
-| [svm_final.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/svm_final.tsv)] | Final SVM model results or processed dataset |
+| [svm_final.tsv](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/svm_final.tsv) | Final SVM model results or processed dataset |
 | [confusion_matrix_test.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix_test.png) | Confusion matrix for training data |
 | [confusion_matrix_bench.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/confusion_matrix_bench.png) | Confusion matrix for benchmark data |
 | [RF_Gini_importance.png](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/SVM_method/Plots/RF_Gini_importance.png) | Random Forest feature importance visualization |
