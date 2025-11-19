@@ -78,9 +78,11 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 
 **Confusion Matrix:**
 
-| True Negatives | False Positives | False Negatives | True Positives |
-| :---: | :---: | :---: | :---: |
-| 1781 | 6 | 6 | 213 |
+
+| | **Predicted Negative** | **Predicted Positive** |
+| :--- | :---: | :---: |
+| **Actual Negative** | 1781 (TN) | 6 (FP) |
+| **Actual Positive** | 6 (FN) | 213 (TP) |
 
 
 **Interpretation:**
