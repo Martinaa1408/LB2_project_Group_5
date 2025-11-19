@@ -167,54 +167,60 @@ Total features extracted: **29**
 
 Features selected for SVM (RF importance): **15** 
 
-### Model Training and Optimization
+---
+
+## **Model Training and Optimization**
 
 | Step | Method | Details / Parameters | Output |
-|:------|:--------|:--------------------|:---------|
-| **Model 1** | **Von Heijne (rule-based)** | Position-Specific Weight Matrix (PSWM), optimized threshold by MCC | Cleavage-site scoring function |
-| **Model 2** | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, kernel = RBF; Stratified 5-fold CV | Trained classifier on 15 features |
+|------|---------|---------------------|---------|
+| Model 1 | **Von Heijne (rule-based)** | Position-Specific Weight Matrix (PSWM), optimized threshold by MCC | Cleavage-site scoring function |
+| Model 2 | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, `kernel = RBF`; Stratified 5-fold CV | Trained classifier on 15 features |
+| Model 3 | **Deep Learning (ESM-2 + MLP)** | `Hidden layers: [45, 48, 41]`, `Dropout: 0.21`, `LR: 7.97e-4`; Optuna optimization | Trained neural network on ESM-2 embeddings |
 
-### Quantitative Performance
+## **Quantitative Performance**
 
-#### Internal Evaluation (Training / Validation Set)
+### **Internal Evaluation (Training / Validation Set)**
+| Metric | Von Heijne | SVM (RBF) | Deep Learning |
+|--------|------------|-----------|-------------------|
+| Accuracy | 0.939 ± 0.002 | 0.927 | 0.994 |
+| Precision | 0.708 ± 0.017 | 0.619 | 0.973 |
+| Recall (TPR) | 0.756 ± 0.032 | 0.857 | 0.973 |
+| F1-score | 0.728 ± 0.011 | 0.719 | 0.973 |
+| MCC | 0.697 ± 0.013 | 0.690 | 0.989 |
 
-| Metric | Von Heijne | SVM (RBF) |
-|:--------|------------:|----------:|
-| **Accuracy** | 0.939 ± 0.002 | **0.927** |
-| **Precision** | 0.708 ± 0.017 | **0.619** |
-| **Recall (TPR)** | 0.756 ± 0.032 | **0.857** |
-| **F1-score** | 0.728 ± 0.011 | **0.719** |
-| **MCC** | 0.697 ± 0.013 | **0.690** |
+### **External Evaluation (Independent Benchmark)**
+| Metric | Von Heijne | SVM (RBF) | Deep Learning |
+|--------|------------|-----------|-------------------|
+| Accuracy | 0.930 | 0.921 | 0.994 |
+| Precision | 0.665 | 0.594 | 0.973 |
+| Recall (TPR) | 0.726 | 0.895 | 0.973 |
+| F1-score | 0.694 | 0.714 | 0.973 |
+| MCC | 0.656 | 0.690 | 0.969 |
 
-#### External Evaluation (Independent Benchmark)
+## **Key Observations**
 
-| Metric | Von Heijne | SVM (RBF) |
-|:--------|------------:|----------:|
-| **Accuracy** | 0.930 | **0.921** |
-| **Precision** | 0.665 | **0.594** |
-| **Recall (TPR)** | 0.726 | **0.895** |
-| **F1-score** | 0.694 | **0.714** |
-| **MCC** | 0.656 | **0.690** |
+| Aspect | Von Heijne | SVM | Deep Learning |
+|--------|------------|-----|-------------------|
+| False Positives (FP) | Hydrophobic TM helices (Metazoa bias) | Strongly reduced; fewer TM-related misclassifications | Minimal (6 FP); balanced error distribution |
+| False Negatives (FN) | Short or polar SPs (<18 aa) | Borderline SPs with weak α-helix signals | Minimal (6 FN); robust to sequence variations |
+| Motif capture | Conserved [A,V]XA cleavage motif | Broader tolerance to sequence variability | Automatic feature learning; no manual motif definition |
+| SP mean length | 22.4 aa | 21.9 aa | No length bias detected |
+| Interpretability | High (biological motifs visible) | Moderate (feature-dependent) | Lower (black-box) but superior performance |
 
-### Key Observations
-
-| Aspect | Von Heijne | SVM |
-|:--------|:-------------|:----|
-| **False Positives (FP)** | Hydrophobic TM helices (Metazoa bias) | Strongly reduced; fewer TM-related misclassifications |
-| **False Negatives (FN)** | Short or polar SPs (<18 aa) | Borderline SPs with weak α-helix signals |
-| **Motif capture** | Conserved `[A,V]XA` cleavage motif | Broader tolerance to sequence variability |
-| **SP mean length** | 22.4 aa | 21.9 aa |
-| **Interpretability** | High (biological motifs visible) | Moderate (feature-dependent) |
-
-### Final Summary Table
+## **Final Summary Table**
 
 | Dataset | Model | Accuracy | F1-score | MCC | Best For |
-|:--------|:-------|----------:|----------:|----------:|:----------|
-| **Training / Validation** | Von Heijne | 0.939 | 0.728 | 0.697 | Baseline biological interpretability |
-| | SVM (RBF) | **0.927** | **0.714** | **0.690** | Pattern learning and discrimination |
-| **Benchmark (Independent)** | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
-| | SVM (RBF) | **0.921** | **0.714** | **0.690** | Robust generalization |
+|---------|--------|----------|----------|-----|----------|
+| Training / Validation | Von Heijne | 0.939 | 0.728 | 0.697 | Baseline biological interpretability |
+| | SVM (RBF) | 0.927 | 0.714 | 0.690 | Pattern learning and discrimination |
+| | Deep Learning | 0.994 | 0.973 | 0.989 | Maximum predictive performance |
+| Benchmark (Independent) | Von Heijne | 0.930 | 0.694 | 0.656 | Motif-based baseline |
+| | SVM (RBF) | 0.921 | 0.714 | 0.690 | Robust generalization |
+| | Deep Learning | 0.994 | 0.973 | 0.969 | State-of-the-art classification |
 
+---
+
+## Conclusion:
 The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.
 
 The **Von Heijne PSWM** remains biologically interpretable and complements the SVM by providing motif-level insight into cleavage-site conservation.
