@@ -34,7 +34,7 @@ The goal is to build a robust classifier for signal peptide prediction by levera
 
 ## Model Architecture and Optimization
 
-### (a) Network Structure & Input Processing
+### Network Structure & Input Processing
 The classifier is a **Multi-Layer Perceptron (MLP)** designed to focus on the biologically relevant N-terminal region.
 
 * **Input (N-Terminal Focus):** 1280-dimensional ESM-2 vectors extracted from the **first 90 residues** only, reducing noise from the rest of the protein.
@@ -42,7 +42,7 @@ The classifier is a **Multi-Layer Perceptron (MLP)** designed to focus on the bi
 * **Hidden Layers:** Three dense layers with **ReLU** activation to model non-linear decision boundaries.
 * **Regularization:** **Dropout** is applied after each layer to prevent overfitting.
 
-### (b) Hyperparameter Tuning (Optuna)
+### Hyperparameter Tuning (Optuna)
 An automated study (Trial 7) identified the optimal configuration to maximize the Validation MCC:
 
 | Hyperparameter | Optimal Value |
