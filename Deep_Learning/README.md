@@ -38,8 +38,8 @@ The aim of this Deep Learning module is to implement and optimize a neural netwo
 |------|--------------|
 | **1. Dataset Prep** | Custom split into `train_sp.fasta` (folds 1-3), `val_sp.fasta` (folds 4-5), and `test_sp.fasta` |
 | **2. Embedding** | Sequence encoding using `facebook/esm2_t33_650M_UR50D` (1280-d), sliced to the first **90 AA** |
-| **3. Optimization** | **Optuna** study (10 trials) to tune hidden layers, dropout rates, and learning rate |
-| **4. Training** | Training with **CrossEntropyLoss**, **Adam** optimizer, and **Early Stopping** |
+| **3. Optimization**  | **Optuna** study (10 trials) to tune hidden layers, dropout rates, and learning rate |
+| **4. Training**  | Training with **CrossEntropyLoss**, **Adam** optimizer, and **Early Stopping** |
 | **5. Evaluation** | Final performance assessment on the independent blind test set |
 
 ---
