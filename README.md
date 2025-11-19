@@ -40,7 +40,6 @@ This project compares three main strategies for SP prediction:
 3. **Deep Learning approach** (ESM-2 + MLP)
 
 The aim is to evaluate their performance using curated datasets from **UniProtKB**, applying cross-validation and benchmarking on a blind test set.  
-In later stages, the pipeline may be extended to **neural networks** and **deep learning architectures** for advanced prediction.
 
 ---
 
