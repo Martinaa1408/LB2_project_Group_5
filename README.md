@@ -45,17 +45,20 @@ In later stages, the pipeline may be extended to **neural networks** and **deep 
 
 ## Project Work Plan
 
+
 | Task | Description |
 |------|-------------|
-| Retrieve datasets | Collect relevant protein datasets from UniProtKB |
-| Preprocess datasets | Prepare data for cross-validation and benchmarking |
-| Analyze statistics | Compute and visualize dataset statistics |
-| Feature extraction | Extract relevant features for classification |
-| von Heijne’s algorithm | Implement cleavage site prediction method |
-| SVM classifier | Train and test Support Vector Machine model |
-| Evaluation | Assess methods with cross-validation and blind test set |
-| Reporting | Discuss and interpret results |
-| Manuscript | Prepare manuscript in scientific article format |
+| **Retrieve datasets** | Collect relevant protein datasets from UniProtKB |
+| **Preprocess datasets** | Prepare data for cross-validation and benchmarking |
+| **Analyze statistics** | Compute and visualize dataset statistics |
+| **Feature extraction** | Extract relevant features for classification |
+| **von Heijne's algorithm** | Implement cleavage site prediction method |
+| **SVM classifier** | Train and test Support Vector Machine model |
+| **Evaluation** | Assess methods with cross-validation and blind test set |
+| **Deep Learning approach** | Implement ESM-2 embeddings + MLP classifier with Optuna optimization |
+| **Reporting** | Discuss and interpret results |
+| **Manuscript** | Prepare manuscript in scientific article format |
+
 
 ---
 
