@@ -82,7 +82,6 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 | :---: | :---: | :---: | :---: |
 | 1781 | 6 | 6 | 213 |
 
----
 
 **Interpretation:**
 The Deep Learning approach achieves a near-perfect classification with an MCC of **0.969**. The balanced errors (only 6 false positives and 6 false negatives) demonstrate that the model is unbiased and handles the class imbalance effectively.
