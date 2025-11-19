@@ -12,23 +12,12 @@ The purpose of this module is to extend the classical methods (von Heijne, SVM) 
 ---
 
 ## **Objective**
+The goal is to build a robust classifier for signal peptide prediction by leveraging Transfer Learning and automated optimization. Rather than relying on manual feature engineering, this approach uses:
 
-The aim of this Deep Learning module is to implement and optimize a neural network classifier for signal peptide (SP) prediction by leveraging modern protein language models. Specifically, this phase focuses on:
+- **Pre-trained Embeddings:** Leveraging ESM-2 to capture evolutionary and structural context without explicit feature calculation.
+- **Data-Driven Classification:** Training a neural network tailored to detect complex, non-linear patterns in the sequence data.
+- **Rigorous Optimization:** Using Optuna for hyperparameter tuning and Cross-Validation to ensure generalization.
 
-* **Transfer Learning:** using pretrained **ESM-2** embeddings (1280-dimensional) to capture evolutionary, structural and contextual sequence information.
-* **Neural Architecture:** training a **Multi-Layer Perceptron (MLP)** classifier tailored to SP detection.
-* **Automated Optimization:** applying **Optuna** to tune hyperparameters and maximize validation **MCC**.
-* **Generalization Strategies:** employing **cross-validation** and **early stopping** to prevent overfitting and ensure model robustness.
-
------
-
-## Theoretical Framework
-
-1. Protein Language Models & Transfer Learning: **Transfer Learning** is applied, using the pre-trained **ESM-2** model (`esm2_t33_650M_UR50D`) to obtain **1280-dimensional embeddings** hat capture the fundamental properties of protein sequences without explicit feature calculation.
-
-2. Domain Knowledge: N-Terminal Focus: embeddings are extracted from the first 90 residues to focus on the biologically relevant **N-terminal region**, reducing noise from the rest of the protein.
-
-3. Feature Learning vs. Engineering: **Global Average Pooling** and an **MLP** automatically learn non-linear feature combinations, capturing subtle patterns in signal peptides that manual or rule-based methods may miss.
 
 ---
 
@@ -48,7 +37,8 @@ The aim of this Deep Learning module is to implement and optimize a neural netwo
 
 ### (a) Network Structure
 The classifier is a **Multi-Layer Perceptron (MLP)** designed for robustness:
-* **Input:** 1280-dimensional semantic vectors (ESM-2 output).
+* **Input (N-Terminal Focus:** 1280-dimensional semantic vectors (ESM-2 output) extracted from the first 90 residues only, reducing noise from the rest of the protein.
+* **Global Pooling:** Averages the token embeddings to produce a fixed-size representation.
 * **Hidden Layers:** Three dense layers with **ReLU** activation to model non-linear decision boundaries.
 * **Regularization:** **Dropout** is applied after each layer to prevent the model from relying on specific neurons (overfitting).
 
@@ -83,7 +73,7 @@ The optimized model was evaluated on the independent **Test Set**.
 
 **Interpretation:**
 - The Deep Learning approach achieves a high MCC of **0.9692**.
-- The superior performance compared to classical methods confirms that **Transformer-based embeddings** effectively capture the complex, degenerate motifs of signal peptides better than static physicochemical descriptors.
+- The superior performance compared to classical methods confirms that **Transformer-based embeddings** effectively capture the complex, degenerate motifs of signal peptides.
 
 ---
 
