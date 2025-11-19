@@ -34,7 +34,7 @@ The project addresses the **prediction of secretory signal peptides in eukaryoti
 Predicting secretory signal peptides (SPs) is fundamental for understanding protein localization and function.  
 Traditional experimental methods are accurate but time-consuming, motivating the adoption of **computational approaches**.  
 
-This project compares two main strategies for SP prediction:
+This project compares three main strategies for SP prediction:
 1. **Motif-based statistical approach** (von Heijne, 1986)  
 2. **Support Vector Machine (SVM)**-based classification (scikit-learn)
 3. **Deep Learning approach** (ESM-2 + MLP)
