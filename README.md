@@ -118,7 +118,7 @@ To set up the environment and run the project, follow these steps:
 
 - [**Evaluation_and_Comparison/**](./Evaluation_and_Comparison)
   Comparative analysis of SVM and von Heijne models using independent test sets and performance metrics visualization.  
-  → Main notebook: [`Evaluation_and_Comparisons.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison_Collection/Evaluation_and_comparisons.ipynb)
+  → Main notebook: [`Evaluation_and_Comparisons.ipynb`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Evaluation_and_comparisons.ipynb)
   
 - [**Deep_Learning/**](./Deep_Learning)
   Implementation of a Multi-Layer Perceptron (MLP) classifier using Transfer Learning from pre-extracted ESM2 protein embeddings, optimized via Optuna for best performance.
