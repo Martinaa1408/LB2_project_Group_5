@@ -36,7 +36,8 @@ Traditional experimental methods are accurate but time-consuming, motivating the
 
 This project compares two main strategies for SP prediction:
 1. **Motif-based statistical approach** (von Heijne, 1986)  
-2. **Support Vector Machine (SVM)**-based classification (scikit-learn)  
+2. **Support Vector Machine (SVM)**-based classification (scikit-learn)
+3. **Deep Learning approach** (ESM-2 + MLP)
 
 The aim is to evaluate their performance using curated datasets from **UniProtKB**, applying cross-validation and benchmarking on a blind test set.  
 In later stages, the pipeline may be extended to **neural networks** and **deep learning architectures** for advanced prediction.
@@ -221,9 +222,9 @@ Features selected for SVM (RF importance): **15**
 ---
 
 ## Conclusion:
-The **SVM (RBF kernel)** outperforms the rule-based model on all quantitative metrics, maintaining excellent generalization to independent data while minimizing false positives.
+The MLP leveraging ESM-2 embeddings outperforms both the SVM and rule-based models on all metrics, capturing canonical and atypical signal peptides with near-perfect accuracy and robust generalization.
 
-The **Von Heijne PSWM** remains biologically interpretable and complements the SVM by providing motif-level insight into cleavage-site conservation.
+The Von Heijne PSWM remains biologically interpretable and complements the MLP by providing motif-level insight into cleavage-site conservation.
 
 ---
 
@@ -267,6 +268,7 @@ We would like to thank Professors **Castrense Savojardo** and **Matteo Manfredi*
 - **conda environment tools** — package and environment management  
 
 ---
+
 
 ### Key references
 - UniProt Consortium (2023). *UniProt: the Universal Protein Knowledgebase.* **Nucleic Acids Research**.  
