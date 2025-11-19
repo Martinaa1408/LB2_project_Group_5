@@ -34,23 +34,6 @@ The aim of this analysis is to quantitatively and qualitatively assess the predi
 
 ---
 
-## Quantitative Evaluation
-
-| Metric | Von Heijne | SVM |
-|:-------|:-----------:|:---:|
-| **Accuracy** | 0.930 | **0.953** |
-| **Precision** | 0.665 | **0.796** |
-| **Recall (TPR)** | 0.726 | **0.767** |
-| **F1-score** | 0.694 | **0.781** |
-| **MCC** | 0.656 | **0.755** |
-
-**Interpretation:**  
-The **Von Heijne** model exhibits higher recall, identifying most true SPs but with slightly more false positives.  
-Conversely, the **SVM** classifier adopts a stricter decision boundary, reducing false positives at the cost of marginally lower sensitivity.  
-This trade-off reflects their distinct nature: heuristic motif scoring versus learned feature boundaries.
-
----
-
 ## Confusion Matrices
 
 | Model | True Negatives | False Positives | False Negatives | True Positives |
