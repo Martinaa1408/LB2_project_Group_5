@@ -56,7 +56,7 @@ This trade-off reflects their distinct nature: heuristic motif scoring versus le
 | Model | True Negatives | False Positives | False Negatives | True Positives |
 |--------|----------------|-----------------|-----------------|----------------|
 | **Von Heijne** | 1707 | 80 | 60 | 159 |
-| **SVM** | 1594 | 193 | 201 | 18 |
+| **SVM** | 1653 | 134 | 23 | 196 |
 
 **Interpretation:**  
 - Von Heijne achieves higher recall but is more prone to FP misclassifications caused by transmembrane helices.  
@@ -70,7 +70,7 @@ This trade-off reflects their distinct nature: heuristic motif scoring versus le
 | Method | FP Transmembrane (%) | FP Non-Transmembrane (%) |
 |---------|----------------------|---------------------------|
 | **Von Heijne** | 53.8 | 46.2 |
-| **SVM** | 15.0 | 85.0 |
+| **SVM** | 9.7 | 90.3 |
 
 The rule-based PSWM often confuses hydrophobic transmembrane helices with SPs due to similar N-terminal composition.  
 The SVM integrates additional descriptors (charge, TM propensity, size) that reduce this bias.
@@ -78,10 +78,10 @@ The SVM integrates additional descriptors (charge, TM propensity, size) that red
 ### (b) By Taxonomic Kingdom
 | Kingdom | Von Heijne FP (%) | SVM FP (%) |
 |----------|-------------------|-------------|
-| **Metazoa** | 66.2 | 52.8 |
-| **Viridiplantae** | 20.0 | 19.7 |
-| **Fungi** | 10.0 | 25.9 |
-| **Other** | 3.8 | 1.6 |
+| **Metazoa** | 66.2 | 53.7 |
+| **Viridiplantae** | 20.0 | 20.9 |
+| **Fungi** | 10.0 | 22.4 |
+| **Other** | 3.8 | 3.0 |
 
 Von Heijne is tuned toward **Metazoan** sequences, while the SVM distributes errors more evenly.  
 Fungal sequences remain a weak point for both methods due to taxon-specific motif deviations.
@@ -138,7 +138,7 @@ Overall, both models capture biologically meaningful trends:
 
 | File | Description |
 |------|--------------|
-| [metrics_comparison] | Quantitative performance summary |
+| [FalsePositive_analysis.txt](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/FalsePositive_analysis.txt)| Quantitative performance summary |
 | [FP_comparisons](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/FP_comparisons.png) | FP composition and TM bias |
 | [FP_kingdom_comparisons](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/FP_kingdom_comparisons.png) | FP distribution by kingdom |
 | [residues_composition](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Evaluation_and_Comparison/Plots/residues_composition.png) | Amino acid frequency plot |
