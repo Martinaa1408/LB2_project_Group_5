@@ -59,8 +59,8 @@ An automated study (Trial 7) identified the optimal configuration to maximize th
 
 The training process incorporated **Early Stopping** (patience = 10 epochs) to ensure the selection of the model state with the best generalization capability.
 
-* **Best Validation Score:** 0.9893 (MCC) achieved at Epoch 9.
-* **Convergence:** The model converged rapidly, triggering early stopping at Epoch 19. This indicates that the pre-trained ESM-2 features are highly discriminative, requiring minimal gradient updates to separate the classes effectively.
+* **Best Validation Score:** 0.989 (MCC) achieved at Epoch 17.
+* **Convergence:** The model converged rapidly, triggering early stopping at Epoch 28. This indicates that the pre-trained ESM-2 features are highly discriminative, requiring minimal gradient updates to separate the classes effectively.
 
 ---
 
@@ -86,7 +86,7 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 
 
 **Interpretation:**
-The Deep Learning approach achieves a near-perfect classification with an MCC of **0.969**. The balanced errors (only 6 false positives and 6 false negatives) demonstrate that the model is unbiased and handles the class imbalance effectively.
+The Deep Learning approach achieves a near-perfect classification with an MCC of **0.969**. The balanced errors (only 6 false positives and 14 false negatives) demonstrate that the model is unbiased and handles the class imbalance effectively.
 
 ---
 
