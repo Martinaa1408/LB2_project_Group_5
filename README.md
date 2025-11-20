@@ -169,7 +169,7 @@ Features selected for SVM (RF importance): **15**
 
 ---
 
-## **Model Training and Optimization**
+### **Model Training and Optimization**
 
 | Step | Method | Details / Parameters | Output |
 |------|---------|---------------------|---------|
@@ -177,7 +177,7 @@ Features selected for SVM (RF importance): **15**
 | Model 2 | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, `kernel = RBF`; Stratified 5-fold CV | Trained classifier on 15 features |
 | Model 3 | **Deep Learning (ESM-2 + MLP)** | `Hidden layers: [45, 48, 41]`, `Dropout: 0.21`, `LR: 7.97e-4`; Optuna optimization | Trained neural network on ESM-2 embeddings |
 
-## **Quantitative Performance**
+### **Quantitative Performance**
 
 ### **Internal Evaluation (Training / Validation Set)**
 | Metric | Von Heijne | SVM (RBF) | Deep Learning |
@@ -197,7 +197,7 @@ Features selected for SVM (RF importance): **15**
 | F1-score | 0.694 | 0.714 | 0.973 |
 | MCC | 0.656 | 0.690 | 0.969 |
 
-## **Key Observations**
+### **Key Observations**
 
 | Aspect | Von Heijne | SVM | Deep Learning |
 |--------|------------|-----|-------------------|
@@ -207,7 +207,7 @@ Features selected for SVM (RF importance): **15**
 | SP mean length | 22.4 aa | 21.9 aa | No length bias detected |
 | Interpretability | High (biological motifs visible) | Moderate (feature-dependent) | Lower (black-box) but superior performance |
 
-## **Final Summary Table**
+### **Final Summary Table**
 
 | Dataset | Model | Accuracy | F1-score | MCC | Best For |
 |---------|--------|----------|----------|-----|----------|
@@ -220,7 +220,7 @@ Features selected for SVM (RF importance): **15**
 
 ---
 
-## Conclusion:
+### Conclusion:
 The MLP leveraging ESM-2 embeddings outperforms both the SVM and rule-based models on all metrics, capturing canonical and atypical signal peptides with near-perfect accuracy and robust generalization.
 
 The Von Heijne PSWM remains biologically interpretable and complements the MLP by providing motif-level insight into cleavage-site conservation.
