@@ -47,11 +47,11 @@ An automated study (Trial 7) identified the optimal configuration to maximize th
 
 | Hyperparameter | Optimal Value |
 |----------------|---------------|
-| **Hidden Size 1** | 45 |
-| **Hidden Size 2** | 48 |
-| **Hidden Size 3** | 41 |
-| **Dropout Probability** | 0.21 |
-| **Learning Rate** | 7.97e-4 |
+| **Hidden Size 1** | 35 |
+| **Hidden Size 2** | 35 |
+| **Hidden Size 3** | 34 |
+| **Dropout Probability** | 0.115 |
+| **Learning Rate** | 1.552e-4 |
 
 ---
 
