@@ -202,7 +202,7 @@ Features selected for SVM (RF importance): **15**
 | Aspect | Von Heijne | SVM | Deep Learning |
 |--------|------------|-----|-------------------|
 | False Positives (FP) | Hydrophobic TM helices (Metazoa bias) | Strongly reduced; fewer TM-related misclassifications | Minimal (6 FP); balanced error distribution |
-| False Negatives (FN) | Short or polar SPs (<18 aa) | Borderline SPs with weak α-helix signals | Minimal (6 FN); robust to sequence variations |
+| False Negatives (FN) | Short or polar SPs (<18 aa) | Borderline SPs with weak α-helix signals | Minimal (14 FN); robust to sequence variations |
 | Motif capture | Conserved [A,V]XA cleavage motif | Broader tolerance to sequence variability | Automatic feature learning; no manual motif definition |
 | SP mean length | 22.4 aa | 21.9 aa | No length bias detected |
 | Interpretability | High (biological motifs visible) | Moderate (feature-dependent) | Lower (black-box) but superior performance |
