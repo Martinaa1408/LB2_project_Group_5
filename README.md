@@ -130,7 +130,7 @@ To set up the environment and run the project, follow these steps:
 
 - [**Report/**](./Report)
   PDF version of the final report related to the project.
-  →PDF document: [`report_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Report/report_LB2%20_Group5.pdf)
+  →PDF document: [`report_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Report/report_LB2_Group5.pdf)
   
 - [**README.md**](./README.md)  
   General project overview and workflow description.
