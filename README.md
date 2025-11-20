@@ -126,7 +126,7 @@ To set up the environment and run the project, follow these steps:
 
 - [**Supplementary_materials/**](./Supplementary_materials)
   Additional resources, figures, and intermediate files supporting the main notebooks and report.  
-  → PDF documents: [`Supplementary_materials_LB2_Group5.pdf`]([https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/Supplementary_materials_LB2_Group5.pdf));[`Manual_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/) .
+  → PDF documents: [`Supplementary_materials_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/Supplementary_materials_LB2_Group5.pdf);[`Manual_LB2_Group5.pdf`](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Supplementary_materials/) .
 
 - [**Report/**](./Report)
   PDF version of the final report related to the project.
