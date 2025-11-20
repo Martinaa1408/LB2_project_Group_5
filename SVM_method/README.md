@@ -128,8 +128,8 @@ An independent dataset of 2006 yeast proteins was used to assess model generaliz
 
 | Metric | Value |
 |:--------|-------:|
-| **Accuracy** | 0.921 |
-| **Precision** | 0.593 |
+| **Accuracy** | 0.922 |
+| **Precision** | 0.594 |
 | **Recall (TPR)** | 0.895 |
 | **F1-score** | 0.714|
 | **MCC** | 0.690 |
