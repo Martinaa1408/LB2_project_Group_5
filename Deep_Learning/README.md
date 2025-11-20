@@ -70,11 +70,11 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 
 | Metric | Score |
 |--------|-------|
-| **Accuracy** | 0.994 |
-| **Precision** | 0.973 |
-| **Recall** | 0.973 |
-| **F1 Score** | 0.973 |
-| **MCC** | **0.969** |
+| **Accuracy** | 0.990 |
+| **Precision** | 0.971 |
+| **Recall** | 0.936 |
+| **F1 Score** | 0.953 |
+| **MCC** | **0.948** |
 
 **Confusion Matrix:**
 
@@ -82,7 +82,7 @@ The optimized model was evaluated on the independent **Test Set** (2006 sequence
 | | **Predicted Negative** | **Predicted Positive** |
 | :--- | :---: | :---: |
 | **Actual Negative** | 1781  | 6  |
-| **Actual Positive** | 6  | 213  |
+| **Actual Positive** | 14  | 205  |
 
 
 **Interpretation:**
