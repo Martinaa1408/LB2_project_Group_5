@@ -175,27 +175,27 @@ Features selected for SVM (RF importance): **15**
 |------|---------|---------------------|---------|
 | Model 1 | **Von Heijne (rule-based)** | Position-Specific Weight Matrix (PSWM), optimized threshold by MCC | Cleavage-site scoring function |
 | Model 2 | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, `kernel = RBF`; Stratified 5-fold CV | Trained classifier on 15 features |
-| Model 3 | **Deep Learning (ESM-2 + MLP)** | `Hidden layers: [45, 48, 41]`, `Dropout: 0.21`, `LR: 7.97e-4`; Optuna optimization | Trained neural network on ESM-2 embeddings |
+| Model 3 | **Deep Learning (ESM-2 + MLP)** | `hidden_size1': 35, 'hidden_size2': 35, 'hidden_size3': 34`, `Dropout: 0.11525485528721369`, `LR: 0.0001552002336009008`; Optuna optimization | Trained neural network on ESM-2 embeddings |
 
 ### **Quantitative Performance**
 
 ### **Internal Evaluation (Training / Validation Set)**
 | Metric | Von Heijne | SVM (RBF) | Deep Learning |
 |--------|------------|-----------|-------------------|
-| Accuracy | 0.939 ± 0.002 | 0.927 | 0.994 |
-| Precision | 0.708 ± 0.017 | 0.619 | 0.973 |
-| Recall (TPR) | 0.756 ± 0.032 | 0.857 | 0.973 |
-| F1-score | 0.728 ± 0.011 | 0.719 | 0.973 |
-| MCC | 0.697 ± 0.013 | 0.690 | 0.989 |
+| Accuracy | 0.939 ± 0.002 | 0.927 | 0.995 |
+| Precision | 0.708 ± 0.017 | 0.620 | 0.987 |
+| Recall (TPR) | 0.756 ± 0.032 | 0.857 | 0.970 |
+| F1-score | 0.728 ± 0.011 | 0.719 | 0.981 |
+| MCC | 0.697 ± 0.013 | 0.6913 | 0.978 |
 
 ### **External Evaluation (Independent Benchmark)**
 | Metric | Von Heijne | SVM (RBF) | Deep Learning |
 |--------|------------|-----------|-------------------|
-| Accuracy | 0.930 | 0.921 | 0.994 |
-| Precision | 0.665 | 0.594 | 0.973 |
-| Recall (TPR) | 0.726 | 0.895 | 0.973 |
-| F1-score | 0.694 | 0.714 | 0.973 |
-| MCC | 0.656 | 0.690 | 0.969 |
+| Accuracy | 0.930 | 0.922 | 0.990 |
+| Precision | 0.665 | 0.594 | 0.971 |
+| Recall (TPR) | 0.726 | 0.895 | 0.936 |
+| F1-score | 0.694 | 0.714 | 0.953 |
+| MCC | 0.656 | 0.690 | 0.948 |
 
 ### **Key Observations**
 
