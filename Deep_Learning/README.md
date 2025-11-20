@@ -6,7 +6,7 @@ This section describes the deep learning approach implemented to classify protei
 |---------|------|----------------|
 | **ESM-2 + MLP** | Deep Learning | Transformer-based Embeddings + Multi-Layer Perceptron |
 
-**Notebook:** [DL_analysis.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_analysis.ipynb)
+→ **Notebook:** [DL_analysis.ipynb](https://github.com/Martinaa1408/LB2_project_Group_5/blob/main/Deep_Learning/DL_analysis.ipynb)
 
 ---
 
