@@ -111,8 +111,8 @@ Overall, both models capture biologically meaningful trends:
 - **SVM** leverages nonlinear boundaries in physicochemical space, achieving higher precision and lower FP.  
 - Errors in both models largely arise from **local deviations in hydrophobicity** and **motif strength**, not from dataset bias.
 
-> In conclusion, SPs generally show enrichment in **L, A, V, M**, a conserved `[A,V]XA` motif, and average lengths around 22 residues.  
-> FNs exhibit polar enrichment (S, T, D, E) and shortened hydrophobic cores (<18 aa), confirming that **compositional variability** is the main cause of reduced recognition.
+In conclusion, SPs generally show enrichment in **L, A, V, M**, a conserved `[A,V]XA` motif, and average lengths around 22 residues.  
+FNs exhibit polar enrichment (S, T, D, E) and shortened hydrophobic cores (<18 aa), confirming that **compositional variability** is the main cause of reduced recognition.
 
 
 ---
