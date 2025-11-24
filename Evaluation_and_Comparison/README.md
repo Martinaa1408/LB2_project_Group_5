@@ -42,8 +42,9 @@ The aim of this analysis is to quantitatively and qualitatively assess the predi
 | **SVM** | 1653 | 134 | 23 | 196 |
 
 **Interpretation:**  
-- Von Heijne achieves higher recall but is more prone to FP misclassifications caused by transmembrane helices.  
-- SVM minimizes FP but occasionally fails on marginal or short SPs, leading to slightly higher FN.
+- Von Heijne: Shows strong recall but produces many false positives, mainly because N-terminal transmembrane segments resemble SP hydrophobic cores. This leads to frequent overprediction of the positive class.
+
+- SVM (RBF): Captures a wider range of SP patterns and reduces false negatives, but still struggles with borderline hydrophobic regions. As a result, it produces more false positives and occasionally misses very short or weak SPs.
 
 ---
 
