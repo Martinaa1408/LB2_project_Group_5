@@ -175,7 +175,7 @@ Features selected for SVM (RF importance): **15**
 |------|---------|---------------------|---------|
 | Model 1 | **Von Heijne (rule-based)** | Position-Specific Weight Matrix (PSWM), optimized threshold by MCC | Cleavage-site scoring function |
 | Model 2 | **SVM (RBF kernel)** | `C = 10`, `γ = 'scale'`, `kernel = RBF`; Stratified 5-fold CV | Trained classifier on 15 features |
-| Model 3 | **Deep Learning (ESM-2 + MLP)** | `hidden_size1': 35, 'hidden_size2': 35, 'hidden_size3': 34`, `Dropout: 0.11525485528721369`, `LR: 0.0001552002336009008`; Optuna optimization | Trained neural network on ESM-2 embeddings |
+| Model 3 | **Deep Learning (ESM-2 + MLP)** | `hidden_size1': 49, 'hidden_size2': 41, 'hidden_size3': 42`, `Dropout: 0.26`, `LR: 0..0006223341477028767`; Optuna optimization | Trained neural network on ESM-2 embeddings |
 
 ### **Quantitative Performance**
 
