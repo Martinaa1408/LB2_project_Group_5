@@ -47,11 +47,11 @@ An automated study (Trial 7) identified the optimal configuration to maximize th
 
 | Hyperparameter | Optimal Value |
 |----------------|---------------|
-| **Hidden Size 1** | 35 |
-| **Hidden Size 2** | 35 |
-| **Hidden Size 3** | 34 |
-| **Dropout Probability** | 0.115 |
-| **Learning Rate** | 1.552e-4 |
+| **Hidden Size 1** | 49 |
+| **Hidden Size 2** | 41 |
+| **Hidden Size 3** | 42 |
+| **Dropout Probability** | 0.26 |
+| **Learning Rate** | 6.2233e-05 |
 
 ---
 
@@ -59,7 +59,7 @@ An automated study (Trial 7) identified the optimal configuration to maximize th
 
 The training process incorporated **Early Stopping** (patience = 10 epochs) to ensure the selection of the model state with the best generalization capability.
 
-* **Best Validation Score:** 0.984 (MCC) achieved at Epoch 17.
+* **Best Validation Score:** 0.985 (MCC) achieved at Epoch 7.
 * **Convergence:** The model converged rapidly, triggering early stopping at Epoch 28. This indicates that the pre-trained ESM-2 features are highly discriminative, requiring minimal gradient updates to separate the classes effectively.
 
 ---
